@@ -1,3 +1,5 @@
 # UMKC-PhD-Work
+
 This is my PhD work in progress at UMKC.
-<Dissertation> folder contains set-up and chapter files (*.tex)
+
+_**Dissertation**_ folder contains set-up and chapter files (*.tex).
