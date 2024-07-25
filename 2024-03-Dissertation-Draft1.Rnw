@@ -1,0 +1,153 @@
+\documentclass[12pt]{article}
+
+% --- Bibliography Section -----------------------------------------------------+
+\usepackage{natbib}
+\bibliographystyle{apalike}
+%\usepackage[natbibapa]{apacite}
+%\bibliographystyle{apacite}
+
+% --- Index Section ------------------------------------------------------------+
+\usepackage{imakeidx} % <----------------------- Alphabetical Index, two columns
+\makeindex[columns=2, title={INDEX}]
+
+% --- Set the page margins as required -----------------------------------------+
+\usepackage[left=1.25in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{graphicx} % <------------------------- Required for inserting images
+\usepackage[]{hyperref}
+\hypersetup{
+    colorlinks  = {false},
+    linkcolor   = {blue},
+    filecolor   = {magenta},      
+    urlcolor    = {cyan},
+    pdftitle    = {Dissertation by Oleksandr Valchyshen},
+    pdfpagemode = {FullScreen},
+}
+%\graphicspath{{C:/UMKC/My Working Papers/Dissertation/Plots/}}
+\usepackage{setspace}\doublespacing % <------------ Double-spacing the main text 
+\expandafter\def\expandafter\quote  % <---------- Single-spacing the quotes used
+  \expandafter{\quote\small\singlespacing}
+\usepackage{endnotes,chngcntr}
+\usepackage[perpage,symbol*]{footmisc}
+\usepackage{titlesec}
+\usepackage{soul}
+\usepackage{afterpage}
+\usepackage{stringstrings} % <----------- https://www.ctan.org/pkg/stringstrings
+\usepackage{mwe}
+\usepackage{mfirstuc}
+\usepackage{xcolor}
+\usepackage[labelfont=bf]{caption}
+\usepackage{tikz}
+\usepackage{pgfplots}\pgfplotsset{compat=1.18}
+\usetikzlibrary{matrix,fit,arrows.meta,bending,positioning,arrows,shapes,
+                shapes.multipart,automata,decorations.pathmorphing,calc}
+                  
+% --- Acronyms/Abbreviations Section -------------------------------------------+
+\usepackage{acro}         
+\newcommand{\folder}{C:/UMKC/My Working Papers/Dissertation} % The working folder!
+\newcommand{\plotsfolder}{C:/UMKC/My Working Papers/Dissertation/Plots}
+\input{\folder/00-Acronyms} % List of acronyms, 2b updated
+% acro dev page: https://github.com/cgnieder/acro
+% acro manual:   https://mirror2.sandyriver.net/pub/ctan/macros/latex/contrib/acro/acro-manual.pdf
+
+% --- Managing sections
+\usepackage{titlesec}     % To modify the section titles
+\renewcommand\thesection{\arabic{section}} % CHAPTER 1 [New Line] TITLE
+\titleformat{\section}[display]            % each chapter has two lines...
+  {\normalfont\Large\filcenter}{\MakeUppercase{Chapter~\thesection}}{0pt}{}
+\titlespacing*{\section}{0pt}{0pt}{24pt}    % 24pt after section/chapter
+\titlespacing*{\subsection}{0pt}{30pt}{6pt} % 30pt before, 6pt after subsection
+% Capitalizing the titles of the respective sections:
+\renewcommand{\notesname}{\centering \MakeUppercase{Endnotes}}
+\renewcommand{\contentsname}{\centering \MakeUppercase{Contents}}
+\renewcommand{\refname}{\centering \MakeUppercase{References}}
+\renewcommand{\listfigurename}{\centering \MakeUppercase{List of Illustrations}}
+\renewcommand{\listtablename}{\centering \MakeUppercase{List of Tables}}
+\usepackage[titles]{tocloft}      % <-- ...to modify ToC, LoF, and LoT
+\renewcommand{\cftdotsep}{4}      % dots spacing
+\renewcommand{\cftsecdotsep}{4}   % dots spacing for sections 
+\renewcommand{\cftsubsecdotsep}{4}% dots spacing for subsections
+\renewcommand{\cfttoctitlefont}{\hfill\Large} % ToC = Table of Contents
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\Large} % LoF = List of Figures
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\Large} % LoT = List of Tables
+\renewcommand{\cftafterlottitle}{\hfill}
+
+%--- Endnotes
+% Reset endnote numbering every section
+\counterwithin*{endnote}{section}
+\let\latexsection\section
+\makeatletter  %changes the catcode of @ to 11
+\renewcommand\enoteheading{
+    \setcounter{secnumdepth}{-2}
+    \latexsection*{\notesname\markboth{NOTES}{}}
+    \mbox{}\par\vskip-\baselineskip
+    \let\@afterindentfalse\@afterindenttrue
+}
+\def\enotedivision#1#2{\@ifnextchar\enotedivision{}{#1{#2}}}
+\makeatother    
+\RenewDocumentCommand{\section}{som}{%
+  \IfBooleanTF{#1}
+  {\latexsection*{#3}%
+    \setcounter{endnote}{0}%
+    \addtoendnotes{%
+      \noexpand\enotedivision{\noexpand\subsubsection*}
+      {\unexpanded{#3}}}%
+  }
+  {\IfNoValueTF{#2}
+    {\latexsection{#3}}
+    {\latexsection[#2]{#3}}%
+    \addtoendnotes{%
+     \noexpand\enotedivision{\noexpand\subsubsection*}
+     {\thesection. \unexpanded{#3}}}%
+  }%
+}
+\let\footnote=\endnote
+%--- ...end of Endnotes
+
+% --- Epigraphs ----------------------------------------------------------------+
+\usepackage{epigraph}
+% \epigraphsize{\small}% Default
+\setlength\epigraphwidth{8cm}
+\setlength\epigraphrule{0pt}
+
+% My info
+\date{March 1st, 2024}
+
+% --- START of the DOCUMENT ----------------------------------------------------+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+% Prelim \section{section name}
+\label{sec:section name}
+
+\pagenumbering{roman}
+\input{\folder/00-MyInfo}
+\input{\folder/01-Title}
+%\input{\folder/02-Copyright}
+%\input{\folder/03-Abstract} % <------- UMKC's req: this page # is [iii] in Roman
+%\input{\folder/04-Approval}
+\input{\folder/05-TOC}
+%\input{\folder/06-Acknowledgements}
+\input{\folder/07-Preface}
+
+% Main sections
+\pagenumbering{arabic}
+\input{\folder/11-Introduction} % <--------------------- DRAFT IS DONE 6/23/2024
+\input{\folder/12-Innes}
+%\input{\folder/13-SocStudies}
+%\input{\folder/14-Payments}
+%\input{\folder/15-Sanctions}
+
+% --- Concluding Sections: End-notes, References, Index ------------------------+
+%\include{20-Appendicies}
+\newpage \theendnotes \newpage  % <--------------------------- End-notes Section
+\addcontentsline{toc}{section}{\uppercase{Endnotes}}
+\newpage \bibliography{ref} % <------------------------------ References Section
+\addcontentsline{toc}{section}{\uppercase{References}}
+\newpage \printindex % <------------------------------------------ Index Section
+\addcontentsline{toc}{section}{\uppercase{Index}}
+\newpage \input{\folder/23-Vita} % <--------------------------------VITA Section
+
+\end{document}
+% --- END of the DOCUMENT ------------------------------------------------------+
