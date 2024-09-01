@@ -2052,9 +2052,61 @@ credit, one is always a debtor and the other always a creditor.~\citep[p.~688]{c
 The credit system is that by which men set-off\index{Colwell, Stephen!on set-off} the debts wlich others owe them against those which they owe to others.~\citep[p.~8]{colwell1859} 
 \end{quote}
 
-In a broad extent, the terminology and its meaning used \citeauthor{colwell1859} was similar to \citeauthor{innes1913} as far as technique of payment is concerned.\footnote{For example, compare \citeauthor{colwell1859}'s ``[e]ach individual, in fact, directly or indirectly pays for what he purchases with that which he has to sell"~\citep[p.~190]{colwell1859} with what \citeauthor{innes1913} said: ``[p]urchases \dots are paid for by sales"~\citep[p.~168]{innes1914}.} Thus, Colwell speaks of the mutual claims between transacting counter-parties, which are extinguished through the technique of ``set off" \citep[p.~693]{colwell1860}.\index{Colwell, Stephen!on set-off} However, his description lacks detail of differentiating debts and credits in terms of their tenor or maturity, which is in the forefront of \citeauthor{innes1913}' analysis.
+In a broad extent, the terminology and its meaning used \citeauthor{colwell1859} was quite similar to \citeauthor{innes1913} as far as technique of payment is concerned.\footnote{For example, compare \citeauthor{colwell1859}'s ``[e]ach individual, in fact, directly or indirectly pays for what he purchases with that which he has to sell"~\citep[p.~190]{colwell1859} with what \citeauthor{innes1913} said: ``[p]urchases \dots are paid for by sales"~\citep[p.~168]{innes1914}.} Thus, Colwell speaks of the mutual claims between transacting counter-parties, which are extinguished through the technique of ``set off" \citep[p.~693]{colwell1860}.\index{Colwell, Stephen!on set-off} However, his description lacks detail of differentiating debts and credits in terms of their tenor or maturity, which is in the forefront of \citeauthor{innes1913}' analysis.
 
-Also, Colwell mentions what later in the Mitchell Innes writings  was described as sanctity of obligation, albeit in some lighter version: ``[s]o long as a man's own debts are to be regarded as a good currency to pay him with, and he is willing to receive such payment." \citeyearpar[p.~691]{colwell1860}. Then that ``[m]en learned to pay their debts with their credits" \citeyearpar[p.~691]{colwell1860}. Lastly, ``[g]old and silver are seldom lent upon interest; they are never sought for as a medium of payment, because a check upon a bank is preferred" \citeyearpar[p.~694]{colwell1860}. 
+For example, consider the following quote describing payment as complete set-off by \citeauthor{colwell1859} from his book \textit{The Ways and Means of Payment}, which is following by an illustartion of this example in Figure~\ref{fig:set-off-colwell}, p.~\pageref{fig:set-off-colwell}. In this example there two counter parties: the merchant and the manufacturer. The former runs a book of account, where records who owes to whom and the nominal worth of the debts. 
+
+\begin{quote}
+The merchant who debits a manufacturer five thousand dollars for raw materials in the course of six months, and gives him credit for finished goods to the amount of seven thousand dollars in the same period, is very willing to unite with his customer in dis charging ten thousand dollars of this debt by balancing the account between them, leaving only two thousand to be paid otherwise than by the balance. The merchant and his customer each receive pay ment of five thousand dollars without money or currency. Each is paid with the debt he owes; the book is the evidence of the debts, and the balancing is the act of payment.~\citep[pp.~8-9]{colwell1859}
+\end{quote}
+
+\citeauthor{colwell1859} used verb ``debit" to indicate a change in the debt position of the manufacturer in the merchant's book of account, it meant that manufacturer was buying from the merchant the raw materials worth of \$5,000. Hence, in the merchant's book debiting of the manufacturer account for that worth resulted in an increase of the merchant's credit position on manufacturer by \$5,000. As an mirror image, debt position of manufacturer to the merchant did increase by same size, too. Then, in the quote above giving a credit meant that the merchant was recording a change of the manufacturer's position in the former's book of account. Due to this change, merchant's debt owed to manufacturer increased by \$7,000 and again as an mirror image the manufacturer's credit on the mechant increase by the same size. In other words, merchant was buying from the manufacturer finshed goods worth of \$7,000. Hence, the mentioned counter parties were paying to each other by establishing new dated \acfp{dcr}. These were dated because by mutual agreement they were due in six months. Then, the sides agreed to pay each other by complete set-off for \$5,000 and remaining part of \$2,000 to ``be paid otherwise" or through partial set-off, as a result of which the debtor gives the creditor a swap of the latter's credit position from the current debtor to another debtor, being a banker or the government. 
+
+\begin{figure}[!ht]
+\centering
+\vspace{.3in}
+\captionsetup{width=.8\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+\begin{tikzpicture}
+  \draw[help lines,white] (0,0) grid (13,6);
+  \node         (A)         at (4,6) {A};
+  \node         (B)         at (9,6) {B};
+  \node                     at (6.5,5) {(1)};
+  \begin{scope}[every node/.style={midway,auto,font=\scriptsize}]
+     \draw[black] (A) -- node {$credit^{\$5,000}_{t,B}$ \hspace{0.7in} $debt^{\$5,000}_{t,A}$} (B);
+     \draw[red]   (4.25,5.9) -- (8.75,5.9) node[sloped,below]  
+                          {$debt^{\$7,000}_{t,B}$ \hspace{.7in} $credit^{\$7,000}_{t,A}$};
+  \end{scope}
+  \node         (A)         at (4,3) {A};
+  \node         (B)         at (9,3) {B};
+  \node                     at (6.5,1) {(2)};
+  \begin{scope}[every node/.style={midway,auto,font=\scriptsize}]
+     \draw[black] (A) -- node {$credit^{\$5,000}_{t,B}$ \hspace{0.7in} $debt^{\$5,000}_{t,A}$} (B);
+     \draw[red]   (4.25,2.9) -- (8.75,2.9) node[sloped,below]  
+                          {$debt^{\$5,000}_{t,B}$ \hspace{.7in} $credit^{\$5,000}_{t,A}$};
+     \draw[blue] (4.5,2.5)   -- (5.5,3.5);
+     \draw[blue] (4.5,3.5)   -- (5.5,2.5);
+     \draw[blue] (7.75,2.5)  -- (8.75,3.5);
+     \draw[blue] (7.75,3.5)  -- (8.75,2.5);
+     \draw[red] (A.west) -- (3.5,3) |- (6,2) -| (9.5,3) -- (B.east);
+  \end{scope}
+  \node[red] at (2.8,2.6) {\textsuperscript{$debt^{\$2,000}_{t,B}$}};
+  \node[red] at (10.4,2.6) {\textsuperscript{$credit^{\$2,000}_{t,A}$}};
+  \node         (A)         at (4,0) {A};
+  \node         (B)         at (9,0) {B};
+  \node                     at (6.5,-1) {(3)};
+  \begin{scope}[every node/.style={midway,auto,font=\scriptsize}]
+     \draw[red]   (A) -- (B) node[sloped,below]  
+                          {$debt^{\$2,000}_{t,B}$ \hspace{.7in} $credit^{\$2,000}_{t,A}$};
+  \end{scope}
+\end{tikzpicture}
+\caption[Example of merchant $A$ and manufacturer $B$]%
+{Example of merchant $A$ and manufacturer $B$\par\vspace{.05in}(1) They start off with mutual and opposite debt-credit relationships both due in six months or 180 days ($t=180$) but not equal in terms of nominal worth: one is \$5,000 and another is for \$7,000. (2) Set-off is executed for \$5,000. (3) The remaining debt-credit relationship of \$2,000 will ``be paid otherwise."\par Source: narrative from \citep[pp.~8-9]{colwell1859}, illustration by author.}
+\label{fig:set-off-colwell}
+\vspace{.2in}
+\end{figure}
+
+Also, Colwell mentioned what later in the Mitchell Innes writings  was described as sanctity of obligation, albeit in some lighter version: ``[s]o long as a man's own debts are to be regarded as a good currency to pay him with, and he is willing to receive such payment." \citeyearpar[p.~691]{colwell1860}. Then that ``[m]en learned to pay their debts with their credits" \citeyearpar[p.~691]{colwell1860}. Lastly, ``[g]old and silver are seldom lent upon interest; they are never sought for as a medium of payment, because a check upon a bank is preferred" \citeyearpar[p.~694]{colwell1860}. 
 
 Both \citeauthor{colwell1859} and \citeauthor{innes1913} underline the primacy of the money of account concept. It is the language of the commerical activities. The usage of money of account is an established habit and ``a \textit{mental} operation" \citep[p.~3, emphasis added]{colwell1859}. 
 
@@ -2097,6 +2149,12 @@ Among the scholars of \citeauthor{commons1951} there are two views on how to cla
 % -------------- John M. Keynes (1883-1946) ------------------------------------+
 %
 \subsubsection{John M. Keynes}\index{Keynes, John M.}
+
+In his early writings, while describing the workings of the money markets in London and other major capitals of the European nations, \citeauthor{keynes1971_1} used the terms ``the balance of immediate indebtedness" and ``claims against [us/them] for immediate payment"~\citep[pp.~13,16]{keynes1971_1}. This category he reserved and applied for the bank balance sheet items of the most sensitive type with respect to payments. In particular, \citeauthor{keynes1971_1} was describing the workings of the London's money market during the gold-exchange standard and the most complicated mechanism guarding ``against a possible drain of specie abroad." In his own words, which came in print as early as in 1913 in the volume \textit{Indian Currency and Finance}:
+
+\begin{quote}
+A drain of gold can only come about if foreigners choose to turn into gold claims, which they have against us for immediate payment, and we have no counterbalancing claims against them for equally immediate payment. The drain can only be stopped if we can rapidly bring to bear our counterbalancing claims. When we come to consider how this can best be done, it is to be noticed that the position of a country which is preponderantly a creditor in the international short-loan market is quite different from that of a country which is preponderantly a debtor. In the former case, which is that of Great Britain, it is a question of reducing the amount lent; in the latter case it is a question of increasing the amount borrowed. A machinery which is adapted for action of the first kind may be ill suited for action of the second.~\citep[pp.~12-13]{keynes1971_1}
+\end{quote}
 
 \cite[vol.XXV, p.~44]{keynes1980}
 
