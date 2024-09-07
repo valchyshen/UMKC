@@ -1448,7 +1448,7 @@ Then, the relational posotions between a banker and her customer can be presente
         {
          & \\
         Assets: total credits ($\mathbf{c^{\$}_t}$) & Liabilities: total debts ($\mathbf{d^{\$}_t}$) \\
-        $\overrightarrow{c_{0}}$: credits due today continuously & $d_{0}$: debts due today \\
+        $\overrightarrow{c_{0}}$: credits due today continuously & $d_{0}$: daed debts due today \\
         $c_{\tiny t}$: dated credits, ($t \geq 0$) & $d_{\tiny t}$: dated debts, ($t>0$) \\
          };
         \node[fit=(n-1-1)(n-1-2)]%
@@ -2498,6 +2498,8 @@ The typology of the balance sheet payments in terms of \textit{tenor} is elabora
 
 The first type of \textit{dated} payments means that a unit is to make payment or a series of payments in the future. If a date balance sheet payment is contracted as discounted note, then it has one future payment of a predetermined size. Another type of dated balance sheet payments is a financial contract of the bond. The latter means that there is a series of future payments of, again, predetermined size, not just one, and these are spread out in time. An extreme case of a bond is consol, which has future payments lasting forever or into perpertuity. The normal case of the bond is that payment commitments are over a certatin period of time: over one year or over five years and so on. This bond itself might be contracted in a number of ways such as a bullet bond or an amortization bond. Both make regular payments (called coupon payments) at a fixed rate relative to principal, the nominal value of the bond. The difference between them is how the payment of the principal is contracted. The bullet bond is a commitment to make payment of the principal at the very end of the bond's life, i.e. 100\% of principal is paid upon maturity of the bond. The amortizaion bond is a commitment to make payment of the principal at predetermined schedule, not exclusively on the maturity date, such as 25\% of principal to be paid alongside with coupon payments during every last four payments committed by this bond. In extreme case, an ammortization bond spreads out the payment of the principal over the entire life of the bond. In this case, both coupon payments and partial principal payments produce equal payments through maturity of the bond -- in other words, such a bond turns into a type of financial contract referred to as stable annuity.\footnote{Stable annuity type means a financial contract lasting a certain period of time and payment commitments upon it are of stable or equal size.} For example, ``[a]n automobile loan contract or home morgage reguires monthly payments of stipulated amount"~\citep[p.~224]{minsky1986}. 
 
+Minsky's concept of dated payments (``cash flows') is in close equivalence with what was termed above as dated \acf{dcr}, $d_t$ and $c_t$ with $t geq 0$ standing for number of days from today till the maturity, expriration or end of tenor. Minsky's payment is frequently substituted with payment commitment, which now is in straight equivalence with \ac{dcr} because both imply the same thing.  
+
 The second type of balance sheet payments is \textit{demand} contracts, upon which the payment is made on demand from the counter party. In Minsky's own words: 
 
 \begin{quote}
@@ -2508,7 +2510,7 @@ Even though, these contracts have ``indeterminate duration"\index{Duration!measu
 
 For example, if market inerest rate increases then an existing bond with no embedded options and remaining time to maturity of 10 years will experience an immediate drop in market price, its present value, and the difference between current price and previous price corresponds approximattely to duration in percentage terms. So, for such a bond, depending on predetermined coupon rate and ammortization of the principal, it must be somewhat lower than 10. For example, if exact duraion of the above-mentioned bond is 8, then an increase in the market interest rate by one percentage point, from 3.5\% to 4.5\%, results in about 8\% drop of the bond's price. And vise versa when interest rate decreases by 1\%~\citep[see][p.~198, formula 9-2]{fabozzi2005}.\index{Duration!measure of interest-rate risk}
 
-To conclude, Minsky's observation of the existance of the special contracts of the demand type must be extended by saying that by design they have determined duration of zero, meaning their nominal value insensitive to the makret interest rate change. And, indeed, these contracts are ``the principal form of money in our economy."
+To conclude, Minsky's observation of the existance of the special contracts of the demand type must be extended by saying that by design they have determined duration of zero, meaning their nominal value insensitive to the makret interest rate change. And, indeed, these contracts are ``the principal form of money in our economy." Minsky's demand contract is an equivalent to the concept of \acf{dcr} due today continously---with opposite positions $\overrightarrow{d_{0}}$ and $\overrightarrow{c_{0}}$ on its two sides---which was discussed above. Hereinfater these concepts are considered idenical and the latter one is to be used frequently.
 
 Then, the third type of balance sheet payments is another special type after the demand one that is called conditional or \textit{contingent}. These are contracts upon which there is an endorsement from a third party such as governemnt or some state agency. These contracts are various insuarence contracts, conditional to certain events that migh be triggered or not. Also a common shareholder cotnract belongs to this category:
 
@@ -2516,9 +2518,9 @@ Then, the third type of balance sheet payments is another special type after the
 \dots the common stock of corporations embody contingent claims \dots The contingent claim of the common stockholder, for example, is to a proportional share of earnings, if they exist and are distributed, or to a proportional share of the value of the company if sold or liquidated. The value of common shares therefore is intimately related to the expected course of the cash flows that will remain with a firm after payment of contractual commitments on debts.~\citep[p.~226, emphasis added]{minsky1986}.
 \end{quote}
 
-So a for-profit undertaking has contingency debts which in sizable extent relate to its shareholders, whether it is a single shareholder or many shareholders. Their claims on such a business are residual claim to the value of this business that remains after payment upon all other types of debt (demand and dated).
+So a for-profit undertaking has contingency debts which in sizable extent relate to its shareholders, whether it is a single shareholder or many shareholders. Their claims on such a business are residual claim to the value of this business that remains after payment upon all other types of debt (demand and dated). In this disseration, these are labelled as $\widetilde{d}$.
 
-Sizable part of the for-profit undertakings derive their income payments by producing and then selling goods to the customers or services of non-financial character. These firms rely on their positons in capital assets. These are items that belong to the assets side of the balance sheets of these firms. Hence, they are groupped alongside with as credit positions(dated and demand) within \acfp{dcr} with respective counter parties. Since, value of capital assets is above zero if they are expected to yield future quasi-rents as income payments, then these are contingent credits. These quasi-rents are not dated credits. The sum of future quasi-rent capitalized to the present value is the nominal worth of contingent credits. So that:
+Sizable part of the for-profit undertakings derive their income payments by producing and then selling goods to the customers or services of non-financial character. These firms rely on their positons in capital assets. These are items that belong to the assets side of the balance sheets of these firms. Hence, they are groupped alongside with as credit positions(dated and demand) within \acfp{dcr} with respective counter parties. Since, value of capital assets is above zero if they are expected to yield future quasi-rents as income payments, then these are contingent credits. These quasi-rents are not dated credits. The sum of future quasi-rent capitalized to the present value is the nominal worth of contingent credits, $\widetilde{c}$. So that:
 
 \begin{quote}
 A [non-financial] firm with a liability structure can be conceived of as a cash-flow [payment] machine earning quasi-rents from its operations and making payments to the holders of its debts.~\citep[p.~228]{minsky1986}.
@@ -2530,7 +2532,7 @@ In terms of simplified sheme the Minskian balance sheets could be presented as s
 
 \begin{figure}[!ht]
 \captionsetup{width=.9\linewidth,labelfont=bf}
-  \vspace{.4in}
+  \vspace{.8in}
   \centering
   \begin{tikzpicture}
   \draw[help lines,white] (0,0) grid (16,7);
@@ -2563,7 +2565,7 @@ In terms of simplified sheme the Minskian balance sheets could be presented as s
         {
          & \\
         Assets: total credits ($\mathbf{c^{\$}_t}$) & Liabilities: total debts ($\mathbf{d^{\$}_t}$) \\
-        $\overrightarrow{c_{0}}$: credits due today continuously & $d_{0}$: debts due today \\
+        $\overrightarrow{c_{0}}$: credits due today continuously & $d_{0}$: dated debts due today \\
         $c_{\tiny t}$: dated credits, ($t \geq 0$) & $d_{\tiny t}$: dated debts, ($t>0$) \\
         $\widetilde{c}$: contingency credits & $\widetilde{d}$: contingency debts \\
         \textbf{Total:} $\sum{c}=\overrightarrow{c_{0}}+c_t+\widetilde{c}$ & \textbf{Total:} $\sum{d}=\overrightarrow{d_{0}}+d_t+\widetilde{d}$ \\
@@ -2582,20 +2584,249 @@ In terms of simplified sheme the Minskian balance sheets could be presented as s
   \end{split}
   \end{equation*}
  \caption[Typical bank, firm balance sheets in Minsky's analytical framework]%
-  {Typical bank, firm balance sheets in Minsky's analytical framework\par \vspace{.05in}Balance sheet variables are similar to Figure~\ref{fig:bs_bnk_indv}, p.~\pageref{fig:bs_bnk_indv}, except contingency credits, $\widetilde{c}$, and debts, $\widetilde{d}$. These items  include capital assets on the assets side and net worth on the liability side. For firms capital assets are expected to earn future quasi-rents. Their worth is not at historical cost, rather it is subject to continuous revaluation given observable market prices and interest rates. These are \textit{overt} positions. Also, both $\widetilde{c}$ and  $\widetilde{d}$ include, just notionally and not mathematically, \textit{covert} assets and liabilities such as ``such as acceptances, letters of credit, open lines of credit, and responsibilities due to customer connections."~\citep[p.~257]{minsky1986} These covert positions to materialize must be triggered by some events, if they take place then overt positions will be affected.}
+  {Typical bank, firm balance sheets in Minsky's analytical framework\par \vspace{.05in}Balance sheet variables are similar to Figure~\ref{fig:bs_bnk_indv}, p.~\pageref{fig:bs_bnk_indv}, except contingency credits, $\widetilde{c}$, and debts, $\widetilde{d}$. These items  include capital assets on the assets side and net worth on the liability side. For firms capital assets are expected to earn future quasi-rents. Their worth is not at historical cost, rather it is subject to continuous revaluation given observable market prices and interest rates. These are \textit{overt} positions. Also, both $\widetilde{c}$ and  $\widetilde{d}$ include, just notionally and not mathematically, \textit{covert} assets and liabilities such as ``such as acceptances, letters of credit, open lines of credit, and responsibilities due to customer connections."~\citep[p.~257]{minsky1986} These covert positions to materialize must be triggered by some events, if they take place then overt positions will be affected.\par \vspace{.05in}Source: narraive from \citep[Chapter 9]{minsky1986}, illustration by author.}
   \label{fig:minsky_balance_sheets}
-  \vspace{.2in}
+  \vspace{.4in}
 \end{figure}
 
-Following Schumpeter, \citeauthor{minsky1985_} realised that evolutionary processes under the stimilus of finding new avenues for profits would abile to drive some of non-financial firms into transformation of their business processes so that they become banks not by name but by the essense of their \acfp{dcr} and, hence, payments. 
+Following Schumpeter, \citeauthor{minsky1985_} realised that evolutionary processes under the stimilus of finding new avenues for profits would abile to drive some of non-financial firms into transformation of their business processes so that they become banks not by name but by the essense of their \acfp{dcr} and, hence, payments. Hence, ``[b]anking therefore takes in more than organizations that are chartered as banks"~\citep[p.~249]{minsky1986}.
 
 \begin{quote}
-Money has evolved to the point where today it can be checkable liability [demand contract] of a nonbank, can earn interest, and can be internationally acceptable by means of plastic card \dots~\citep{minsky1985_}
+Money has evolved to the point where today it can be checkable liability [demand contract] of a nonbank, can earn interest, and can be internationally acceptable by means of plastic card \dots~\citep[p.~13]{minsky1985_}
 \end{quote} 
 
-How did they manage to develop themselves into those positions? His answer was evolution of money markets. First it was rapid development of the Federal Funds. Later, it was widespread 
+How did they manage to develop themselves into those positions? His answer was evolution of the money markets. First, it was rapid development of the Federal Funds, the US dollar denominated credits on the Federal Reserve Bank of New York held by member banks \citep{minsky1957}. Later, it was development of the money markets serving the so-called Eurodollar funds, which were again the US dollar denominated credits on the US banks, members of the Federal Reserve System, held by the banks outside of the U.S. jurisdiction.
 
-Writing in \citeyear{minsky1985_}, \citeauthor{minsky1985_} was.
+Writing in \citeyear{minsky1985_}, \citeauthor{minsky1985_} was extending his analyitical framework from the U.S. economy and its units by embracing the already burgenouning Eurodollar markets:
+
+\begin{quote}
+[T]he current structure of international banking \dots is dominated by a wide network of mostly dollar-denominated bank debt. Such deb need not be of U.S.-chartered organizations, the dollar assets a bank owns need not be the debt of a U.S. entity, and the holder of bank debt as an asset need not be a U.S. citizen.\par Such Eurodollar or Asian dollar banking involves a commitment by the debtor bank to deliver dollars to whomever the creditor/depositor desires, at the time deposit contract matures. Such ``dollars" are New York dollars that can be converted if necessary into Federal Reserve funds. Such New York dollars can be in tthe form of certificates of deposit in U.S. banks, quickly negotiable commercial paper, or short-term Treasury securities. There is a market demand for short-term and negotiable U.S. dollar assets (or U.S. line of credits) that depends on the volume of dollar-denominated liabilitties in banks that not U.S.-charted.\par In addition to its own New York dollar resources, a foreign bank running a dollar book has access to dollars through its central bank. For such banks, three things determine the availability of dollar refinancing by the central bank: the central bank's dollar holdings, the swap arrangements between the central bank and the Federal Reserve, and the terms on which the central bank will make U.S. dollars available. But as the Federal Reserve's actions in the New York market determine the terms on which an offshore central bank can sell New York assets to refinance a member bank in trouble, then the Federal Reserve is the de facto lender of last resort to the international financial structure.~\citep[p.~15]{minsky1985_}
+\end{quote}
+
+The quote above shows that Minsky was clearly aware of the connections between the major financial institutions that form, as he termed it, international liabilities structure. He did not explicitly explained them however. But they were standing on the background when he was talking about an offshore cenral bank selling its New York assets for the sake to have New York ``dollars." This dissertation aims to describe these situations in a more detailed manner, which is through \acfp{dcr}. Also, Minsky shared with many of economists from the U.S. and U.K. a habitual way of thinking and writing, which by default omits an explicit mentioning of money of account. The latter detail, predominantly, is present all the time in the thinking of the economists from the other countries. This is going to be a part of the discussion in the next chapter of this dissertation.
+
+And lastly, \citeauthor{minsky1986} had such an analytical framework that had as its backbone a monetary scheme similar to those of Schumpeter, which is depicted in Figure~\ref{fig:shumpeter_scheme}, and of \citeauthor{innes1913}, see Figure~\ref{fig:banks_clients_govt2}. His own scheme of the money hierarchy features for-profit non-bank economic units operating essentially like banks and more so this observation applies towards the foreign units such as non U.S.-chartered business entities, which are usually banks chartered by their domestic authorities and which maintain with their customers accounts denominated in the \acf{usd}. Thus:
+
+\begin{quote}
+But in truth, what is money is determined by the workings of the economy, and usually there is a \textit{hierarchy of monies}, with special money instruments for different purposes. Money not only arises in the process of financing, but an economy has a number of different types of money: everyone can create money; the problem to get it accepted.~\citep[p.~255, emphasis added]{minsky1986}
+\end{quote}
+
+At some approximation the Minsky's vision of the hierarchy of monies with international dymansion is shown in Figure~\ref{fig:minsky_scheme}, p.~\pageref{fig:minsky_scheme}. It is trying to replicate the eurodollar market perspective discussed in \citep{minsky1985_} using as an example Italy's economic and monetatry system, the country he visited frequently, at the point of time known to Minsky as before joining the Euro-zone. 
+
+\begin{figure}[!ht]
+\vspace{.0in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+    \centering
+    \begin{tikzpicture}[scale=.7]
+    \tikzstyle{every node}=[font=\fontsize{7}{7}\selectfont]
+    \draw[help lines,white] (0,0) grid (22,28);  
+        % NY Fed ------------------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (cb) at (3,25.5) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node (CB_c0) {$c_0$}; & \node[rectangle,draw=blue,thick] (CB_d0)  {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (cb)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {New York Fed $CB$}; 
+        % US Treasury -----------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (g) at (8,25.5) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (G_c0) {$\overrightarrow{c}_0$}; & \node (G_d0) {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (g)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {U.S. Treasury $G$};
+        \draw[blue] (CB_d0.east) -- (G_c0.west);
+        % US Chartered Banks --------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (r1) at (3,20) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (R1_c0) {$\overrightarrow{c}_0$}; & \node[rectangle,draw=blue,thick] (R1_d0) {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (r1)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Member Bank $R_1$};
+        \gettikzxy{(R1_c0)}{\ax}{\ay}; \gettikzxy{(CB_d0)}{\bx}{\by}
+        \draw[blue] (R1_c0.west) -- (.5,\ay) -- (.5,23) -- (5,23) -- (5,25.3) -- (CB_d0.east);
+        \node [matrix,fill=gray!10,draw=black,thin] (r2) at (8,20) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (R2_c0) {$\overrightarrow{c}_0$}; & \node[rectangle,draw=blue,thick] (R2_d0) {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (r2)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Member Bank $R_2$};
+        \gettikzxy{(R2_c0)}{\ax}{\ay}; \gettikzxy{(CB_d0)}{\bx}{\by}
+        \draw[blue] (R2_c0.west) -- (5.5,\ay) -- (5.5,23) -- (5.2,23) -- (5.2,25.5) -- (CB_d0.east);
+        % US Firms ---------------------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (a) at (3,14) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (A_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (a)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $A$};
+        \node [matrix,fill=gray!10,draw=black,thin] (b) at (8,14) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (B_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (b)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $B$};
+        \node [matrix,fill=gray!10,draw=black,thin] (c) at (8,8) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (C_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (c)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $C$};
+        \node [matrix,fill=gray!10,draw=black,thin] (d) at (8,2) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (D_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (d)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $D$};
+        \gettikzxy{(A_c0)}{\ax}{\ay}; \gettikzxy{(R1_d0)}{\bx}{\by}
+        \draw[blue] (A_c0.west) -- (.5,\ay) -- (.5,17) -- (5.2,17) -- (5.2,\by) -- (R1_d0.east);
+        \gettikzxy{(B_c0)}{\ax}{\ay}; \gettikzxy{(R2_d0)}{\bx}{\by}
+        \draw[blue] (B_c0.west) -- (5.5,\ay) -- (5.5,17) -- (10,17) -- (10,19.9) -- (R2_d0.east);
+        % US Non-Member Bank -----------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (r3) at (3,8) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (R3_c0) {$\overrightarrow{c}_0$}; & \node[rectangle,draw=blue,thick] (R3_d0) {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (r3)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Non-Member Bank $R_3$};
+        \draw[blue] (R3_d0.east) -- (C_c0.west);
+        \gettikzxy{(R3_c0)}{\ax}{\ay}; \gettikzxy{(R1_d0)}{\bx}{\by}
+        \draw[blue] (R3_c0.west) -- (.3,\ay) -- (.3,17.2) -- (5,17.2) -- (5,20.1) -- (R1_d0.east);
+        % US Non Banks -----------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (r1) at (3,2) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (N1_c0) {$\overrightarrow{c}_0$}; & \node[rectangle,draw=blue,thick] (N1_d0) {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (r1)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Non-Bank $N_1$};
+        \draw[blue] (N1_d0.east) -- (D_c0.west);
+        \gettikzxy{(N1_c0)}{\ax}{\ay}; \gettikzxy{(R1_d0)}{\bx}{\by}
+        \draw[blue] (N1_c0.west) -- (.1,\ay) -- (.1,17.4) -- (4.8,17.4) -- (4.8,19.9) -- (R1_d0.east);
+        % USD / EURODOLLAR ------------------------------------------------
+        \draw[red,dashed] (12,0) -- (12,28);
+        \draw[black,dashed] (12.1,0) -- (12.1,28);
+        \draw[<->] (0,28) -- (11.9,28) node[midway,above]% 
+            {\textbf{United States} money of account: US dollar};
+        \draw[<->] (12.2,28) -- (22,28) node[midway,above]% 
+            {\textbf{Italy} money of account: Italian lira};
+        % Example of ITALY (Minsky's likely favorate foreign country) -----
+        % Bank of Italy, central bank -------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (cb) at (15,20) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (ICB_c0) {$\overrightarrow{c}_0$}; & \node[rectangle,draw=blue,thick] (ICB_d0) {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (cb)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Bank of Italy $CB$}; 
+        \draw[blue] (R2_d0.east) -- (ICB_c0.west);
+        \draw[blue] (ICB_c0.west) -- (13,20.6) -- (10.4,20.6) -- (10.4,23.2) -- (5.4,23.2) -- (5.4, 25.7) -- (CB_d0.east);
+        % Italy's government ------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (g) at (20,20) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (IG_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (g)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Gov't of Italy $G$}; 
+        \draw[blue] (ICB_d0.east) -- (IG_c0.west);
+        % Italy Chartered Bank ----------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (r1) at (15,14) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (IR1_c0) {$\overrightarrow{c}_0$}; & \node[rectangle,draw=blue,thick] (IR1_d0) {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (r1)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Member Bank $R_1$};
+        \node [matrix,fill=gray!10,draw=black,thin] (r2) at (20,14) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (IR2_c0) {$\overrightarrow{c}_0$}; & \node[rectangle,draw=blue,thick] (IR2_d0) {$\overrightarrow{d}_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (r2)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Member Bank $R_2$};
+        \gettikzxy{(IR1_c0)}{\ax}{\ay}; \gettikzxy{(R2_d0)}{\bx}{\by}
+        \draw[blue] (IR1_c0.west) -- (12.8,\ay) -- (12.8,17) -- (10.2,17) -- (10.2,20) -- (R2_d0.east);
+        \gettikzxy{(IR2_c0)}{\ax}{\ay}; \gettikzxy{(R2_d0)}{\bx}{\by}
+        \draw[blue] (IR2_c0.west) -- (18,\ay) -- (18,17.2) -- (10.4,17.2) -- (10.4,20.15) -- (R2_d0.east);
+        % Italian Firms ------------------------------------------------------
+        \node [matrix,fill=gray!10,draw=black,thin] (a) at (15,8) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (IA_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (a)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $A$};
+        \node [matrix,fill=gray!10,draw=black,thin] (b) at (20,8) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (IB_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (b)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $B$};
+        \node [matrix,fill=gray!10,draw=black,thin] (c) at (15,2) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (IC_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (c)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $C$};
+        \node [matrix,fill=gray!10,draw=black,thin] (d) at (20,2) {
+            \node {Assets}; & \node {Liab's}; \\
+            \node[rectangle,draw=blue,thick] (ID_c0) {$\overrightarrow{c}_0$}; & \node {$d_0$}; \\
+            \node {$c_t$}; & \node {$d_t$}; \\
+            \node {$\widetilde{c}$}; & \node {$\widetilde{d}$}; \\
+            };
+        \draw (d)++(0,1.9) node[font=\bf\fontsize{7}{7}\selectfont]%
+            {Firm $D$};
+        \gettikzxy{(IA_c0)}{\ax}{\ay}; \gettikzxy{(IR1_d0)}{\bx}{\by}
+        \draw[blue] (IA_c0.west) -- (13,\ay) -- (13,11) -- (17.2,11) -- (17.2,\by) -- (IR1_d0.east);
+        \gettikzxy{(IC_c0)}{\ax}{\ay}; \gettikzxy{(IR1_d0)}{\bx}{\by}
+        \draw[blue] (IC_c0.west) -- (12.8,\ay) -- (12.8,11.2) -- (17,11.2) -- (17,14.2) -- (IR1_d0.east);
+        \gettikzxy{(IB_c0)}{\ax}{\ay}; \gettikzxy{(IR2_d0)}{\bx}{\by}
+        \draw[blue] (IB_c0.west) -- (18,\ay) -- (18,11) -- (22.2,11) -- (22.2,\by) -- (IR2_d0.east);
+        \gettikzxy{(ID_c0)}{\ax}{\ay}; \gettikzxy{(R2_d0)}{\bx}{\by}
+        \draw[blue] (ID_c0.west) -- (17.8,\ay) -- (17.8,11.2) -- (22,11.2) -- (22,14.2) -- (IR2_d0.east);
+        % Labels
+        \draw[blue,thick] (11.3,27) node(a)[draw] {} (12.7,27) node(b)[draw] {};
+        \draw[blue,thick] (a) -- (b);
+        \node[black,align=left,font=\fontsize{8}{8}\selectfont] at (17,27)%
+            {DCR due today continuously\\and denominated in the US dollar};
+        \node[rectangle,above delimiter=\{] (AA) at (17,23) {\tikz{\path (15.5,24) rectangle (22,24);}};
+        \node[above=10pt,align=left,font=\fontsize{8}{8}\selectfont] at (AA.north) {Italian units running US dollar books\\the Italian lira DCRs are omitted};
+    \end{tikzpicture}
+ \caption[Debt-credit pairs due today continuously at international perspective, pre-Euro.]%
+  {Debt-credit pairs due today continuously at international perspective, pre-Euro.\par\vspace{.05in}Source: narrative from (Minsky 1986,1992), illustration by author.}
+  \label{fig:minsky_scheme}
+  \vspace{.0in}
+\end{figure}
+
+
 
 \subsection{Contribution}
 
