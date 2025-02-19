@@ -3,8 +3,429 @@
 %    Endnotes Page
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage 
+
 \section*{\MakeUppercase{Appendices}}
 \addcontentsline{toc}{section}{\MakeUppercase{Appendices}}
 
-\subsection*{Subsection in Appendix}
-\subsection*{Subsection in Appendix}
+\appendix
+\renewcommand{\thesubsection}{\Alph{subsection}}
+
+\subsection{Regression Analysis of Russia's Data}\label{reg_levada}
+%\addcontentsline{toc}{subsection}{Regression Analysis of Russia's Data}
+
+There has been a tendency in the literature to downplay the usefulness of the public opinion surveys done in Russia over the past three years, during which Russia has been waging its brutal war against Ukraine openly. Covertly, Russia's government has held this was in place since 2014. The argument against using the public opinion data in Russia is that it lost its representative power because in 2022 Russia's government change legislation allowing it to sentence own people for making public expressions contrary to official line.
+
+I disagree with such an argument and would like to substantiate my analysis with such data and its econometric analysis. Moreover, in summer 2024 issue of \textit{International Security} an article appeared, which explicitly relies on such data \citep{hale2024}.
+
+This data is publicly available from a Moscow-based and well-established opinion survey firm Levada, see {\small \url{https://www.levada.ru/en/ratings/}}.
+
+These surveys have been done monthly; on some topics, the data dates back to the 1990s. Those surveys of interest to this dissertation concern the approval of general conditions in the country and the approval of Putin's leadership. The former has monthly history since July 1996 and the latter has been running since August 1999. Each of these surveys has three data points per month: (1) share of respondents who approve, (2) share of respondents who disapprove, (3) share of those who cannot say definitely or are indecisive. Up to early 2010s, Levada was publishing fourth data point, which was net between (1) and (2) or the approve share minus disapprove share. Levada dropped this practice in 2012. However, this dissertation restores this practice. 
+
+This dissertation tests econometrically the relationship of public approval in Russia and activities of its army in the areas of former Soviet Union. Hence, Russia's army involvement in Syria and Africa is not included. The latter variable is of dummy type, a war dummy: monthly data where 1 (one) means new war is launched and 0 (zero) means peace or old war still continuing. The war dummy is constructed by this dissertation author and consists of five events:
+
+\begin{itemize}
+    \item February 2022: new, open, phase of Russia's war against Ukraine, which is referred in the contemporary literature as full-scale invasion. Russia expanded the area of occupation of Ukraine's territory by about three times from the covert phase of 2014.  
+    \item February 2014: launch of the covert phase of the Russia's war against Ukraine, which resulted in annexation of Ukraine's territories of Crimea and parts of Donbas (about 42,200 sq km).
+    \item August 2008: war with Georgia, which resulted in \textit{de-facto} occupation of two parts of that country with total area of 12,550 sq km.
+    \item September 2003: a covert attempt to take over the Ukraine's Tuzla island with area of 2.1 sq km. 
+    \item September 1999: launch of the second war against Chechnya (area of 16,165 sq km), a national republic that declared sovereignty from Russia in early 1990s. (Hence, the first war against Chechnya was launched in December 1994 and it ended in August 1996 with peace, which was widely regarded as Chechnya's win and Russia's lost. It is not included in a dummy variable.)
+\end{itemize}
+
+Mere observation of these datasets on the chart suggests there is an underlying socio-economic development taking place, see Figure \ref{fig:reg_levada1}. These is reported or raw data: approval/disapproval increases/decreases when new war launched, especially in the case of Ukraine (2014 and 2022).
+
+The econometric analysis is to regress (via OLS) a time series of public approval as dependent variable ($y_t$) with a time series of war dummy ($x_t$) as independent variable: $y_t=\beta_0+\beta_1 \times x_t + \varepsilon$.
+
+For the dependent variables two surveys are used: (1) approval of general conditions (GC), and (2) Putin approval (PA) as shown in Figure~\ref{fig:reg_levada2}. Then, for each of them there are two datasets: (1) reported shares of approval, and (2) net shares of approval, when a difference between those who approve and those who disapprove is considered. Hence, there are four time series: $gc$, $gc.net$ and $pt$, $pt.net$. Visual observation of these time series proves they are stationary, while their first difference is not, see Figures \ref{fig:reg_levada3} and \ref{fig:reg_levada4}. Hence, the dependent variables $gc$, $gc.net$, $pt$, $pt.net$ are all first differences of the respective time series, see Figure \ref{fig:reg_levada5}. The results of regressions are in Table \ref{tab:reg_results}.
+
+\begin{figure}[!htbp]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=1\linewidth]{\plotsfolder/war_russians5}
+    \caption[Russian public approval of general conditions and Putin's leadership]%
+    {Russian public approval of general conditions and Putin's leadership: (top) reported approval, (middle) reported disapproval and (bottom) net of approved less disapproved.\par\vspace{.05in}Source: Levada, {\small\url{www.levada.ru}}}
+    \label{fig:reg_levada1}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=.9\linewidth]{\plotsfolder/war_russians4}
+    \caption[Russian public approval of general conditions and Putin's leadership through box-plots]%
+    {Russian public approval of general conditions and Putin's leadership through box-plots: (top) reported data, (bottom) first difference of reported data.\par\vspace{.05in}Source: Levada, {\small\url{www.levada.ru}}}
+    \label{fig:reg_levada2}
+\end{figure}
+
+%\lipsum[1]
+
+\begin{figure}[!ht]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=.9\linewidth]{\plotsfolder/war_russians6}
+    \caption[Russian public approval of general conditions and Putin's leadership: stationarity observation]%
+    {Russian public approval of general conditions and Putin's leadership: stationarity observation.\par\vspace{.05in}Source: Levada, {\small\url{www.levada.ru}}}
+    \label{fig:reg_levada3}
+\end{figure}
+
+\begin{figure}[!ht]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=.9\linewidth]{\plotsfolder/war_russians1}
+    \caption[Russian public approval of general conditions and Putin's leadership (in net terms): stationarity observation]%
+    {Russian public approval of general conditions and Putin's leadership (in net terms): stationarity observation.\par\vspace{.05in}Source: Levada, {\small\url{www.levada.ru}}}
+    \label{fig:reg_levada4}
+\end{figure}
+
+\begin{figure}[!ht]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=.9\linewidth]{\plotsfolder/war_russians2}
+    \caption[Russian public approval of general conditions and Putin's leadership: first differences and war dummy]%
+    {Russian public approval of general conditions and Putin's leadership -- first differences and war dummy: (top) reported approval, (bottom) net approval.\par\vspace{.05in}Source: author elaborations.}
+    \label{fig:reg_levada5}
+\end{figure}
+
+\begin{table}[!htbp] \centering 
+\captionsetup{width=.9\linewidth,labelfont=bf} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & gc & gc.net & pa & pa.net \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ war\_dummy & 4.158$^{**}$ & 8.549$^{***}$ & 4.292$^{***}$ & 7.475$^{***}$ \\ 
+  & (1.630) & (3.021) & (1.583) & (2.802) \\ 
+  & & & & \\ 
+ Constant & 0.042 & 0.051 & 0.108 & 0.125 \\ 
+  & (0.198) & (0.368) & (0.204) & (0.362) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 337 & 337 & 300 & 300 \\ 
+R$^{2}$ & 0.019 & 0.023 & 0.024 & 0.023 \\ 
+Adjusted R$^{2}$ & 0.016 & 0.020 & 0.021 & 0.020 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular}
+  \caption{Regression Results} 
+  \label{tab:reg_results}
+\end{table}
+
+\citep{levada2024,levada2015,iz2014,levada2013}
+
+There has been a tendency in the literature to downplay the usefulness of the public opinion surveys done in Russia over the past three years, during which Russia has been waging its brutal war against Ukraine openly. Covertly, Russia's government has held this in place since 2014. The argument against using public opinion data in Russia is that it lost its representative power because in 2022 Russia's government changed legislation allowing it to sentence its own people for making public expressions contrary to the official line.
+
+I disagree with such an argument and would like to substantiate my analysis with such data and its econometric analysis. Moreover, in the summer 2024 issue of \textit{International Security} an article appeared, that explicitly relies on such data \citep{hale2024}.
+
+This data is publicly available from a Moscow-based and well-established opinion survey firm Levada, see {\small \url{https://www.levada.ru/en/ratings/}}.
+
+These surveys have been done monthly; on some topics, the data dates back to the 1990s. Those surveys of interest to this dissertation concern the approval of general conditions in the country and the approval of Putin's leadership. The former has monthly history since July 1996 and the latter has been running since August 1999. Each of these surveys has three data points per month: (1) share of respondents who approve, (2) share of respondents who disapprove, (3) share of those who cannot say definitely or are indecisive. Until the early 2010s, Levada published the fourth data point, which was net between (1) and (2) or the approved share minus the disapprove share. Levada dropped this practice in 2012. However, this dissertation restores this practice. 
+
+This dissertation analyzes econometrically the relationship between public approval in Russia and the activities of its army in the areas of the former Soviet Union. Hence, Russia's army involvement in Syria and Africa is not included. The latter variable is of dummy type, a war dummy: monthly data where 1 (one) means new war is launched and 0 (zero) means peace or old war still continuing. The war dummy is constructed by this dissertation author and consists of five events:
+
+\begin{itemize}
+    \item February 2022: new, open, phase of Russia's war against Ukraine, which is referred in the contemporary literature as full-scale invasion. Russia expanded the area of occupation of Ukraine's territory by about three times from the covert phase of 2014.  
+    \item February 2014: launch of the covert phase of the Russia's war against Ukraine, which resulted in annexation of Ukraine's territories of Crimea and parts of Donbas (about 42,200 sq km).
+    \item August 2008: war with Georgia, which resulted in \textit{de-facto} occupation of two parts of that country with total area of 12,550 sq km.
+    \item September 2003: a covert attempt to take over the Ukraine's Tuzla island with area of 2.1 sq km. 
+    \item September 1999: launch of the second war against Chechnya (area of 16,165 sq km), a national republic that declared sovereignty from Russia in early 1990s. (Hence, the first war against Chechnya was launched in December 1994 and it ended in August 1996 with peace, which was widely regarded as Chechnya's win and Russia's lost. It is not included in a dummy variable.)
+\end{itemize}
+
+Mere observation of these datasets on the chart suggests there is an underlying socio-economic development taking place, see Figure \ref{fig:reg_levada1}. These are reported or raw data: approval/disapproval increases/decreases when a new war is launched, especially in the case of Ukraine (2014 and 2022).
+
+There are following time series in consideration, see Figures~\ref{fig:reg_levada1}, \ref{fig:reg_levada2} and \ref{fig:reg_levada3}: 
+
+\begin{itemize}
+    \item Putin approval dataset: variables (approve, disapprove, no answer, net) monthly, since 1999, regular.
+    \item General conditions approval dataset: variables (approve, disapprove, no answer, net) monthly, since 1995, regular.
+    \item war dummy: 1/0 monthly, since 1999, regular.
+    \item consumer inflation in Russia: variables (index, year-on-year change)  monthly, since 1992, regular.
+    \item foreign exchange rate of Russian ruble vs. the US dollar: variable (FX rate average)  monthly, since 1992, regular.
+    \item Russian public attitude to the U.S.: variables (good, bad, no answer, net: good minus bad) monthly, since 1990, irregular.
+    \item Russian public attitude to Ukraine: variables (good, bad, no answer, net: good minus bad) monthly, since 1998, irregular.
+    \item Russian public attention to the US dollar FX rate versus the Russian ruble: variables (more than once a week, once a week, once per two weeks or more, no attention at all) monthly, since 2015, irregular.
+    \item Pension age: variables (minimum age for men, minimum age for women), monthly, since 1932, regular
+    \item Pensioner's living minimum (PLM): variable (PLM level), annual, since 1999, regular --- since it is assigned at the beginning of every year and not revised during the year, this time series is turned from annual to monthly.
+\end{itemize}
+
+\begin{figure}[!htbp]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=1\linewidth]{\plotsfolder/war_russians5.pdf}
+    \caption[Russian public approval of general conditions and Putin's leadership]%
+    {Russian public approval of general conditions and Putin's leadership: (top) reported approval, (middle) reported disapproval, and (bottom) net of approved less disapproved.\par\vspace{.05in}Source: Levada, {\small\url{www.levada.ru}}}
+    \label{fig:reg_levada1}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=1\linewidth]{\plotsfolder/usd_russians.pdf}
+    \caption[Russian public attitude to other countries (Ukraine and U.S.), attention paid to the foreign exchange rate ruble vs US dollar, history consumer inflation in Russia and its FX rate.]%
+    {Russian public attitude to other countries (Ukraine and U.S.), attention paid to the foreign exchange rate ruble vs US dollar, history consumer inflation in Russia and its FX rate.\par\vspace{.05in}Sources: IMF, BIS, public surveys by Levada, {\small\url{www.levada.ru}}}
+    \label{fig:reg_levada2}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \captionsetup{width=.9\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=1\linewidth]{\plotsfolder/usd_russians2.pdf}
+    \caption[Public pensions: age and living minimum]%
+    {Public pensions: age and living minimum.\par\vspace{.05in}Sources: Russia State Statistics Service, {\small\url{www.rosstat.gov.ru}}}
+    \label{fig:reg_levada3}
+\end{figure}
+
+\subsection{Transcrips of Public Speeches \& Talks on the Russia's Financial Crisis of 1998}\label{russia_crisis_1998}
+%\addcontentsline{toc}{subsection}{Transcrips of Public Speeches \& Talks on the Russia's Financial Crisis of 1998}
+
+\subsubsection*{IMF on the \acp{gko} dollarization}
+
+IMF head Michel Camdessus commented as follows on the Russian policymakers' achievements back in 1997 \citep{imf1997_1}:
+
+\begin{quote}
+As regards stabilization, the achievements are impressive: inflation has been cut from an average of 30 percent per month in 1992 to 1-1 1/2 percent in recent months, and the exchange rate has stabilized. Underlying these achievements is the fact that the enlarged government deficit, including the regional governments and extra budgetary funds, has been substantially reduced: from 19 percent of GDP in 1992 to about one-third that level last year. Moreover, as the deficit has been brought under better control, the central bank has been able to move away from financing the budget deficit and to focus instead on its proper objective: that is, achieving greater price stability. I would like here to pay tribute to the remarkable work of the \ac{cbr} in winning the battle against hyperinflation and in gaining solid credibility in the family of the world's central banks.
+\end{quote}
+
+On July 13, 1998, or nearly one month before Russia's government announced its debt moratorium, IMF Deputy Director Stanly Fisher, during his briefing with reporters, discussed a plan by the Russian government for a voluntary basis conversion of the \acfp{gko} (maturing though June 1999) into longer-term, US dollar-denominated liabilities at 7 years and 20 years. Also, he made vague reference to the issue raised by a reporter on \acp{gko} dollarization \citep{imf1998}:
+
+\begin{quote}
+QUESTION: "I'd like to get back to the \ac{gko} a little bit. You will definitely correct me if I am wrong, but as I understood it, the \ac{gko} debt was sort of effectively dollarized by hedging activity, that when a U.S. bank, for instance--they are very active in the \ac{gko} market--when a U.S. bank went in and purchased \acp{gko}, they offset their exposure in rubles through dollar hedge positions, and often, those dollar hedges were with Russian banks--as a matter of fact, primarily with Russian banks, big Russian banks. Now, if the Russian Government were to devalue the ruble, that would really stick, and with these hedge positions in place, Russian banks effectively could collapse. Is that a concern, or is that another reason why you had to move quickly to: (a) avoid a ruble devaluation and then, secondly, sanction what is now officially a dollarization of the \ac{gko} by the conversion?"\par
+MR. FISCHER: ``There are more reasons." \par
+QUESTION: ``It is pretty complex, yes." 
+\end{quote}
+
+\subsubsection*{Sergey Aleksashenko, First Deputy to Chairman of the \ac{cbr} (1995-98)}
+
+Sergey Aleksashenko, who served in 1995-98 as First Deputy Head of the \acf{cbr}, discusses his first-hand experience with the 1998 crisis that led to the country's domestic default in his book \textit{The Battle for the Ruble} and a series of video recordings/stories on his YouTube channel. 
+
+In \citep{aleksash2018_1}, he explains: 
+
+\begin{quote}
+On May 19th, 1998 \ac{cbr} raised his key policy rate from 30\% to 50\%. With a hindsight, I can say that this was the moment when crisis had become unavoidable, i.e., nobody, neither \ac{cbr}, Russian government, IMF could not re-direct the developments into different path. \dots 1997 was a good year for Russia's economy. At last we gained macroeconomic stabilization, inflation went down and by the year end it was 11\%, during 2nd half of the year inflation was below 10\%. FX reserves of the central bank in 1st half of 1997 increased from \ac{usd} 15bn to \ac{usd} 25bn or by 2/3 and it was colossal size by the time. The economy started to grow after previous five years of contraction. We have passed the heaviest phase of the crisis [of early 1990s], the economic restructuring and started moving ahead. And the first foreign crisis that tested Russian economy's strength of Asian crisis of September-November 1997. In Asia the crisis was ravaging - companies, banks and governments could not pay on their debts. IMF sent its largest missions and started to realize its large programs there. It seemed to us that Asia was far away and our economy in good and stable shape and it should withstand. However, over two weeks since Asian crisis started foreign investors, who held 1/3 of the portfolio of \ac{gko} [bonds in circulation], started massively selling out their holdings. Over three weeks, \ac{cbr} lost 1/4 of its FX reserves - out of those \ac{usd} 25bn we lost \ac{usd} 7bn and it was large stress. At that time, within \ac{cbr} an internal breakup took place. Some part of the board of directors of \ac{cbr} held a view that central bank should hold [defend] interest rates and sacrifice FX reserves, which were considered excessive while interest rates were valuable to the economy. Other part of the board of directors held the opposite view: the FX reserves are more important and valuable to the economy and for its long-term sustainability. Therefore, first three weeks of the [Asian] crisis were spent on sorting out which view \ac{cbr} should adhere. During this time \ac{cbr} lost reserves. Lastly, we decided that interest rates should be freed and the interest rates at the \ac{gko} market sharply went up. If prior Asian crisis they were in the 15-18\% range, the after the \ac{cbr}'s move [of freeing interest rates] they increased by 10-12 per cent up. After this investors' exit from the \ac{gko} market stopped and central bank's FX reserves stabilized. Despite the fact that some pressure on the ruble exchange rate and at the \ac{gko} market was continuing still, in general it was regarded that Russia, among all EM countries, had [withstand] the Asian regional crisis and it was that island of stability where one can hide. At the beginning of 1998 the situation was a bit unstable, but since February [of 1998] the central bank again was able to increase its FX reserves. And it seemed that everything was calming down at the \ac{gko} market. However, another [bad] news arrived - in February [of that year] the crude oil prices started to tilt down at slow pace. We, at \ac{cbr}, faced this news not lightheartedly but rather calmly. IMF officials who came to Moscow were saying that \ac{cbr} has to pay attention to this trend [in oil markets] and if oil price would not hold at \ac{usd} 22/bbl (as was the assumption for our balance of payments forecast) and drop to \ac{usd} 16/bbl then it would have a hard blow to the Russian economy. Later on [by summer of 1998] the crude oil price dropped to \ac{usd} 12/bbl and by early 1999 it dropped even further to \ac{usd} 8/bbl. \dots Back in March 1998, with a growth of FX reserves it seemed we were able to withstand. Now, I understand that seasonality factor - when in March-April there is prevalence of supply over demand in the local FX market - helped us to feel ourselves more comfortably. \dots On March 23rd, President Yeltsin dismissed Prime-Minister Chornomyrdin and his whole cabinet of ministers. It had become a serious blow to what we call political stability. Investors were comfortable with status quo, where President Yeltsin and Prime-Minister Chornomyrdin cohabitated. \dots That government led by PM Chornomyrdin was not highly reformed minded, some reforms were put on breaks as parliament was controlled by left-wing majority. Nevertheless, this government's successes in terms of macroeconomic stabilization and state budget control in general allowed investors to look into the future with optimism. All in all, Yeltsin dismissed PM Chornomyrdin [who was a 60-year old official back then] and proposed to appoint unknown [a 36-year old] Sergey Kiriyenko as new Prime-Minister. And it had caused real shock. This is because it was obvious that Kiriyenko had not had due experience, no experience in government at all. He had not realized the scale of problems facing him. The parliament considered this proposal by President Yeltsin as insult. First two attempts to approve Kiriyenko as next head of the government via parliament voting had failed. Only from the third attempt, on April 24th, he was approved in the parliament as its majority did not want to see the parliament being dissolved because of early elections and left-wing majority feared they would not repeat their success at the previous elections. This political turbulence immediately had its impact on the domestic business activity. Tax revenues of the federal government started sharply declining. If in the first three months of 1998 the tax authorities collected tax revenues more than in the same period of 1997, then in April-May the volumes of collected tax revenues dropped sharply. At the time, 1/3 of total state budget expenditures were expenditure on state debt servicing [he did not elaborate whether it's 'debt servicing' means interest and principal payments or just interest payments]. Then any decrease of cash receipts - those taxes that are paid into state budget - it had a blow on expenditures, which had to be reduced and the federal budget started to appear in situations when its wage as well as pension payments were delayed. Naturally, it did not lead to the improvement in the wider economy. \dots In mid-May of 1998, there was again a massive drop [of prices] in the \ac{gko} market. Investors started massively selling government bonds. I do not know what triggered that. It was rumored that there some reports of the analysts, some articles in the media. Prices on the government bonds went down. \ac{cbr} raised its policy rate to 50\% from 30\% and on May 27th it raised again up to 150\%. This had become a shock for the whole financial market. We [at \ac{cbr}] did not hide that our key goal was to calm down the panic, because we did not the basis for the panic. We succeeded to cool down the \ac{gko} and FX markets and then \ac{cbr} cut its key policy rate, which effectively was held at such high level for just several days. However, the situation was shaky. It was understood that chances to exit from the crisis unscathed were very slim.
+\end{quote}
+
+In \citep{aleksash2018_2}, he talks about the operational detail established between \acf{cbr} and Russia's Ministry of Finance (MoF), which aimed for smoother functioning of the local-currency government bond market:
+
+\begin{quote}
+Real [first] default happened on June 17th [1998], two months prior the all-known date [August 17th, 1998]. At that moment there was an agreement, which exists today, between the Ministry of Finance and the central bank [of Russia] on servicing of the operations on the \ac{gko}-\ac{ofz} market. By this agreement, the central bank is an agent of the Ministry of Finance and technically it carries out the redemption of all issues of [\ac{gko}-\ac{ofz} securities]. All auctions back then and now are carried out in accordance with this principle that on the maturity date the Ministry of Finance is making the primary placement of the new securities - respectively, at the beginning the old securities are redeemed and then investors as a rule re-invest into new securities. Thus, on June 17th of 1998 the Ministry of Finance for the first time failed to attract enough funds to pay out to the investors. Technically, the central bank paid to the investors. And this difference just a bit below RUB5bn. That is RUB5bn was the gap between the funds the central bank paid out to investors who held old securities up to maturity and the funds the Ministry of Finance attracted via selling new securities. Eventually, the latter got itself into a position of owing these funds to the central bank. Naturally, this outcome was a surprise to the central bank. And then it was nothing surprising that next days these all funds came to the foreign exchange market. At that time the exchange rate of the [Russian ruble to the US] dollar stood at a bit over 6 rubles [per dollar] and practically speaking, nearly \ac{usd} 850m of central bank's FX reserves were gone on that day. In a week, there was a repeat of this exercise [of failed \ac{gko}-\ac{ofz} auction] and Ministry of Finance's liabilities to the central bank increased again by RUB3.5bn. An attempt by the central bank to enter into constructive negotiations with Ministry of Finance in a bid to know the perspectives [of these liabilities] and urge it to redeem the debt failed to yield any result. \dots By law, the central bank was not allowed to credit Ministry of Finance except the cases when this was directly prescribed by federal laws. At that moment it was well understood that any mistake amid approaching crisis it would result in a situation when the law enforcement agencies pay greater attention to the unlawful acts of the central bank and its management would put under investigation to the fullest extent of the law. \dots The board of directors of the central bank adopted a tough decision that it would put collection order onto accounts of Ministry of Finance and start debiting all incoming tax revenues in order to redeem that debt. It made Ministry of Finance furious. It was obvious that it end up without the funds and this would be a catastrophic situation. Then, somehow Minister of Finance Mr. Zadornov brought to the central bank a letter from the Accounts Chamber of the Russian Federation that stated that Central Bank of Russia credits to the Ministry of Finance during the \ac{gko}-\ac{ofz} maturity was not a loan from the former to the latter. Mr. Zadornov said to the central bank people: 'Here is the paper for you in order to defend yourself [before law enforcement agencies]'. We [at the central bank] did not follow such offer by Ministry of Finance. After 1998 [default on August 17th], there were eight criminal cases opened against the central bank officials and there was any case against the Ministry of Finance officials. And the fact that we [at central bank] did not break the laws was good defense for us in the future. I do not know what would had happened if we had broken the law, but it is clear we would face a hard lot then. On June 29th of 1998 Mr. Zadornov during his interview uttered a word of devaluation. \dots It was a shock to the financial community. \dots Only few people of top management inside the central bank and Ministry of Finance knew about that indebtedness [between these two bodies]. We considered that it was inappropriate to discuss this issue on public domain and there is no need to rock the boat. \dots It was clear that crisis was approaching \dots and we attempted to understand how that crisis would unfold in order to soften its impact. At that time it was clear that to carry out ruble devaluation in early July 1998 was impossible, it would had frozen the financial markets altogether, foreign investors would had started in mass selling out of government securities, Ministry of Finance would inevitably default on its external debt (volumes of redemptions of domestic and external debts were equal and the external debt schedule was quite tough - payments on the external debt were small but they were regular so that Ministry of Finance was constantly servicing it). In the very beginning of August 1998 second default took place: Vneshekonombank that was a payment agent of the Ministry of Finance did not pay on one of the tranches of the external debt. So that, we [Aleksashenko and Alexander Potiomkin, who was responsible at the central bank for foreign exchange policy] at the beginning of July while being in London [at the meeting of \ac{cbr}'s London-based daughter bank] came to the agreement that without default on domestic debt it was impossible to came out of this situation. Default and restructuring of the domestic debt as well as of the external debt were inevitable conditions to exit from the crisis, because it was clear that there was no scenario when Ministry of Finance could carry out redemption of the domestic debt on a weekly basis in the volume of approximately RUB6bn (equivalent of 1bn \ac{usd}). Even with a devaluation these were huge sums. It was clear that to pass the law that allowed the central bank to credit Ministry of Finance in such volumes would be practically equivalent to suicide. And we understood that if we would had entered the path of debt monetization and if central bank would start lending to Ministry of Finance and these funds would be used to redeem all debt we would create hyperinflation in another time [during 1990s] and all our successes of 1996, 1997 and early 1998 in terms of suppressing inflation and certain macroeconomic stabilization would be cancelled out. We, on the level of top central bank management, decided that at any case the country had to have resources and we had drawn a [floor] line for official FX reserves amounting to \ac{usd} 10bn of liquid foreign currency assets. Word 'liquid' is key as \ac{cbr}'s FX reserves at the time consisted among other things of 2bn \ac{usd} that were illiquid, they were problematic, and they could not be converted into liquid assets soon. So that the line was drawn of how much long the central bank was able to resist [market pressure] and it amounted to 13bn \ac{usd} [that could be spent on defense]. So, the receipt [against the crisis] was drawn - devaluation and restructuring of domestic debt.
+\end{quote}
+
+\subsubsection*{Yevgeniy Primakov, Prime-Minister (1998-99)}
+
+Former prime-minister Yevgeniy Primakov, who served as head of the Russian government in 1998-99, or right after the government default in August 1998, provided these details about the Russian economy and its business practices that dominated in the country on the eve of the 1998 default:
+
+- The following paragraph gives readers an idea of the probability that the default decision was adopted by the officials who drew on neoliberal economics only:
+
+\begin{quote}
+By the middle of 1998 it became clear that economic course of the 'liberals' had brought the country to a dead end. In these very conditions on August 17th the \ac{gko}-\ac{ofz} payment moratorium was announced [by then serving prime-minister Sergey Kirienko]. This step deepened many negative processes in the economic, social and political spheres in Russia at catastrophic extent. I think that the authors of the August 17th decision did not foresee its real consequences. They decided to go ahead without consulting with representatives of other economic schools of thought, they considered this unnecessary and humiliation. Such a behavior, regrettably, is characteristic feature of all [neo-liberal] 'reformers', who rose to the top of economic policy- and decision-making in Russia in the 1990s and who previously had not serious work experience. Their qualities are, first, neglect of domestic opinions that foreign to them, and, second, self-love in economics that opened to them the way not only to establish themselves, which is half the trouble, but to the thoughtless and reckless experimentation within the boundaries of a giant country.  \citep[p.~32]{primakov2002}
+\end{quote}
+
+- Some of operational details of how local-government bonds were bought by the commercial banks:
+
+\begin{quote}
+The very Minfin [Ministry of Finance] placed the budget funds on the zero-interest deposits in commercial banks. The banks, in their turn, used---and I want especially to emphasize---these state funds to buy out \acp{gko} [government short-term zero-coupon obligations / bonds]. Fabulous returns gained up to 150-200 per cent per annum." \citep[p.~27]{primakov2002}
+\end{quote}
+
+- On the geographical extent of financial speculation:
+
+\begin{quote}
+During the restructuring of the Russian banking system we aimed to get rid of 'imbalance', which was due to excessive concentration of capital of commercial banks in the center [usually meant to be the city of Moscow]. By the way, as a result of August 17 event [default] the banks in the periphery turned out to be the least affected. This is thanks to the fact that they were allowed to take part in the \ac{gko}-\ac{ofz} speculations at much lesser extent." \citep[p.~53]{primakov2002}
+\end{quote}
+
+\subsection{Meeting in the U.S. Treasury, October 2015}
+
+In October 2015, the author of this disseration had an opportunity to present own macroeconomic report on Ukraine's economy and its financial markets to a group of the U.S. Treasury economists from the international department. One of the participants from Treasury side was Erik Weeks\footnote{See {\small\url{https://www.linkedin.com/in/erikweeks/}}}. Since thier responsibility was to cover that region of Europe, to which Ukraine belongs, they expressed interest in my request for a meeting and presenting an analysis of the research department I headed~\citep{valchyshen_2015_,valchyshen_2015}. See Figure~\ref{fig:us_treasury_2015}, p.~\pageref{fig:us_treasury_2015}. At the time, Russia's first military invasion into Ukraine was already 1.5 years old. There were sanctions on Russia in place already. In addition to general discussion of the state of the Ukraine's economy, I had a chance to briefly elaborate on my view with respect to sanctioning of Russia. Few year later, I wrote from that point of view in my short (about 300-word long) blog \citep[see][]{valchyshen_2018}. 
+
+\begin{figure}[!htbp]
+    \captionsetup{width=1\linewidth,labelfont=bf}
+    \centering
+    \includegraphics[width=1\linewidth]{\imagesfolder/2015 Meeting w UST.jpg}
+    \caption[Before the meeting in the U.S. Treasury with the officials from the department covering Ukraine, October 2015]%
+    {Before the meeting in the U.S. Treasury with the officials from the department covering Ukraine, October 2015, presenting the view of the research department I headed that was laid down in two reports \citep{valchyshen_2015_,valchyshen_2015}.}
+    \label{fig:us_treasury_2015}
+\end{figure}
+
+
+\subsection{Cross-Border Payments Diagrams}
+
+See Figures~\ref{fig:bs_hierarchy}-\ref{fig:bs_hierarchy_dividend_payment_}, pp.~\pageref{fig:bs_hierarchy}-\pageref{fig:bs_hierarchy_dividend_payment_}.
+
+{ %section begins
+
+\begin{landscape}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy.png}
+\caption{Typical blanace sheets structure between \textit{unconsolidated} government, banking and non-banking sectors.}
+\label{fig:bs_hierarchy}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Consd.png}
+\caption{Typical blanace sheets structure between \textit{consolidated} government, banking and non-banking sectors.}
+\label{fig:bs_hierarchy_consd}
+\end{figure}
+
+\end{landscape}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy FS+DS+.png}
+\caption{Money hierarchy within two jurisdictions, one of which experiences wide usage of the foreign money unit of account along with domestic/national money unit of account.}
+\label{fig:bs_hierarchy_fs_sd}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Wage Payment 3 BSs.png}
+\caption{Wage payment: hierarchy of blanace sheets and accounting entries they record, when three balance sheets are involved}
+\label{fig:bs_hierarchy_wage_payment_3BS}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Wage Payment 3 BSs+.png}
+\caption{Wage payment: step-by-step changes in the simplified hierarchy of blanace sheets, when three balance sheets are involved}
+\label{fig:bs_hierarchy_wage_payment_3BS_}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Wage Payment 5 BSs.png}
+\caption{Wage payment: hierarchy of blanace sheets and accounting entries they record, when five balance sheets are involved}
+\label{fig:bs_hierarchy_wage_payment_5BS}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Wage Payment 5 BSs+.png}
+\caption{Wage payment: step-by-step changes in the simplified hierarchy of blanace sheets, when five balance sheets are involved}
+\label{fig:bs_hierarchy_wage_payment_5BS_}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Tax Payment.png}
+\caption{Tax payment: hierarchy of blanace sheets and accounting entries they record}
+\label{fig:bs_hierarchy_tax_payment}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Tax Payment+.png}
+\caption{Tax payment: step-by-step changes in the simplified hierarchy of blanace sheets}
+\label{fig:bs_hierarchy_tax_payment_}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Govt Spending.png}
+\caption{Government spending out of available funds/balances: hierarchy of blanace sheets and accounting entries they record}
+\label{fig:bs_hierarchy_govt_spending}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Govt Spending+.png}
+\caption{Government spending out of available funds/balances: step-by-step changes in the simplified hierarchy of blanace sheets}
+\label{fig:bs_hierarchy_govt_spending_}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Govt Spending v2.png}
+\caption{Government spending with zero of available funds/balances and by domestic borrowing: hierarchy of blanace sheets and accounting entries they record}
+\label{fig:bs_hierarchy_govt_spending1}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Govt Spending v2+.png}
+\caption{Government spending with zero of available funds/balances and by domestic borrowing: step-by-step changes in the simplified hierarchy of blanace sheets}
+\label{fig:bs_hierarchy_govt_spending1_}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Govt Spending v3.png}
+\caption{Government spending with zero of available funds/balances and by external borrowing: hierarchy of blanace sheets and accounting entries they record}
+\label{fig:bs_hierarchy_govt_spending3}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Govt Spending v3+.png}
+\caption{Government spending with zero of available funds/balances and by external borrowing: step-by-step changes in the simplified hierarchy of blanace sheets}
+\label{fig:bs_hierarchy_govt_spending3_}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Exports Payment.png}
+\caption{Foreign payment for exports of domestically produced capital goods: hierarchy of blanace sheets and accounting entries they record}
+\label{fig:bs_hierarchy_exports_payment}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Exports Payment+.png}
+\caption{Foreign payment for exports of domestically produced capital goods: step-by-step changes in the simplified hierarchy of blanace sheets}
+\label{fig:bs_hierarchy_exports_payment_}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Dividend Payment.png}
+\caption{Dividend payment to foreign majority shareholder: hierarchy of blanace sheets and accounting entries they record}
+\label{fig:bs_hierarchy_dividend_payment}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{\pictures/BS Hierarchy Dividend Payment+.png}
+\caption{Dividend payment to foreign majority shareholder: step-by-step changes in the simplified hierarchy of blanace sheets}
+\label{fig:bs_hierarchy_dividend_payment_}
+\end{figure}
+
+} %section begins

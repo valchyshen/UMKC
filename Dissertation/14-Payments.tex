@@ -2,249 +2,363 @@
 
 \section{\MakeUppercase{Cross-Border Payments in the Real World}}\label{sec:payments}
 
-\subsection*{Abstract}
+%\subsection*{Abstract}
 
 \subsection{Introduction}
 
-\subsection{aaa}
+\subsection{Domestic Payments}
 
-On \ac{gfn} see \citep{wojcik2018}.
+\subsubsection*{Case \#1: Domestic Payment Between Two Clients Served by the Bank's Three Branches}
 
-\cite{usdot2009} on the \ac{usd} status as reserve currency with key factors explaining it. 
+This case considers a situation when two domestic firms---one is the seller of a good worth of 1,000 of domestic money unit and another is the buyer of that good---agrees to transact via their serving banking units. These banking units are the branches of the same bank (as an example I use Ukraine's Prominvestbank). These branches by internal design of Prominvestbank have own balance sheets and correspondent accounts with head office to settle payments. Then, the buying firm (the payer that is labeled as Firm-1 on the chart below) does not have enough balance on its current account and hence it borrows from its serving bank unit and then instructs its bank by delivering a payment order to debit is current account and credit the account of the selling firm (the payee that is labeled as Firm-2). To facilitate the payment order the branch of the payer (labeled as Branch-1) borrows correspondent account balances from a third party (Branch-2), which by assumption possessed such balances. Now with current account balances of enough size Btranch-1 instructs the head office to debit its account and credit the correspondent account of Branch-3 that serves the payee cleint. At the end of the transaction chain, the firms exchanged (a) bank balances denominated in the domestic money unit of account, and (b) non-financial asset. The banking units of Prominvestbank, serving the above-mentioned firms, expanded their balance sheets by size of the transaction. In particular, Branch-1 expanded the balance sheet by providing a loan to the buying firm, while Branch-3 expanded its balance sheet because its client, the selling firm, was paid for the goods sold. Head office and Branch-2, which retained their balance sheet sizes, had just reshuffle the composition of their liabilities and assets, respectively. In consolidated terms, the balance sheet of the bank as a whole increased by the size of the transaction as the bank endogenously created own \acsp{iou}, which are money for the firms, and settled the payment between the firms through its branch hierarchy.        
 
-\begin{quote}
-In 2010, the fastest way to move money on the same day from New York to 
-London was to catch a flight from JFK to Heathrow and deliver it yourself. Now, 
-you can initiate a secure, real-time payment that's sent and received into your 
-account in seconds at virtually no cost and in any currency. Not just from New 
-York to London, but from New York to anywhere - including space. The last 
-decade for payments has been extraordinary. However, payments are on the 
-cusp of an even greater revolution. \citep{jpmorgan2021}
-\end{quote}
+%![Case #1: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart1.png")
 
-On the issue of 'dollarization'\index{Dollarization}\index{Dollarization!of 1990s} see \citep{alesina2001}\index{Dollarization!in Latin America},\citep{jameson2003},\citep{havrylyshyn2003},\citep{johnson2008}\index{Dollarization!in Russia}.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart1}
+\caption[Case \#1: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
+{Case \#1: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart1}
+\end{figure}
 
-\begin{quote}
- Residents in developing economies save and borrow in foreign currencies. At the end
- of 2000 the share of domestic bank deposits denominated in foreign currencies was
- 35\% on average in all developing economies, and 44\% in those among them where
- dollar deposits are not illigal. \citep[p.~63]{ely2006}
-\end{quote}
+\subsubsection*{Case \#2: Domestic Payment Between Two Clients Served by the Bank's Two Branches}
 
-\citeauthor{clark2024} considers modern-day geopolitics between US and China: "I think China is accepting short term econmic pain to help conjure a non-US dollar financial system into existanc." He also aludes to the case of sanctions imposed on Russia for its military envasion of Ukraine:
+In the second case of domestic payment, everything identical to the previous case except one nuance. That is instead of three branches of the same bank, there are just two branches instead of three that are involved in settling the transaction. Now, it is Branch-2 that serves the selling firm (Firm-2) and which also has excess correspondent account balances, which it lends to Branch-1. This is not an extraordinary situation. It is rather perfectly fine, when a branch lends excess balances to another branch and then it re-gains those balances from the same very branch that just borrowed them by the end of the day. This is because lending-and-borrowing of the correspondent account balances and payments are settling of payments for clients are quite impersonal activities for the network of bank units. In terms of consolidated balance sheet of the bank as a whole, the outcome is the same as in the previous case. This particular case just shows how flexible the system is.
 
-\begin{quote}
-The issue is that like Japan in 1980s, even if China suddenly became democratic, it is hard to see how Americans could ever accept China having a larger economy. If you look at US-Japanese relations in the 1980s it was all about how to restrain Japanese economic might, even with Japan being democratic and staunch US ally. Given the history of China relations with the West, relative economic decline is not political acceptable in China. This leaves China with only one option, to replace the US financial system with it own system. Strangely, China seems to me to be making enormous progress in this aim. \par
-First of all, with Russia's invasion of Ukraine, the West looked to isolate and destroy the Russian economy. This policy has signally failed, with Russian exports of energy to the rest of the world remaining stable. This trade is largely conducted outside of the US dollar financial system, not only for energy products, but for the shipping of these assets too. Russia exports 10\% of total oil exports, all of which now needs to be outside of the US financial system. The recipients of this oil, must also have the financial system in place to handle this trade, meaning that the non-US dollar financial infrastructure is now in place in major nations such as India, China and Brazil to name a few. \citep{clark2024}
-\end{quote}
+%![Case #2: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart2.png")
 
-In the words of the manager of the Canada Payments, the operator of the national pyament system in Canada: "In the payment industry, we know that when payments work how they're supposed to, they go \textit{unnoticed}. This means we're doing our job right. It also means that many people \textit{don't know} about the critical payment systems that underpin our economy." \citep[emphasis added]{larocque2024}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart2}
+\caption[Case \#2: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
+{Case \#2: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart2}
+\end{figure}
 
-\begin{quote}
-There is no such a thing as "capital flight". Transactions are voluntary: if one is carried out
- it is because everyone is happy with the terms of trade (prices reflect indifference levels).   In other words, for someone to buy (say, the one "flying capital") there must be someone
- selling. Of course, once the government has an exchange rate target it must stand ready to
- buy/sell the quantity of foreign exchange the market desires (and if dollar reserves are going
- out, we may call that "capital flight"). \citep[p.~374, footnote 8]{mario2021}
-\end{quote}
+\subsubsection*{Case \#3: Domestic Payment Between Two Clients Served by the Bank's Two Branches and Its Head Office}
 
-On the postwar \ac{epu}\index{European Payments Union} see \citep{kaplan1989} as it details the EPU operations by utilizing the termilogy and logic of the \textit{offsetting} balance sheet technique. 
+In this case, again, there are two firms aiming to make transaction. Assumptions are basically the same as in the previous case. However, the key difference is that now all two branches are short of correspondent account balances. The branch, serving the buying firm, asks for loan from the head office to settle the payment. And once that branch receives balances on its correspondent account enough to clear the payment, it gives to the head office the payment instruction to debit its correspondent account and credit the correspondent account of the branch, which serves the selling firm. Consolidated balance sheet of the entire bank is the same as in the previous two cases: assets side has increased by the loan to Firm-1, while the liabilities side has increased by the deposit of Firm-2.
 
-\uppercase{Important!} On \ac{fps} see \citep{bis2024}.
+At the same time, on the non-consolidated basis the balance sheets of the all three units of Proimnvestbank, which are involved in the settlement of the transaction, there is expansion of balance sheets in every unit.
 
-See \citep{hemmer2008} on \ac{hc} and \ac{mm} accounting issues that arose on the back of \ac{gfc}.
+Head office did expand it because it provided loan to the branch, which serves the paying firm, and booked on the asset side of the balance sheet. The counterweight item in the liabilities side to that loan is the correspondent account of the paying branch. The latter item is being modified in the final stage of the transaction, when head office books an accounting entry, when the account of paying branch is debited while the account of the branch of the payee is credited. Hence, the newly created balances were shifted from one correspondent account to another.
 
-\citep[p.~820]{wray2009}: "Rather than 'mark to market', prices
- were actually set by 'mark to model'; later, this was called 'marking to myth' as the models
- broke down."
- 
-\citep{fed2024} on the book-entry securities operations. Also, \citep[p.~870]{hancock1996}: ``Fedwire also comprises a book-entry securities system for the electronic delivery of U.S. Treasury
- and agency securities against (electronic) payment for those securities. The book
- entry securities system allows immediate and simultaneous delivery of securities
- and corresponding payment in immediately available funds.".
+%![Case #3: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart3.png")
 
-\begin{quote}
-At the core of current international monetary arrangements lies \textit{an
- interlocking network of national and international payments systems} which
- facilitate the exchange of funds associated with almost all international
- trade and financial transactions. \dots At first glance, the payments side of a transaction appears to be straightforward--the payor instructs his bank to transfer an agreed upon
- amount of funds to the bank of the payee. \dots there is the problem of how best to
- achieve a simultaneous exchange of goods or securities for money so as to
- minimize the risk that one party to the transaction could renege on his
- payments or his delivery obligation, while the other party is fulfilling
- his side of the transaction. This risk can be minimized by closely tying
- the delivery of securities or goods to the receipt of good funds by the
- seller. \textit{The payments system is, therefore, closely linked to the system
- of transferring securities} and legal arrangements for securing title to
- goods. \citep[emphasis added]{folkerts1990}
-\end{quote}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart3}
+\caption[Case \#3: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
+{Case \#3: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart3}
+\end{figure}
 
-\begin{quote}
-Money is (carefully regulated) talk. \citep[p.~7]{sommer1998} \dots Although this Article's definition of bank liabilities is standard, its definition of payment is not. "Payment"
- is clearly-and wrongly-treated in law as something requiring the
- tender of currency, or at least the satisfaction of a right to receive
- currency.2" This law is clearly inconsistent with market practice. The
- honor of a check seldom involves dollar bills; commercial wire trans
-fers almost never do. This Article takes a different approach, one more consistent with
- practice. For our purpose, "payment" is the result of extinguishing a
- bank liability.\citep[p.~10]{sommer1998}
- A bank payment, therefore, is a shifting of bank liabilities
- through a highly stereotyped communications process. Indeed, we
- can view most of the commercial law of checks or wire transfers as
- regulation of the speed, reliability, and integrity of this process.
- The purpose of the payment system is admittedly not the shifting
- and extinction of bank liabilities, but rather discharging money-de
-nominated obligations among end-parties. But the payment system
- functions by the extinction and novation of bank liabilities. Most pay
-ment law takes the purpose of payment systems for granted, concen
-trating instead on the communications that extinguish and novate
- bank liabilities. \dots
- This Article has defined a payment as the result of extinguishing a bank liability. This
- definition has led to a complementary relationship between payments
- and money. Payments are the mechanics of money; money is the pur
-pose of payments. Money is what payments do. Understanding money
- requires understanding the corresponding payment system. But the
- converse is also true: Payment systems cannot be understood without
- understanding money. \citep[p.~11-12]{sommer1998} \dots
-  money and payment systems are inextricably interrelated:
- social teleology and instrumental functionality. Neither makes sense
- without the other. Because money cannot be viewed independently of
- the payment system that implements it, each payment system is its own
- money. This implies that checks are different money than coins,
- although one employing the same unit of account. If this statement
- strains intuition, try buying a house with coins, or finding a soda
- machine that accepts checks. In other words, money \textit{is} what a payment system \textit{does}. \citep[p.~18]{sommer1998}
- As long as the underlying system operates reliably, and
- the rules for external use of the system are separable from the internal
- operating rules, a user of the payment system does not have to know
- the operating details of the system at all.  \citep[p.~21]{sommer1998}
-\end{quote}
+\subsubsection*{Case \#4: Domestic Payment Between Two Clients Served by the Bank's Two Branches With Mutual Correspondent Relationship}
 
-\citep[p.~46]{shen1997}: "Fedwire is used mainly for interbank payments,
- many of which are related to federal funds transactions or payments for the purchases of government securities."
- 
-See as well \citep{cpss1995,cpmi2022,fed2023} on the complex of payment system and other elements of the \ac{fmi}. On Citi as global castodian see \citep{gcastodian2022,gcastodian2023}.
+Two banking units are able to go about in settling mutual obligations on behalf of their clients without the usage of \acsp{iou} issued by their correspondent bank, with which they opened their correspondent accounts. This way of settling payments, for instance, described by~\citep[p.~42]{tulin2012}.\footnote{Tulin is currently deputy head of Bank of Russia, the central bank of this country. See {\small\url{https://cbr.ru/eng/about_br/tulindv/}}.} The chart below is adopted to illustrate this case. This case is hypothetical because in practice Prominvestbank designed its network of branch in such a way that correspondent relationships existed between head office and the branches and no correspondent relationships between branches were allowed. So, instead of using the correspondent accounts at the head office the branches open correspondent account with each other. So, the branch of buying client (a) lends money to its client and then (b) borrows from the branch, which serves the selling client. Then, the former branch instructs the latter to debit its account and credit the account of the selling client -- this accounting entry takes place on the books of the branch of the selling client. The branch of the buying client books the accounting entry that debits the account of the client and credits the correspondent account opened with another branch. In this way, the payment is settled. On the consolidated basis the whole bank increased assets by the size of loan extended to the buying firm, while the liabilities side increased by current account of the selling firm (see diagram below).
 
-See \citep{boz2022} for empirical work on the composition of international trade by money of account (called "currency" in this paper).
+%![Case #4: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart4.png")
 
-"SWIFT is a network that enables financial institutions to send and receive messages on financial transactions to and from one another in a secure and harmonised manner. Yet SWIFT neither clears or settles payments nor is it directly involved in the transfer of funds. Instead, SWIFT messages amount to \textit{payment orders} settled via correspondent accounts that banks hold with each other." \citep[p.~4, emphasis added]{boz2022}. See also \citep{robinson2018,robinson2023,robinson2024}. 
-
-\cite{robinson2018}: "Often characterized as the 'plumbing' of the global financial system, and perceived as "boring, low margin and not strategic" (Lord et al. 2015, 6), it is poorly understood beyond its well-known intermediary 'facilitating' role. A fundamental function of FMI is the transfer of (exchange) value, more simply known as payment.".
-
-\cite{maurer2012}: "\dots recent attention to the ghosts in the financial machine neglects the infrastructures of payment that make finance possible."
-
-\begin{quote}
-While the established system enables the flow 
-of money via intermediaries such as SWIFT and corre
-spondent banks, these intermediaries are not given in the 
-new monetary system, which has money as its basis and 
-enables interaction via APIs. \citep[p.~15]{swartz2023}
-\end{quote}
-
-On \ac{ifrs}: "IFRS was created in the Anglo-Saxon accounting
-style with a \textit{capital market orientation}, instead of a tax orientation as is common in Continental European accounting (Zeff, 2012)." \citep[p.~6, emphasis added]{trimble2024}, which was published as a chapter in \cite{amat2024}.
-
-It is worth to note that \ac{bea}, the state-run agency that has been responsible for the collection and publication of the balanace of payments records of the United States since 1920s, has dropped the minus sign from presentation of the debit items, see \cite{bogen2014}.   
-
-Also, \ac{bea} adheres to the consistency between \textit{positions} and flows \citep[p.~41]{bea2022}, which contrasts a bit with stock-flow consistency analysis of Godley. This work proposes to abandon the terms stemming from the metalist view of money, which invoke the thinking of money as things, which include both stocks and flows. Instead, positions and changes in them are to be disegaged from utilizing metaphors of motion. Let us use financial positions instead of "stocks" and change in the financial positions instead of "flows".
-
-The technique of the New York Clearing House by settling mutual indebtedness in 19th century is descirbed in \citep[pp.~292-342]{gibbons1858}. \citep{kregel2023,kregel2024_}
-
-\citeauthor{roover1948} describes inter-bank transfer between two clients of two separate banks \citep[see][pp.~272-275]{roover1948}. This description at the very basic principles of the transfer procedure is similar to the description of the workings of the \textit{Hawala}\index{Hawala} system, see \citep{ballard2005} and \citep{qorchi2002}.
-
-See \citep{schenk2023} on payments today. On the mainstream literature on correspondent banking \citep{schenk2024}, \citep{panza2019}, \citep{cipriani2023}.
-
-\citeauthor{schenk2023} considers correspondent banking as practice that emerged in full extent during the first wave of globalization, which took place in the second half of the 19th century. Technological innovations in communications sustained its usage since then. Overall, according to the author, the history of correspondent bankings accounts for about 150 years now. Prior history of this practice is downlayed since communication technologies might be considered now as rudimentary if compared to subsequent technological breakthroughs. First, it was "the spread of undersea and coastal telegraph in the second half of the nineteenth century" \citep[p.~281]{schenk2023}. Then, invention of telex machines in the 1920s, the spread of the computers in the 1970s and the internet since the 1990s all magnified the trend towards greater globalization of trade and finance. As of today, rise of new digital technologies---such as \ac{dlt} and \ac{ai} respectively since late 2010s and early 2020s---are yet to be tested if they are capable to replace the correspondent banking mechanism \citep[p.~300]{schenk2023}.
-
-The following description of the cross-border payment is made by \citeauthor{cipriani2023}, a team of economists from Federal Reserve Bank of New York. It is quite simplified, indeed, despite the usage of financial jargon. Nevetheless, its major shortcomings are of totally other nature. These must be highlighted and corrected. Let us first consider the description first, which reads:
-
-\begin{quote}
- [C]ross-border payments occur through 
-``correspondent banking": banks use the services of ``correspondent banks" in order 
-to execute cross-border payments \dots A "correspondent account" is an account that a ``respondent bank" has at a foreign correspondent bank usually in the foreign bank's currency. Both banks will keep a record of this account, and common terminology here is to refer to \textit{Nostro} and \textit{Vostro} accounts, where the terms are the Italian words for ours and yours. The record kept by the respondent bank of the money that it keeps with its correspondent bank is the \textit{Nostro} account, whereas the record kept by the correspondent bank of its respondent bank's money is the \textit{Vostro} account. \dots
-[I]f X wants to send money to Y, who resides in another country, X's bank will instruct its correspondent bank in the country where Y resides to send money to Y's bank through the domestic payment system of Y's country. The \textit{Nostro} account of X's bank (an asset on the bank's balance sheet) will be debited for the amount paid; similarly, the \textit{Vostro} account (a liability on the correspondent bank's balance sheet) will also be debited. \citep[pp.~39-40, emphasis original]{cipriani2023}
-\end{quote}
-
-Let us now pay attention to the above-mentioned shortcomings. There are two. First, it invokes a metaphor of motion that creates an impression of the payment system being alike to the transportation system. This is due to the usage of such terms as \textit{send} and \textit{flow} with respect to money. Secondly, it uses the term \textit{debit} in quite imprecise way so that an inexperienced reader would not get it what is exactly is going on within the payment system. 
-
-Describing the banking industry in New Orleans during an antebellum era, \citeauthor{green1972} depicts local banks having a large network of correspondent banking relationships. He notes that a typical private bank once launched was prioritizing of establishing a correspondent relationship with another bank, see below.    
-
-\begin{quote}
-Because of New Orleans' involvement in national and world trade, nearly every Louisiana bank maintained a correspondent relationship with some bank in New York, Philadelphia, or Boston, and with some European city (usually London, but often Liverpool, Paris, or Amsterdam). For example, the Commercial Bank, which concentrated on the Western trade and earned its profits largely from its wide correspondent ties, maintained accounts with 71 banks and had "active correspondence" with 40 of these. One of the \textit{first concerns} of a newly opened bank was to establish correspondent ties. \citep[pp.~72-73, emphasis added]{green1972}
-\end{quote}
-
-Another illustrartive example of primacy of correspondent banking is by \cite{adams1978}. The author provides an account of the operations of the private, unchartered bank based in Philadelphia during the first half of the 19th century. The bank was established in 1812 by Stephen Gerard, a Frenchman born in Bordeaux who active in mechant trade between commercial centers of Europe and North America over second half of the 18th century. He settled in Philadephia during the American Revolutionary War, being already a successful merchant with personal wealth embodied in "ships, cargoes, and funds spread all over the European continent \dots in Amsterdam, Hamburg, Saint Petersburg, Copenhagen, Riga, London, and other 
-trading centers" \citep[p.~8]{adams1978}. He kept active correspondence with banks, with which his funds were held, and one of the major bankers he was communicating with were "Messrs. Baring Brothers \& Co. of London" (ibid, p. 9). In early 1812, Gerard commited himself to launch and run a private bank in Philadelphia. Already in May of same year he wrote another letter to the Baring Brothers,\index{Baring!Brothers \& Co.} in which "he inquired about a possible correspondent relationship" with the London-based bank (ibid, p. 23). He got a positive responce from them. Overall, by June 1982 the Girard's bank established correspondent ties with banks in six major cities in the US and with two banks in London (ibid, p. 25). This example shows that establishing correspondent relationships was a matter of top priority for a banker.
-
-The overseas trade by the eighteenth and early nineteenth centuries major merchant houses is also discussed in \cite{marichal2007}. It provides an example of a European merchant with experience of being a correspondent to the London's merchant house of Baring Brothers (ibid, p. 177). 
-
-Another illustrative example can be found in \cite{joslin1963}, which provides a historical account of establishment and operations of the British banks in the nineteenth century's Latin America. The following quote demonstrate the built up of the operational capacities of the London \& River Plate Bank, which was incorporated in London in 1862 with prime purpose of expanding the British commercial activities in that continent:
-
-\begin{quote}
-Before the branch [in Bueno Aires] was opened and during the succeeding years Head Office [in London] was active in building a network of correspondents, so that the bank could offer a wide range of services to those who wished to make payments or remit funds to the River Plate. In London the City Bank became its banker and a discount and drawing account was opened at the Bank of England. In Paris its agents were Messrs. Bischoffshcim and Goldschmidt, and other correspondents were soon appointed at Hamburg, Amsterdam, Berlin, and Genoa. Across the Atlantic a correspondent in New York was necessary to handle business between the United States and the River Plate. For Brazil the bank chose the London and Brazilian Bank as its original correspondent, though die agency was transferred to the Brazilian and Portuguese Bank when die London and Brazilian Bank proposed to operate in the River Plate. In the River Plate a furdier net¬ work of correspondents and agents was needed for the bank to carry out the collection of bills and extend the circuladon of its notes, which the agents were to honour. There were further additions as the years passed. By 1871 diere were more correspondents in France, the Low Countries, Spain, Portugal, and Italy, and an agent at St. Petersburg [capital of Russia Empire]. Careful arrangements were made with the correspondents, specifying limits within which they might draw on the bank or be drawn upon. \citep[pp.~29-30]{joslin1963}
-\end{quote}
-
-Similar arrangements preceeded for the launch of the London \& Brazilian Bank, the Brazilian \& Portuguise Bank, the London Bank of Mexico \& South America and many other financial establishemnts aimed at that continent.  Further, a wide and equally efficient network of correspondents is vital for the banking business acting as a clearing hours for debts and credits. Thus, from the experience of the ninteenth century banking in Brazil: ``To gain the maximum advantage in the exchange market, a bank needed branches or correspondents at many points along the coast. Only in this way could drawings easily be covered by remittances, since at Rio Grande do Sul and at Sao Paulo exports greatly exceeded imports, while the converse held true at Pernambuco and Salvador do Bahia" \citep[p.~64]{joslin1963}.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart4}
+\caption[Case \#4: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
+{Case \#4: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart4}
+\end{figure}
 
 
+\subsubsection*{Case \#5: Domestic Payment Between Two Clients Served by the Bank's Head Office and a Branch}
 
-\citep{bernstein1984}: "At a dinner he gave to Walter Gardner
- and me in 1943, Keynes said that the United States would be glad that the
- new institution would allow control of capital flows, as there could be a flight
- from the dollar after the war. I asked whether that was because there might
- be a depression in the United States and a fear of a possible devaluation of
- the dollar. Keynes said that was what he meant. After Bretton Woods,
- however, Keynes came to believe that the dollar payments problem would be
- solved by expansion in the United States."
- 
-\citep{coombs1976} on the swap lines in mid-1960s. 
+In this case, the same two firms are by two units of the bank: the head office and a branch. The latter has a correspondent account with the former. The sequence of steps to complete the transaction is the following: (1) the buying firm borrows from head office and then (2) instructs its bank to debit its current account and debit the current account of the selling firm. In his turn head office instructs the branch to credit the selling client's current account and debt the correspondent account with head office -- in fact, such instruction (an accounting entry) is booked automatically on the balance sheet of the branch by the means of the computerized system of the bank. Alongside another accounting entry is made on the balance sheet of the head office of the bank: it debits the current account of the buying firm and credits the correspondent account of the branch. On the non-consolidated basis, both balance sheets of head office and the branch did expand by the size of the transaction. On the consolidated basis, the outcome for the bank as a whole is the same as it was in all previous cases: the assets side rise by loan to the buying firm, the liabilities side expanded by the deposit of the selling firm. On the non-consolidated basis two banking units did expand their balance sheet simultaneously to settle the payment.
+
+%![Case #5: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart5.png")
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart5}
+\caption[Case \#5: Domestic Payment Between Two Clients Served by the Bank's Head Office and a Branch]%
+{Case \#5: Domestic Payment Between Two Clients Served by the Bank's Head Office and a Branch.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart5}
+\end{figure}
+
+\subsubsection*{Case \#6: Domestic Payment Between Two Clients Served by Two Independent Banks with Branches}
+
+If in cases \#1 and through \#5 the payment was settled by the branches of one bank, in the current case \#6 there are two independent banks, which serve the clients that agree to transact with each other for the goods worth of 1,000 domestic money unit of account. The buying firm (Firm-1) is served by a branch of Prominvestbank, while the selling form (Firm-2) is served by a branch of Savings Bank. The former firm does not have enough balance on the current account and hence it borrows from its banking unit (Branch-1). The latter itself is short of balances on its correspondent account and hence it borrows them from another branch (Branch-2), which has them is excess by assumption. In its own turn the head office of Prominvestbank is assumed as being short of reserves, which are the balances on its correspondent account with the country's central bank, and it borrows them from the central bank to settle the transaction. (In practice, these borrowings of correspondent account balances either between independent banks or between branches of a bank are made in bulk terms and with an estimation of overall daily needs. They are done most of the time not for the sake of one transaction. The explanation use in these cases is done for simplicity purpose. It should not create an impression that one transaction by a client causes those chains of borrowings by banking units.) The transaction is being finally settled on the books of the central bank by means of the Prominvestbank's payment instruction given to the central bank to debit its correspondent account and credit the correspondent account of Saving Bank. Then, the payment instruction extended to the balance sheet of the head office of Savings Bank, which within own balance sheets debits its correspondent account with the central bank and credits the correspondent account of the branch that serves the client, which is the beneficiary of the payment. That branch, too, records an entry within own balance sheet, where it debits its correspondent account with head office and credits current account of the Firm-2. On consolidated basis, each bank and the central bank did expand their balance sheet simultaneously by the end of transaction. At next level of consolidation, when balance sheets of all banks and the central banks are put together as balance sheet of monetary sector, it is seen that this sector expanded its balance sheet by size of the transaction. On the assets side of the balance sheet there is new loan to the buying firm, while on the liabilities side there is new deposit owed to the selling firm. And vice versa on the non-consolidated basis, each banking unit on the below diagram did expand its balance sheet by size of the transaction.
+
+%![Case #6: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart6.png")
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart6}
+\caption[Case \#6: Domestic Payment Between Two Clients Served by Two Independent Banks with Branches]%
+{Case \#6: Domestic Payment Between Two Clients Served by Two Independent Banks with Branches.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart6}
+\end{figure}
+
+\subsection{Cross-Border Payments}
+
+\subsubsection*{Case \#7: Cross-Border Payment Between Two Firms of Different Countries, Payment is Denominated in the Importer's Domestic Money of Account}
+
+This case is about a cross-border payment between two firms residing in two different countries. One firm is an exporter and sells its produce to a foreign firm, which is an importer. The former firm is the seller, while the latter one is the buyer. The firms agree that payment is going to be made in domestic money unit of the importer's country. The firms transact via their banks, which are assumed to have established correspondent relationship. It means that the bank of the importer has opened a correspondent account for the foreign bank, which serves the exporter. That correspondent account is denominated in the domestic money unit of the importer's country. To be more specific those two firms reside in Ukraine and Russia. The Ukrainian firm is an exporter and is being served by a branch of Prominvestbank. The Russian firm is an importer and is being served by the head office of Sberbank of Russia. These two firms agree that goods being sold and purchased is worth of 10,000 Russian rubles (\ac{rub}). It is assumed, hypothetically, that in the Russian domestic financial market the exchnage rate of the Russian ruble (\ac{rub})\footnote{Russia's money of account} against the US dollar is 72 (rubles per 1 dollar). In the Ukraine's financial market the exchange rate of the Ukrainian hryvnia (\ac{uah})\footnote{Ukraine's money of account} is 26  (hryvnias per 1 dollar). Hence, the cross-currency rate of hryvnia per ruble is derived as a ratio of $26/72=0.361$ (hryvnias per 1 ruble). Hence, the hryvnia value of the goods to be sold and purchased is 10,000*0.361=3,610 hryvnias. \par
+
+The importer, the Russian buying firm, does not have enough funds at hand, hence it borrows 10,000 rubles from its bank. Then, it instructs its bank to debit its current account for the value of goods to be purchased and credit the account of the exporter, which is the beneficiary of the cross-border payment. Since the banks of both the importer and of the exporter have already in use an established correspondent relationship, then buyer's payment instruction for its bank means the following accounting entry on its balance sheet: it debits the current account of importer by 10,000 rubles and credits the correspondent account of the exporter's bank for the same amount. Simultaneously, two banks exchange of payment information that gives ground to the exporter's bank to book the following entry on the balance sheet of its head office: it debits the correspondent account in ruble opened with Russian bank with 10,000 rubles and credits the corresponding account of the branch that serves the exporter. Subsequently, the branch's balance sheet records the accounting entry: debit (mark up) of the correspondent account in ruble with the head office and credit (mark up) of the current account in ruble of the exporting company. While this accounting entry is made, the bank gives information to the exporting firm that its account is being credited with above-mentioned amount in rubles. This makes exporting firm's balance sheet to record the following entry: debit (mark up) of current account in rubles by 10,000 rubles and credit (mark down) of the account of inventory by 3,610 hryvnias, which is a hryvnia equivalent of the rubles at the bank account. As goods left the inventories of the exporter and were physically transfered across the border into the inventories of the importer, the latter balance sheet records the entry: debit (mark up) of inventories by 10,000 rubles and credit (mark down) of the current account in rubles with its bank. \par
+
+One important assumption that is relevant for cross-border transactions is about the level of liberalization allowed by the authorities of the country (by laws adopted by the parliament, central government and central bank) in the sphere of usage of foreign cash and of denomination of the assets and liabilities of the local economic units in foreign money units of account. \acf{srr} is an internationally recognized coefficient and procedure. It is imposed by the authorities onto exporters of goods and services which are selling their produce in foreign money. It is practically a requirement on the exporters to sell immediately a certain portion of the foreign money that are credited upon their bank accounts. It may range from zero to 100 percent. In this case, the assumption is that $SRR=0\%$. Hence, the exporter freely decides when the foreign money funds to be converted into domestic money. \par
+
+This said, however, the exporter (Firm-UA) wants to proceed and convert its bank's ruble balance into the bank's balance in domestic money unit, hryvnia. It asks its serving bank unit to sell its rubles at the prevailing current exchange rate. The branch finds a bid for its client ruble balances in another branch, which serves a third firm (Firm-UA2) that is importer from Russia. Then these two branches transact on the ruble-for-hryvnia bank balances exchange. For simplicity, the exchange rate is assumed at the above-mentioned level of 0.361 hryvnias per 1 ruble. Another assumption is that the ruble-buying firm does not have hyvnia balance at hand on its current account. So it borrows from its serving bank unit, resulting in the balance sheet expansion of both the branch and the firm. By another assumption, the branch (Branch-2) is short of hryvnia balance on its correspondent account with the head office. In order, to settle the payment for its client Branch-2 borrows from head office to build up its correspondent account balance. Then the firm instructs its bank branch to make the following accounting entry on the balance sheet of the latter: debit (mark down) the hryvnia current account of Firm-3 and credit (mark down) the hryvnia correspondent account of Branch-2 opened with head office of Prominvestbank. \par
+
+The latter entry in essence comes hand in hand with a set of accounting entries on the balance sheets of head office of Prominvestbank, the branch of the ruble-selling firm and that firm itself. These entries are dealing with two groups of assets and liabilities in terms of denomination in money units of account: (i) domestic and (ii) foreign.  \par 
+
+Hence, the entries with domestic money unit (hryvnia, \ac{uah}) are: \par 
+
+1. Prominvestbank's head office: debit the correspondent account of Branch-2 and credit the correspondent account of Branch-1. 
+
+2. Branch-1: debit (mark up) the correspondent account with head office and credit (mark up) the current account of Firm-1, the ruble selling firm. 
+
+Then, the entries with the foreign money unit (ruble, \ac{rub}) are: \par
+
+1. Branch-1: debit (mark down) of ruble current account of Firm-1 and credit (mark down) of the ruble correspondent account with head office.
+
+2. Prominvestbank's head office: debit (mark down) the ruble correspondent account of Branch-1 and credit (mark up) the ruble correspondent account of Branch-2.
+
+On their balance sheets Firm-UA and Firm-UA2 record the following entries, which are mixed in terms of denomination of assets and liabilities by money units of account: \par
+
+1. Firm-UA: debit (mark down) of the ruble current account of 10,000 rubles and credit (mark up) the hryvnia current account of 3,610 hryvnias. 
+
+2. Firm-UA2: debit (mark down) of the hryvnia current account of 3,610 hryvnias and credit (mark up) the ruble current account of 10,000 rubles.
+
+(Note: for simplicity these two entries by Firm-UA and Firm-UA2 are presented in compressed form, where debit and credit sides of the each entry are in different money units. While in practice each of them consists of at least two entries where each entry consists of debt and credit in the same monetary unit.) 
+
+On consolidated basis, two banks did expand their balance sheets alebit at different pace. The Russia's bank expanded it in the assets side by ruble loan to the importing firm and it the liabilities side by ruble deposit on the correspondent account of the Ukraine's bank. The Ukraine's bank did expand twice the size of the expansion of the Russia's bank. It happened because the Ukrainian bank expanded its balance sheet by ruble-denominated assets and liabilities. At the same time it expanded the balance sheet by hryvnia-denominated assets and liabilities, because another client took a loan--and effectively it obtained hryvnia-denominated liabilities of the Ukrainian bank--to acquire ruble-denominated liabilities of the same bank. This illustrates a foreign-exchange transaction as effectively a swap of the \acsp{iou} the same bank but denominated in different money units of account (in this case in hryvnia and ruble).
+
+%![Case #7: Balance-sheet relationships during cross-border payment between banks of two countries, where one bank is a correspondent of another.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart7.png")
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart7}
+\caption[Case \#7: Balance-sheet relationships during cross-border payment between banks of two countries, where one bank is a correspondent of another]%
+{Case \#7: Balance-sheet relationships during cross-border payment between banks of two countries, where one bank is a correspondent of another.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart7}
+\end{figure}
+
+\subsubsection*{Case \#8: Cross-Border Payment Between Two Firms of Different Countries, Payment is Denominated in the Foreign Money Unit}
+
+Another example of the cross-border payment between the same firms and banks, which participated in the payment in the previous case, illustrates situation when the exporter and importer agree that payment now should be denominated in the money unit of account of a third country.
+
+In particular, this case describes two firms, an exporter from Ukraine and importer from Russia, which are served by their countries' commercial banks. The names of firms and banks are identical to the previous case. Also, the market exchange rates of national money units of account is the same, too. The difference is that the firms agree to transaction is the US dollars and the goods to be sold and purchased are worth of 1,000 US dollars.
+
+The banks that serve these two firms now have to activate their established correspondent relationships with banks that help them clear the US dollar payment. By assumption such a clearance is provided by the US bank, which is member bank of the Federal Reserve System. This status of the US bank means that it has correspondent account with Federal Reserve System.
+
+The importing firm (Firm-RU) does not have US dollar balance on its current account with the Russian bank and hence it borrows from its bank in the US dollar. As a result, the Russian bank creates deposit, which is its own \acsp{iou} denominated in the US dollar (see diagram below). For the Russian firm, those bank's \acsp{iou} dollars are money to be used for the payment in favor of exporter from Ukraine. For the Russian bank those \acsp{iou} in US dollars it just created are going to be paired with US dollar balances on the correspondent account with its bank that facilitates the US dollar payments in most efficient way. By assumption, the Russian bank does not enough balance on that correspondent account and hence it borrows those balances from the US bank. The latter records the following entry on its balance sheet: it debits (marks up) the account of loan to the Russian bank and credits (marks up) the correspondent account of that same bank. Then, the Russian bank gives instruction to its US correspondent bank to make a payment in favor of the Ukrainian bank, where the beneficiary of the payment is served. Such an instruction forces the US bank to record the accounting entry: debit of the correspondent account of the Russian bank and credit of the correspondent account of the Ukrainian bank. \par
+
+Once the Ukrainian bank receives indication of the inbound US dollar payment in favor of Firm-UA, the exporter, as beneficiary, it records the following accounting entries in the balance sheets of the head of office and the branch that serves the exporting firm (all modifications are with assets and liabilities denominated in the US dollar): \par
+
+1. Prominvestbank's head office: debit (mark up) of the US dollar correspondent account with US bank and credit (mark up) of the US dollar correspondent account of the Branch-1.
+2. Branch-1: debit (mark up) of the US dollar correspondent account with head office and credit (mark up) of the US dollar current account of Firm-UA.
+3. Firm-UA, too, books this entry: debit (mark up) of the US dollar current account with Branch-1 by 1,000 US dollars and credit (mark down) of inventories by 26,000 hryvnias, which is an equivalent of the dollar amount of the transaction.
+
+In Russia, meanwhile, the importing Firm-RU records an entry, where inventories are debited (marked up) by 72,000 rubles, which a local money unit equivalent of the US dollar amount of the transaction, and the US dollar current account at the Russian bank is credited (marked down). \par
+
+Back to Ukraine, there is an assumption that Firm-UA is willing to sells its US dollar bank balance to obtain the Ukrainian hryvnia bank balance. For that purpose, the exporting firm provides its bank unit, Branch-1, with an order to sell US dollar at the current market exchange rate (assumed to be 26 hryvnias per 1 US dollar). The branch goes out to the inter-branch over-the-counter market and finds another branch, Branch-2, which has a bid on the US dollar bank balances at this level of the exchange rate. Hence, these two branches of Prominvestbank are to carry out a foreign exchange transaction swapping US\$1,000 for \ac{uah}26,000. \par
+
+It has to be mentioned here that Branch-2 has a bid for the US dollar balances because it serves another Ukrainian firm, labeled as Firm-UA2, which is an importer requiring US dollars for its operations. The firm does not have enough funds at hand so it asks its banking branch for a local-currency loan to buy the US dollar balances it needs. So, by lending to the firm Branch-2 creates Ukrainian hryvnia balances in the volume of \ac{uah}26,000. Then, those are used to settle the purchase of the US dollar bank balances from Branch-1. \par
+
+Branch-2 debits (marks down) the current account in hryvnia of the importing firm, Firm-UA2, for \ac{uah}26,000 and credits (marks down) its correspondent account in hryvnia with the head office of the bank for the same amount. It also instructs the head office and Branch-1 about the initiation of the payment on crediting the Firm-UA's account in hryvnia for the amount of \ac{uah}26,000. Hence, three balance sheets record the following accounting entries: \par
+
+1. Head office: it debits (marks down) the correspondent account of Branch-2 and credits (marks up) the correspondent account of Branch-1 for the amount of \ac{uah}26,000.
+2. Branch-1: it debits (marks up) its correspondent account with the head office and credits (marks up) the current account of Firm-UA, which sells its US dollar balances for the Ukrainian hryvnia balances, for the amount of \ac{uah}26,000.
+3. Firm-UA: it debits (marks up) its current account for the amount of \ac{uah}26,000 and credits (marks down) its US dollar current account by US\$1,000. (Note: for simplicity this entry presented in compressed form where debit and credit sides of the entry are in different money units. While in practice it consists of at least two entries where each entry consists of debt and credit in the same monetary unit.) \par
+
+Then, the following accounting entries with the US dollar balances take place: \par
+
+1. Branch-1: it credits (marks down) the US dollar correspondent account with head office by US\$1,000 and debits (marks down) the US dollar current account of Firm-UA, the exporter.
+2. Head office: it debits (marks down) the US dollar correspondent account of Branch-1 and credits (marks up) the US dollar correspondent account of Branch-2 for the amount of US\$1,000.
+3. Branch-2: it debits (marks up) its US dollar correspondent account and credits (marks up) the US dollar current account of Firm-UA2, the importer.
+4. Firm-UA2: it debits (marks up) its US dollar current account with Branch-2 for US\$1,000 and credits (marks down) its Ukrainian hryvnia current account with Branch-2 for \ac{uah}26,000. (Note: for simplicity this entry presented in compressed form where debit and credit sides of the entry are in different money units. While in practice it consists of at least two entries where each entry consists of debt and credit in the same monetary unit.) \par
+
+And, again if one considers this set of transactions on the consolidated basis (see diagram below), the banks involved in these transactions--in three countries: Ukraine, Russia and the United States--have expanded their balance sheets in order to facilitates the above mentioned transactions. The description of "flow" of capital between the above-mentioned jurisdictions and geographical territories does not reflect in its entirety the processes that take place. A detailed balance sheet description of the processes allows to see that what did take place is accommodation of business requirements by banks and then reconfiguration of the structure of the balance sheets across the money unit mix (domestic vs. foreign money units). The capital (funds) in the US dollars did not leave the jurisdiction of the USA, the country for which the US dollar as money unit of account belongs in legal terms. \par 
+
+%![Case #8: Balance-sheet relationships during cross-border payment between banks of three countries, where two banks serving their clients have correspondent accounts in the bank of third country.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart8.png")
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.95\textwidth]{\plotsfld/PIB chart8}
+\caption[Case \#8: Balance-sheet relationships during cross-border payment between banks of three countries, where two banks serving their clients have correspondent accounts in the bank of third country]%
+{Case \#8: Balance-sheet relationships during cross-border payment between banks of three countries, where two banks serving their clients have correspondent accounts in the bank of third country.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart8}
+\end{figure}
+
+\subsection{Collateral-Based Payments}
+
+In some strands of the endogenous money literature, there is a notion that banks rely on trust while accommodating their clients' demand for money. For example: ``the process through which banks create money--that is bank deposits--fundamentally relies on trust."~\citep[p.~153]{gabor2018} Invoking trust, this kind of literature points out on the supposed difference between traditional intermidiation by banks, which is named as relational banking, and market-based intermidiation by banks and non-bank financial institutions. That difference is on that thing the banks do rely upon while endogenously create money. In the former case, they rely on trust, while in the latter case they use collateral such as US Treasuries or government bonds of other triple-A rated sovereigns.\footnote{\ac{mmt} literature says these are securities issued by the central/federal governments that enjoy highest degree of monetary sovereignty. US, UK, Japan, Australia and some other countries are considered monetary sovereign.}
+
+\ac{mmt} literature does not mentioned trust as a feature of endogenous money neither explicitly nor implicitly. Instead, own anticipations of profits on the side of a lender and a borrower are in place as they enter a loan agreement:
 
 \begin{quote}
-If money moves from Italy to Switzerland, the
-Bank of England and Bank of France couldn't care less, but we become automatically involved in a problem of what to do about the Swiss dollar surplus
-and the Italian dollar deficit. In the past, these shifts of funds between
-foreign countries were largely settled by gold transfers, but now we have
-reached the stage where the adjustment is often effected through debits and
-credits under our swap network, or similar credit operations. \dots In any
-event, the New York Bank has now become virtually the balance wheel of
-the international financial machinery and I suspect that the complexity and
-magnitude of our operations will continue to grow. \citep{coombs1964}
+Banks, like other firms, take positions in assets by issuing liabilities on the expectation of making profits. \dots It is mainly the private demand for loans, plus the williness of banks to lend, that determines the quantity of loans, and thus of deposits, created. \dots One can think of bank money as 'horizontal' at the loan rate of interest, with banks supplying loans on demand. This does not indicate that banks are merely passive, fully accommodating all demand for loans. Clearly, large segments of the population are 'quantity rationed' \dots~\citep[pp.~109-110]{wray1998} \par
+Credit and money are created endogenously, out of thin air, independent of
+prior deposits, at the initiative of a borrower deemed creditworthy and in the context
+of a loan deemed profitable to the lender. The bank makes the loan and obtains reserve
+balances and liabilities later to meet reserve requirements or withdrawals as needed.~\citep[p.~190]{fullwiler2013}
 \end{quote}
 
-According to \citep[p.~98]{viner1943}: "Even under pre-1914 gold standard, moreover, actual gold transfers played only a residual role in settling international liabilities; aside from clearing or offsetting transactions, there was an elaborate pattern of use of international credits to meet---or to postpone---immediate laibilities to payment."
+In \ac{mmt} literature, authors do discuss collateralized, or secured, lending and it is usually put greater focus on the central banks operations with commercial banks. See \cite{tymoigne2009,fullwiler2013,wray1998}. The banks, if being short of reserves as a whole, do turn to the central bank for reserves accommodation. And central bank respond by accepting eligible securities collateral from the borrowing banks. MMT's description of the banks operations with their clients during endogenous money creation has a bit more different and nuanced explanation of the role of collateral.
 
-\citeauthor{viner1943} says: ``clearing means matching or offsetting debt bt reciprocal debt, and credit by reciprocal credit" \citep[p.~86]{viner1943}. While showing awareness of the offegting principles of payment, this passage omits the time-matching priciple, which is a debt due today (emmidiately) must be offset only with credit that is due today (emmidiately). Otherwise, offesting does not work.
+In the literature such as \cite{gabor2018} there is a dichotomy of trust-based versus collateral-based endogenous money creation. And it is defined along the line of credit risk exposure. Under trust-based way of money creation the bank assumes the borrower's risk directly, it means the lender-borrower relationship is a long-lasting and established one so that trust supports the lending decision. Under the market-based money creation, the lender requires collateral (a readily marketable financial security) from the borrower. In doing so, the lender mitigates a direct credit risk exposure on the borrower by having a collateral that is security issued by an economic unit of higher credit quality than the borrower itself. 
 
-\citep{cattani2002}: "In banking correspondent banking is the nearest analog to exporting. Here one bank, the correspondent, makes payments to (generally local) parties, for a fee, at the request of its client bank located in another county, state or country.". This is an example of misrepresentation as balance sheet analysis was not applied here.
+In the literature written by \ac{mmt} economists there is a slightly different approach to collateral. They tend to agree to another dichotomy: it is the cash-flow-based endogenous money creation versus the collateral-based one. This approach borrows from \citeauthor{minsky1986}.
 
-\citep[p.~38]{spero1980}: ``Foreign branches gave Franklin[ National Bank]'s rivals a competitive advantage beyond service. With foreign branches they had greater access to funds for use both at home and abroad. For example, when credit became less available to banks in the late 1960s due to the Federal Reserve's anti-inflation policy, banks with foreign branches were able to use those branches to borrow funds that were transferred to the head office for use within the United States." From the balance sheet analysis the last line in this quote misrepresents the banking business. Depending on the transacting counterparties and their arrangements via correspondent accounts there are might be different combinations of the trasnactions -- but any case the end result is hierarchical (a) re-assignemnt of debt-credit relationships, or/and (b) creation of the new ones.
+Under cash-flow-based lending, banks can provide loans against collateral (such as borrowers' fixed assets or inventories of goods they produce), however, "a successful bank would almost never be forced to take the collateral"~\citep[p.~104]{wray2016}.
 
-\citep[p.~382]{ruggie1982} on Schacht device: ``had the Germans succeeded in their quest to
- establish a "New International Order" after World War II, the designs
- Hjalmar Schacht would have instituted were the very mirror image of Bret-
- ton Woods"-obviously, differences in social purpose again provide the
- key." In the footnote 11 (ibid) he adds: ``11 A brief description may be found in Armand Van Dormael, Brettoh Woods: Birth of a Monetary System (London: Macmillan, 1978), chap. 1. The classic statement of how it actually worked remains Albert O. Hirschman, National Power and the Structure of Foreign Trade, expanded ed. (Berkeley: University of California Press, 1980)."
- 
 \begin{quote}
- one of the first assignments
- that Keynes undertook after he joined the British Treasury in 1940 was to
- draft the text of a radio broadcast designed to discredit recent propaganda
- proclamations by Walther Funk, minister for economic affairs and president
- of the Reichsbank in Berlin, on the economic and social benefits that the
- ``New Order" would bring to Europe and the world. Keynes was instructed
- to stress the traditional virtues of free trade and the gold standard. But this,
- he felt, "will not have much propaganda value." Britain would have to offer
- ``the same as what Dr. Funk offers, except that we shall do it better and
- more honestly." He had reached the conclusion that only a refinement and
- improvement of the Schachtian device would restore equilibrium after the
- war. \citep[p.~387-388]{ruggie1982}
+Banks make loans against collateral or unsecured loans that "do 
+not have specific assets as security, rather they are based upon 
+the fact that the borrower's total assets are sufficiently in excess 
+of his debts to protect the prudent banker." However, a prudent 
+banker does not want to seize assets-seizure is costly and can 
+be risky and time-consuming.~\citep[p.~169]{wray2016}
 \end{quote}
 
-On the Schachtian device see \cite{beyen1949}, on Germany's trading practices of the 1930s see \citep{hirschman1945}.
+\begin{quote}
+When lending, the bank usually pays attention to the customer's collateral and 
+solvency. The latter consists of a judgement regarding the customer's capability to 
+repay debts using income. Collateral is relevant in case the customer defaults on a 
+loan - i.e. if there's a lasting interruption in the agreed stream of repayments. In 
+that case, the bank takes recourse by exercising its right to take ownership of the 
+posted collateral, and selling it (in most cases) to recover as much as possible of 
+the nominal financial value of the defaulted loan.\par 
+Things that have been bought with the loan might count as collateral. This is 
+typical for real estate loans, which in some countries are called 'mortgages'. If 
+the borrower stops making payments on his mortgage, the bank eventually takes 
+possession of the house and usually sells it. If this does not provide the bank 
+with sufficient money to pay off the loan, residual debt might be placed on the 
+borrower by means of a 'lien', requiring him to repay the balance of the debt 
+from his future earnings. Rules vary from country to country.~\citep[p.~58-59]{ehnts2017}
+\end{quote}
 
- 
- See \citep{hirschman1951} on convertibility. 
- 
-\subsection{Englisn Monetary Orthordoxy on Cross-Border Transactions}
+Minsky's motto here is "a bank should not operate like a pawn shop" (ibid). Underwriting practices of a bank are key. Minsky pointed out that a loan officer of the bank, which is prudently follows cash-flow-based underwriting practice, is always skeptical of the borrower's plans. Collectively they are designated skeptics in the constant game of guessing between the lenders and borrowers about the future. While their skepticism might be eroded over time, loan officers epitomizing cash-flow-based lending practice are considered essential to the stability of the economy~\citep[p.~125]{tymoigne2009}.
 
-See \citep[chapter 1]{goschen1864} who developed from \citep[chapter XX]{mill1852}
+Hence,  a cash-flow-based lending by a bank relies on something more than trust. It is "cash flow analysis is the most important consideration" in such an activity (ibid). And on top of that, quoting Minsky again, there is "a morality to the lending officer's work, because his prosperity depended on the success of his clients" \citep{mayer2010}.
+
+Following Minsky, \ac{mmt} considers collateral-based lending by banks and non-bank financial institutions, where tradable securities serve as collateral, as a lasting development that has led economy into a state of heightened financial fragility. In Minsky's sketchy terminology, this development forstered financial institutions that are ``banks without loan officers"~\citep[p.~127]{tymoigne2009}. It meant that endogenous money creation by the banking industry lacked designated skeptics and relied on anticipation of (i) short-term gains from taking positions in the financial securities tradable in the secondary markets, and (ii) underwriting fees from arranging issuance of ever more new financial securities in the primary markets, including layering of debt or securitization of cash-flow derived from pooled debt obligations (such as \acfp{cmo} and \acfp{clo}).    
+
+Next, I provide description of three cases of banking lending against collateral. Each case aims to show particular balance-sheet relationship between lender and borrower that arise from using a distinct type of collateral. Hence, there are three types of collateral being discussed: (1) fixed assets and/or inventories that belong to the borrower, (2) borrower's deposit at the bank that provides lending, and (3) local-currency government securities held by the borrower. 
+
+\subsubsection*{Case \#9: Bank Lending Against Fixed Assets As Collateral}
+
+This is a simple case of a domestic company that borrows from the local bank some funds denominated in the local money unit of account (again, say, in Ukrainian hryvnia or \ac{uah}). Assumptions on the loan agreement are purely notional and they are: (a) total size is \ac{uah}1,000, (b) period is one year, (c) interest rate is 5\% per year and paid at the end of the period. Another assumption is that lender asked for collateral and the borrower pledged its fixed assets. In legal terms, it means that borrower resumes operating its fixed assets to produce more stuff for sale with profit, while the ownership title is temporary transferred to the lender, which might use it in case of borrower's fail to repay the loan in due terms. Both sides of the loan agreement booked the pledged collateral on the off balance sheet accounts. (These off balance sheet entries are not detailed in full. They just indicate that pledge collateral is an asset to the lender and a liability to the borrower.)
+
+With this set of assumptions in mind, there are two opposite outcomes that follow. The first one assumes that borrower is successful in its business plan and repays the loan. In the second one it fails. The lender's respective operations with collateral take place.
+
+Consider the \textit{first} outcome. At the beginning, when both the bank and the company entered the loan agreement, they booked the opening of the loan transaction accordingly (see diagram below, where Bank-1 stands for the lender and Firm-1 stands for the borrower).
+
+The principal of the loan (\ac{uah}1,000) is booked on the balance sheet of the bank, the lender, as debit (mark up) of the 'loan-to-company' account and credit (mark up) of the current account of the company. The company, the borrower, booked this loan on its balance sheet by debiting (marking up) the current account at the bank and crediting (marking up) the 'loan-due-to-bank' account. In additon to these accounts, both the bank and the company book the interest to be, respectively, received and paid (\ac{uah}50). For the bank this is anticipated interest revenues, while for the company this is anticipated interest expense. On the payment day, which is at the end of one year since opening the loan relationship, the bank will book those funds (\ac{uah}50) as realized revenues and the company will book them as realized expenses. Hence, both balance sheets of two economic units--the bank and the company or the lender and the borrower--have expanded by the size of the loan principal and interest payment that is accounted for to be made in the future, at the end of the loan agreement.
+
+Then, right after opening the loan relationship and respective balance-sheet positions, the borrower uses the bank's funds turns them into produce. Its balance sheet expanded further as production booked as inventory at some selling market price. Proceeds from realization of the produce in the market allows the borrower to repay the loan principal (\ac{uah}1,000) and interest (\ac{uah}50) and retain some funds as profit (which is not specified but assumed to be enough).
+
+At the end of the loan term, which is in the one-year period, the sides of the loan agreement are ready to close this relationship and their respective mutual positions. For that matter, the company accumulated on this current account with the bank enough balance to fully repay the loan. Hence, total balance on the account is \ac{uah}1,050 (a total of principal and interest, see above). Then, on the day of repayment the company redeems principal and pays interest. This repayment results in the following balance sheet modifications of the involved parties: 
+
+1. The company, the borrower, makes these accounting entries on its balance sheet:
+
+(i) debit (mark down) of the loan account 'loan due to Bank-1' for \ac{uah}1,000, which is loan principal, and credit (mark down) of the current account with the bank, Bank-1, for the same amount;
+
+(ii) debit (mark down) of the account 'interest due to Bank-1' for \ac{uah}50, which is interest charged on the loan, and credit (mark down) of the current account with the bank, Bank-1, for the same amount; and 
+
+(iii) debit (mark down) of the account 'anticipated interest expenses' for \ac{uah}50 and credit (mark down) of the account 'realized interest expanses' for the same amount.
+
+2. The bank, the lender, books these four accounting entries within its balance sheet:
+
+(i) debit (mark down) of the current account of the company, the borrower, for loan principal of \ac{uah}1,000 and credit (mark down) of the 'loan to Firm-1' account for the same amount;
+
+(ii) debit (mark down) of the current account of the company, the borrower, for loan interest of \ac{uah}50 and credit (mark down) of the account called 'interest due from Firm-1' for the same amount; and
+
+(iii) debit (mark down) of the account called 'anticipated interest revenues' for \ac{uah}50 and credit of the account 'realized interest revenues' for the same amount.
+
+Both sides of the agreement unwind the off-balance-sheet positions with respect to collatreal. Effectively, in legal terms, the lender does not have any more a hold on the ownership title of the collateral (fixed assets). The borrower, too, does not account the pledged collateral on the off-balance-sheet accounts any more. The collateral's silent service, generally speaking, remained unnoticed.
+
+%![Case #9-1: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart9.png")
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart9}
+\caption[Case \#9A: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral]%
+{Case \#9A: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart9}
+\end{figure}
+
+In the \textit{second} outcome, where the borrower fails to repay the loan, collateral's service becomes much more prominent than in the above-mentioned outcome. Here, the initial (opening) leg of the loan relationship is exactly the same as in the above-mentioned case (see diagram below). However, the borrower failed to realize its produce in the market and hence it did not accumulate balances on its bank account at all (it is zero balance). In this case, the lender takes its legal right over collateral and sells it into the market. It is a prior assumption, too, that there is a market for such fixed assets and there is a willing buyer, which is another company (Firm-2) that is driven by consideration of profits and competition reduction. Hence, the ongoing price on this market is such that allows the bank to realize the collateral exactly at the price that covers total size of payments \ac{uah}1,050 owed by the borrower (Firm-1). Firm-2 has enough funds on its bank account with Bank-1 to pay for the fixed assets. It is our assumption too (it is shown on the diagram below). Hence, there are three economic units that engage with each other at this final (closing) leg of the loan relationship. They carry out the following accounting entries on their balance sheets: \par
+
+1. The defaulted company, Firm-1, books three entries:
+
+(i) it debits (marks down) the account 'loan due to Bank-1' for \ac{uah}1,000 and credits (marks down) the fixed assets account for the same amount;
+
+(ii) it debits (marks down) the account 'interest due to Bank-1' for \ac{uah}50 and credits (marks down) the fixed assets account for the same amount;
+
+(iii) it debits (marks down) the account 'anticipated interest expenses' for \ac{uah}50 and credits (marks down) of the account 'realized interest expanses' for the same amount.
+
+2. The new company, Firm-2, carries out one entry:
+
+(i) it credits (marks down) its current account with Bank-1 for \ac{uah}1,050 and debits its fixed assets account for the same amount.
+
+3. The bank, Bank-1, books the following entries within its balance sheet:
+
+(i) given the borrower's default on the loan agreement, it turns collateral initially book on the off-balance sheet accounts onto its balance sheet -- hence, it debits (marks up) an account 'assets for sale' for \ac{uah}1,050 and credits (marks up) internal or transit account for the same account;
+
+(ii) upon Firm-2 request to purchase the fixed assets, it debits (marks down) the current account of Firm-2 for \ac{uah}1,050 and credits (marks down) the 'assets for sale' account for the same amount;
+
+(iii) then, simultaneously two entries are carried out, which are (a) debit of the 'loan due from Firm-1' account for \ac{uah}1,000 and credit of the transit account for the same amount, and (b) debit of the 'interest due from Firm-1' account for \ac{uah}50 and credit of the transit account for the same amount;
+
+(iv)  debit (mark down) of the account called 'anticipated interest revenues' for \ac{uah}50 and credit of the account 'realized interest revenues' for the same amount.
+
+%![Case #9-2: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral and under borrower's default]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart10.png")
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart10}
+\caption[Case \#9B: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral and under borrower's default]%
+{Case \#9B: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral and under borrower's default.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart9b}
+\end{figure}
+
+\subsubsection*{Case \#10: Bank Lending Against Deposit As Collateral}
+
+Bank deposit can serve as collateral as well. For example, in Ukraine, commercial banks practice extensively the ``loan-against-deposit" type of lending.\footnote{A number of top banks in Ukraine provide this service. For example, state-owned Privatbank has this offering on its web page \url{https://privatbank.ua/business/kredit-pod-depozit} with loan-to-collateral ratio of 85\%. Another example is a Ukrainian subsidiary of the Hungarian bank OTP Bank: \url{https://www.otpbank.com.ua/privateclients/crediting/loans-deposit/}, where the loan-to-collateral ratio is advertised as up to 90\%. (This page is available only on the Ukrainian version of the website of the bank and the English-language version of the website does not mention this service.) Ukrsibbank, which is a Ukrainian subsidiary of French bank BNP Paribas, offers this service with loan-to-collateral ratio of up to 95\%, interest rate is 8.5\% and in addition the upfront charge is 0.4\%, see \url{https://my.ukrsibbank.com/ru/sme/credits/loan_secured_by_deposit/}. Another top Ukrainian bank, First Ukrainian International Bank, offers this service with loan-to-collateral ratio of 95\%, no upfront charge and denomination of the loan as well as of deposit can be in three money units of account: Ukrainian hryvnia, US dollar, and euro, \url{see https://b2b.pumb.ua/finance/credit_for_deposit}. In a small regional bank Vostok this service is offering a loan with loan-to-collateral ratio of 100\%, \url{https://vostok.bank/b2b/financing}.} These collaterized loans are usually denominated in the domestic money unit of account, however, they many denominated in foreign units such as the US dollar and the euro. Another feature is that both the loan and the deposit are of the same money unit of account. However, this rule is not engraved in stone and banks might be flexible according to their profit-seeking appetite, which is the same to say as risk tolerance, and given the prevailing practices of competing banks. A bank that offers to its client a loan against the deposit of the same client assumes (or expects) that both loan and deposit will be accounted for on its balance sheet. It means that a bank agrees to extend loan to its customer if this customer has a deposit with same bank. If a customer has a deposit in another bank, it has to transfer those balances to the bank with which this customer agrees to obtain loan secured by deposit. In some situations, when a bank and its client have international presence they might agree that deposit is accounted on the balance sheet of the bank's subsidiary that resides in one jurisdiction, while loan is extended by a bank's subsidiary in another jurisdiction. In this case, money units of account applied to both deposit and loan might be the same or they might differ. In the latter case, for example, a deposit might be denominated in the US dollars while the loan might be extended in the Ukrainian hryvnia.\footnote{We omit considerations of interest rates and exchange rates. The purpose of this exposition is to provide balance-sheet modifications between lender and borrower, which show the essential meaning of bank deposit as a type of collateral.} 
+
+The following case describes a set of balance sheet relationships between a lender and borrower as they agreed to enter the lending-secured-by-deposit transaction. The main assumptions of the transaction are the following ones: (i) a company, the borrower, has a deposit with the bank of 1,000 denominated in the domestic money unit of account (let it be Ukrainian hryvnia, \ac{uah}) and the bank pays 5\% per year on its deposit balances, (ii) it agrees to enter a one-year loan agreement with the bank by pledging its deposit as security and the loan has 8\% interest rate.
+
+There are two outcomes of the transaction: (1) a successful outcome, where the borrower repays the borrowed funds, and (2) its opposite or a unsuccessful outcome, where the borrower fails to repay or defaults.
+
+%![Case #10-1: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart11.png")
+
+%![Case #10-2: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral and under borrower's default]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart12.png")
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart11}
+\caption[Case \#10A: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral]%
+{Case \#10A: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart10a}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart12}
+\caption[Case \#10B: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral and under borrower's default]%
+{Case \#10B: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral and under borrower's default.\par\vspace{.05in}Source: author's illustration.}
+\label{fig:pib_chart10b}
+\end{figure}
+
+\subsection{Conclusions}
+
+1. Monetary system has been digitized since very early 1990s and most money operations were non-cash, they involved computerized systems, and cash operations occupied rather a smaller portion of total. This claim is valid for both domestic- and foreign-money denominated assets and liabilities of the banks.
+
+2. The monetary system is hierarchical even within one large bank. For example, Prominvestbank's inter-branch trading in balances on correspondent accounts with head office revealed different branches had varying credit risk. Hence, the monetary hierarchy within one country is multi-tiered. And a two-tiered monetary system is a description that omits important nuances of the operations of the system as a whole.
+
+3. Money (or monetary) hierarchy between economic units (banks, near banks and non-banks) appears because of correspondent relationships (direct and indirect) between them. In banks these are called correspondent relationships (nostro and vostro accounts), in other units these are the relationships that take place through current or demand deposit accounts. Those relationships are constructed to facilitate payments and settlements. If a bank unit provides its balance sheet to other banks for payments (such a bank opens correspondent accounts for those banks) hence such a bank situates in the higher tier in the money hierarchy relative to those banks it serves, which are in the lower tier.
+4. Money (or monetary) hierarchy practically happens on the balance sheets of economic units. Talking of the banking business, balance sheets are the language of this business. Money hierarchies denominated in different money units (domestic and foreign ones) co-habituate on those balance sheets. Business operations modify them daily through creation and destruction of financial liabilities (\acsp{iou}) denominated in either domestic or foreign money units of account. In other words, it reflects endogenous money concept.
+
+5. A granulated (most elementary) transaction between economic units, balance sheets of which are in such relationship that situates them on different tiers of money  (or monetary) hierarchy, such as a wire transfer of balances (money) result in the following outcome. Consolidated balance sheet of the units of higher money tier stays intact in terms of total assets, while there is expansion of consolidated balance sheet of the units of lower money tier. When such a transaction takes place between economic units within same money tier then consolidated balance sheet of this tier stays intact, while consolidated balance sheets of other tiers stays intact too. One example of the former case is wage payment by a firm in favor of its employees: a firm borrows from the head office of the bank (both balance sheets expand) and then instruct the bank to debit its current account and credit the accounts of its employees served by the branch of that bank.
+
+6. Foreign-exchange market operationally is such money hierarchy (endogenous) modifications that convert endogenously created \acsp{iou} denominated in domestic money unit into the endogenously created \acsp{iou} denominated in foreign money unit. Exchange of domestic cash currency into foreign cash currency is just a fraction of the whole of foreign-exchange operations. Hence, description of the whole as well as of its elementary part is best served by the language free of cash currency invocations.
