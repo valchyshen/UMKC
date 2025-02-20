@@ -6,359 +6,560 @@
 
 \subsection{Introduction}
 
-\subsection{Domestic Payments}
+Now, let us analyze a typical cross-border transaction in which a local producer imports some goods from abroad and commits to paying a foreign counterparty. Again, let us use the case of cross-border trade transaction between two business units of the United States and Mexico such as in \citep[p.~500-501]{lavoie2022}, but not exactly following that exposition. In terms of money of account, the transacting counterparties have many options, of which there are two main ones. They can use either the U.S. dollar or the Mexican peso. Then, let us assume that they agree on the former. 
 
-\subsubsection*{Case \#1: Domestic Payment Between Two Clients Served by the Bank's Three Branches}
+With all the assumptions made above, there are two typical cases: (1) a U.S. resident makes imports paid in the U.S. dollar via a local bank. Generally, this is the case of imports paid in \textit{domestic} money. And (2) a Mexico resident makes imports paid in the U.S. dollar via a local bank. Generally, this is the case of imports paid in \textit{foreign} money.
 
-This case considers a situation when two domestic firms---one is the seller of a good worth of 1,000 of domestic money unit and another is the buyer of that good---agrees to transact via their serving banking units. These banking units are the branches of the same bank (as an example I use Ukraine's Prominvestbank). These branches by internal design of Prominvestbank have own balance sheets and correspondent accounts with head office to settle payments. Then, the buying firm (the payer that is labeled as Firm-1 on the chart below) does not have enough balance on its current account and hence it borrows from its serving bank unit and then instructs its bank by delivering a payment order to debit is current account and credit the account of the selling firm (the payee that is labeled as Firm-2). To facilitate the payment order the branch of the payer (labeled as Branch-1) borrows correspondent account balances from a third party (Branch-2), which by assumption possessed such balances. Now with current account balances of enough size Btranch-1 instructs the head office to debit its account and credit the correspondent account of Branch-3 that serves the payee cleint. At the end of the transaction chain, the firms exchanged (a) bank balances denominated in the domestic money unit of account, and (b) non-financial asset. The banking units of Prominvestbank, serving the above-mentioned firms, expanded their balance sheets by size of the transaction. In particular, Branch-1 expanded the balance sheet by providing a loan to the buying firm, while Branch-3 expanded its balance sheet because its client, the selling firm, was paid for the goods sold. Head office and Branch-2, which retained their balance sheet sizes, had just reshuffle the composition of their liabilities and assets, respectively. In consolidated terms, the balance sheet of the bank as a whole increased by the size of the transaction as the bank endogenously created own \acsp{iou}, which are money for the firms, and settled the payment between the firms through its branch hierarchy.        
+It is resonable to claim that just-mentioned counterparties might decide on the money of account of a third country, for example, British pound (\pounds), Chinese yuan or other. Nevertheless, analyically such an option is not a distinctive from the previous two. It falls into the category of the payments in foreign money with more complexity being added on. That is why it is not considered here in detail.
 
-%![Case #1: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart1.png")
+The next subsections, \ref{sec:xpay_dom} and \ref{sec:xpay_frn}, below consider these two cases through the framework developed above that money is a system of debt-credit relationships. For simplicity we consider imports, while the same logic applies to all other cases of payments made cross-border such as financial investments.
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart1}
-\caption[Case \#1: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
-{Case \#1: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart1}
-\end{figure}
+As a side note, during discussion of the monetary side of international trade, \cite{ehnts2024} observes: ``Imports thus lead to additional income abroad, and thus purchasing power is \textit{lost} for the domestic monetary circuit.''~\citep[p.~68, emhasis added]{ehnts2024} 
 
-\subsubsection*{Case \#2: Domestic Payment Between Two Clients Served by the Bank's Two Branches}
+This paper suggests an analytical framework to test such a hypothesis in terms of the lost purchasing power during imports or other purchases abroad such as of financial securities. Note that the above statement (i) assumes an already existing purchasing power in the hands of a domestic individual or producer, and (ii) is neutral to the money of account in which payments for imports were made. In other words, whatever money of account---domestic or foreign---is relied upon for cross-border payments, there is a general outcome of lost purchasing power for the domestic monetary circuit. By standard definition, purchasing power is a positive balance on an individual or producer's checking (current) account with a local bank, and the domestic monetary circuit consists of all units, such as governing authorities, banks, producers, and individuals, which are residents of a country. 
 
-In the second case of domestic payment, everything identical to the previous case except one nuance. That is instead of three branches of the same bank, there are just two branches instead of three that are involved in settling the transaction. Now, it is Branch-2 that serves the selling firm (Firm-2) and which also has excess correspondent account balances, which it lends to Branch-1. This is not an extraordinary situation. It is rather perfectly fine, when a branch lends excess balances to another branch and then it re-gains those balances from the same very branch that just borrowed them by the end of the day. This is because lending-and-borrowing of the correspondent account balances and payments are settling of payments for clients are quite impersonal activities for the network of bank units. In terms of consolidated balance sheet of the bank as a whole, the outcome is the same as in the previous case. This particular case just shows how flexible the system is.
+One might suggest that purchasing power means it can be nonexistance right now but endogenuously created on demand by a bank. To address this extended meaning of purchasing power this paper considers two cases for each subsection that follows: (i) endogenous creation of money and (ii) pre-existing money.
 
-%![Case #2: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart2.png")
+\subsection{\textit{Domestic} Money of Account}\label{sec:xpay_dom}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart2}
-\caption[Case \#2: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
-{Case \#2: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart2}
-\end{figure}
+Given the exposition in Figure~\ref{fig:minsky_scheme}, on p.~\pageref{fig:minsky_scheme}, featuring United States and Italy, consider a hypothetical cross-border transaction between two businesses n the U.S. and Mexico. In this transaction, there are two counterparties: a U.S.-based firm $B$ and a Mexican-based firm $C$. The former is an importer and the latter is an exporter of the products made in Mexico. Upon mutual agreement, the payment is to be undertaken in the U.S. dollars. 
 
-\subsubsection*{Case \#3: Domestic Payment Between Two Clients Served by the Bank's Two Branches and Its Head Office}
+As shown in Figure~\ref{fig:minsky_scheme}, there is an underlying assumption that both firms are customers of their domestic banks. The U.S.-based firm is a customer of the U.S.-based bank $R_2$, which is a member bank of the Federal Reserve system and hence it has a reserve accout with the New York Federal Reserve Bank for payments in the U.S. dollar (USD). The Mexico-based firm is a customer of the local commercial bank $R_1$, which is supervised by the Mexico's central bank and hence has a reserve account with the latter for payments in Mexican peso (MXN). However, the same Mexico-based commercial bank $R_1$ has a correspondent banking relationship with the U.S.-based bank $R_2$ just mentioned. Under such a relationship these banks agree to carry out payments either in USD or MXN if their customers decide a particular money of account for transactions. However, Figure~\ref{fig:minsky_intl} shows \textit{only} a correspondent relationship between banks $R_2$ and $R_1$ for payments in U.S. dollar. It means that the U.S.-based bank $R_2$ is on the debt side and the Mexico-based bank $R_1$ is on the creditor side of the debt-credit relationship due today continuously, which is denominated in the U.S. dollar. Note that if the firms were to decide that payment is in Mexican peso, then the commercial banks of two countries would have used the correspondent bank account denominated in Mexican peso and their positions swapped: the U.S.-based bank $R_2$ is on the credit side and the Mexico-based bank is on the debt side.
 
-In this case, again, there are two firms aiming to make transaction. Assumptions are basically the same as in the previous case. However, the key difference is that now all two branches are short of correspondent account balances. The branch, serving the buying firm, asks for loan from the head office to settle the payment. And once that branch receives balances on its correspondent account enough to clear the payment, it gives to the head office the payment instruction to debit its correspondent account and credit the correspondent account of the branch, which serves the selling firm. Consolidated balance sheet of the entire bank is the same as in the previous two cases: assets side has increased by the loan to Firm-1, while the liabilities side has increased by the deposit of Firm-2.
+\subsubsection{Endogenous Money}
 
-At the same time, on the non-consolidated basis the balance sheets of the all three units of Proimnvestbank, which are involved in the settlement of the transaction, there is expansion of balance sheets in every unit.
-
-Head office did expand it because it provided loan to the branch, which serves the paying firm, and booked on the asset side of the balance sheet. The counterweight item in the liabilities side to that loan is the correspondent account of the paying branch. The latter item is being modified in the final stage of the transaction, when head office books an accounting entry, when the account of paying branch is debited while the account of the branch of the payee is credited. Hence, the newly created balances were shifted from one correspondent account to another.
-
-%![Case #3: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart3.png")
+Let us now proceed to the payment itself. In order to provide a full exposition of endogenous money, another assumption is that the U.S.-based firm $B$, the payer or payment initiator, has a zero balance on its checking account with bank $R_2$. Hence, $B$ borrows from $R_2$ a required sum of US dollars to be immediately paid in favor of the Mexico-based firm $C$, the payee or payment beneficiary. This is a triangle between the counterparties of the payment that was shown ealier in Figure~\ref{fig:bank_mk_loan} on p.~\pageref{fig:bank_mk_loan}. However, because there is no direct relationship between the U.S.-based bank and the Mexico-based firm $C$, it is the Mexico-based bank $R_1$ that stands between them. Hence, Figure~\ref{fig:bank_mk_loan} must be re-drawn in the following way, see Figure~\ref{fig:US_MX_payment1} below. 
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart3}
-\caption[Case \#3: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
-{Case \#3: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart3}
+\vspace{.1in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+\begin{tikzpicture}
+  \draw[help lines,white] (0,0) grid (15,5);
+  % Left-hand side part of the Figure
+  \node         (B)         at (1,4.5) {B};
+  \node         (R2)        at (6,4.5) {R$_2$};
+  \node         (R1)        at (5,2.5) {R$_1$};
+  \node         (C)         at (3.5,0.5) {C};
+  \node                     at (3.5,-.5) {(1)};
+  \draw[red,dashed] (0,3) -- (13.1,3); 
+  \node[black] at (7.5,3.2) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (7.5,2.7) {\textsuperscript{Mexico (p)}};
+  \draw[black] (B.north) |- (4,5) -| (R2.north);
+  \draw[black,thick] (B.south) |- (4,4) -| (R2.south);
+  \node at (3.5,5.4) {\textsuperscript{\textit{debt: }$d^{\$}_{t,R2}$ \hspace{.7in} \textit{credit: }$c^{\$}_{t,B}$}};
+  \node at (3.5,3.6) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$ \hspace{.7in} \textit{debt: }$\overrightarrow{d^{\$}_{0,B}}$}};  
+  \draw[dashed,blue] (B) .. controls +(left:-3cm) and +(left:-1.5cm) .. (C);
+  \node[blue,align=left,font=\scriptsize] at (5.7,1) {$B$ buys from $C$\\with USD payment\\due today};
+  \draw (B) -- (0,3.5) -- (C); 
+  \node[rotate=49] at (.2,4) {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$}};
+  \node[rotate=-40] at (2.4,1) {\textsuperscript{\textit{credit: }$c^{\$}_{0,C}$}};
+  % Right-hand side part of the Figure
+  \node         (B)         at (9,4.5) {B};
+  \node         (R2)        at (14,4.5) {R$_2$};
+  \node         (R1)        at (12.75,2.5) {R$_1$};
+  \node         (C)         at (11.5,0.5) {C};
+  \node                     at (11.5,-.5) {(2)};
+  \draw (B) -- (R2) node[midway,sloped,above]%
+        {\textsuperscript{\textit{debt: }$d^{\$}_{t,R2}$ \hspace{.6in} $credit: c^{\$}_{t,B}$}};
+  \draw[thick] (C) -- (R1); \draw[thick] (R1) -- (R2);
+  \node at (14.5,4) {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R1}}$}};
+  \node at (14,3) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \node at (13.2,2) {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,C}}$}};
+  \node at (12.7,.9)   {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R1}}$}};
+  %\draw[thick] (C) -- (R2) node[midway,sloped,below]%
+  %      {\textsuperscript{$credit: \overrightarrow{c^{\$}_{0,R}}$ \hspace{.45in} $debt: \overrightarrow{d^{\$}_{0,B}}$}};
+\end{tikzpicture}
+\caption{A U.S.-based bank $R_2$ provides U.S.-based firm $B$ with a loan in US dollars for $B$'s immediate payment to the Mexico-based firm $C$, which is customer of Mexico-based bank $R_1$}%
+\label{fig:US_MX_payment1}
+\vspace{.1in}
 \end{figure}
 
-\subsubsection*{Case \#4: Domestic Payment Between Two Clients Served by the Bank's Two Branches With Mutual Correspondent Relationship}
+Note the debt and credit positions of the counterparties after the payment was completed on right-hand side of the figure. In particular, the U.S.-based bank $R_2$ retained its debt position $\overrightarrow{d^{\$}_0}$ after it was endogenously created against U.S.-based firm $B$, but now it is against a Mexico-based bank $R_1$. Overall, the cross-border payment is a creation of debt-credit relationships of due today continuously.
 
-Two banking units are able to go about in settling mutual obligations on behalf of their clients without the usage of \acsp{iou} issued by their correspondent bank, with which they opened their correspondent accounts. This way of settling payments, for instance, described by~\citep[p.~42]{tulin2012}.\footnote{Tulin is currently deputy head of Bank of Russia, the central bank of this country. See {\small\url{https://cbr.ru/eng/about_br/tulindv/}}.} The chart below is adopted to illustrate this case. This case is hypothetical because in practice Prominvestbank designed its network of branch in such a way that correspondent relationships existed between head office and the branches and no correspondent relationships between branches were allowed. So, instead of using the correspondent accounts at the head office the branches open correspondent account with each other. So, the branch of buying client (a) lends money to its client and then (b) borrows from the branch, which serves the selling client. Then, the former branch instructs the latter to debit its account and credit the account of the selling client -- this accounting entry takes place on the books of the branch of the selling client. The branch of the buying client books the accounting entry that debits the account of the client and credits the correspondent account opened with another branch. In this way, the payment is settled. On the consolidated basis the whole bank increased assets by the size of loan extended to the buying firm, while the liabilities side increased by current account of the selling firm (see diagram below).
+\subsubsection{Pre-Existing Money}
 
-%![Case #4: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart4.png")
+If one takes a view that a U.S.-based $B$ has already a U.S. dollar balance with its U.S.-based bank $R_2$ enough to make a payment to the Mexico-based firm $C$, then its exposition is simplier than in the previous situation. See Figure~\ref{fig:US_MX_payment2}, below on p.~\pageref{fig:US_MX_payment2}. Thanks to its credit ($\overrightarrow{c^{\$}_{0}}$) position on its bank, $B$ just provides the latter with a pyamnet order to the beneficiary of $C$. Again, thanks to the established correspondent banking relationship between $R_2$ and a Mexico-based bank $R_1$, then $R_2$ acts upon its already existing debt-credit relationship, where it has a debt position ($\overrightarrow{d^{\$}_{0}}$), and re-assign the credit position from $B$ to $R_1$. It also instructs $R_1$ to credit $C$'s U.S. dollar account for the payment's value. In effect, $R_1$ and $C$ create new debt-credit relationship due today contonuously, which is denominated in the U.S. dollar. Once, this is done the U.S. dollar payment is compelte.
+
+Note again that a U.S.-based bank $R_2$ does not lose its debt position ($\overrightarrow{d^{\$}_{0}}$) because of the payment. Instead, it just re-assigned its counterparty from a U.S.-based firm $B$ to a Mexico-based correspondent bank $R_1$. The size of the balance sheet of $R_2$ did not shrink. Bank money in terms of their size did not change at the moment when the payment was complete.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart4}
-\caption[Case \#4: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations]%
-{Case \#4: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart4}
+\vspace{.1in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+\begin{tikzpicture}
+  \draw[help lines,white] (0,0) grid (15,5);
+  % Left-hand side part of the Figure
+  \node         (B)         at (1,4.5) {B};
+  \node         (R2)        at (6,4.5) {R$_2$};
+  \node         (R1)        at (5,2.5) {R$_1$};
+  \node         (C)         at (3.5,0.5) {C};
+  \node                     at (3.5,-.5) {(1)};
+  \draw[red,dashed] (0,3) -- (13.1,3); 
+  \node[black] at (7,3.2) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (7,2.7) {\textsuperscript{Mexico (p)}};
+  %\draw[black] (B.north) |- (4,5) -| (R2.north);
+  %\draw[black,thick] (B.south) |- (4,4) -| (R2.south);
+  \draw[thick] (B) -- (R2) node[midway,sloped,above] {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$ \hspace{.6in} \textit{debt: }$\overrightarrow{d^{\$}_{0,B}}$}};
+  %\node at (3.5,5.4) {\textsuperscript{\textit{debt: }$d^{\$}_{t,R2}$ \hspace{.7in} \textit{credit: }$c^{\$}_{t,B}$}};
+  %\node at (3.5,3.6) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$ \hspace{.7in} \textit{debt: }$\overrightarrow{d^{\$}_{0,B}}$}};  
+  \draw[dashed,blue] (B.south east) .. controls +(left:-1cm) and +(left:-1.5cm) .. (C);
+  \node[blue,align=left,font=\scriptsize] at (5.7,1) {$B$ buys from $C$\\with USD payment\\due today};
+  \draw (B) -- (0,3.5) -- (C); 
+  \node[rotate=49] at (.2,4) {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$}};
+  \node[rotate=-40] at (2.4,1) {\textsuperscript{\textit{credit: }$c^{\$}_{0,C}$}};
+  % Right-hand side part of the Figure
+  \node         (B)         at (9,4.5) {B};
+  \node         (R2)        at (14,4.5) {R$_2$};
+  \node         (R1)        at (12.75,2.5) {R$_1$};
+  \node         (C)         at (11.5,0.5) {C};
+  \node                     at (11.5,-.5) {(2)};
+  %\draw (B) -- (R2) node[midway,sloped,above]%
+  %      {\textsuperscript{\textit{debt: }$d^{\$}_{t,R2}$ \hspace{.6in} $credit: c^{\$}_{t,B}$}};
+  \draw[thick] (C) -- (R1); \draw[thick] (R1) -- (R2);
+  \node at (14.5,4) {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R1}}$}};
+  \node at (14,3) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \node at (13.2,2) {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,C}}$}};
+  \node at (12.7,.9)   {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R1}}$}};
+\end{tikzpicture}
+\caption{A U.S.-based bank $R_2$ provides U.S.-based firm $B$ with a loan in US dollars for $B$'s immediate payment to the Mexico-based firm $C$, which is customer of Mexico-based bank $R_1$}%
+\label{fig:US_MX_payment2}
+\vspace{.1in}
 \end{figure}
 
-
-\subsubsection*{Case \#5: Domestic Payment Between Two Clients Served by the Bank's Head Office and a Branch}
-
-In this case, the same two firms are by two units of the bank: the head office and a branch. The latter has a correspondent account with the former. The sequence of steps to complete the transaction is the following: (1) the buying firm borrows from head office and then (2) instructs its bank to debit its current account and debit the current account of the selling firm. In his turn head office instructs the branch to credit the selling client's current account and debt the correspondent account with head office -- in fact, such instruction (an accounting entry) is booked automatically on the balance sheet of the branch by the means of the computerized system of the bank. Alongside another accounting entry is made on the balance sheet of the head office of the bank: it debits the current account of the buying firm and credits the correspondent account of the branch. On the non-consolidated basis, both balance sheets of head office and the branch did expand by the size of the transaction. On the consolidated basis, the outcome for the bank as a whole is the same as it was in all previous cases: the assets side rise by loan to the buying firm, the liabilities side expanded by the deposit of the selling firm. On the non-consolidated basis two banking units did expand their balance sheet simultaneously to settle the payment.
-
-%![Case #5: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart5.png")
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart5}
-\caption[Case \#5: Domestic Payment Between Two Clients Served by the Bank's Head Office and a Branch]%
-{Case \#5: Domestic Payment Between Two Clients Served by the Bank's Head Office and a Branch.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart5}
-\end{figure}
-
-\subsubsection*{Case \#6: Domestic Payment Between Two Clients Served by Two Independent Banks with Branches}
-
-If in cases \#1 and through \#5 the payment was settled by the branches of one bank, in the current case \#6 there are two independent banks, which serve the clients that agree to transact with each other for the goods worth of 1,000 domestic money unit of account. The buying firm (Firm-1) is served by a branch of Prominvestbank, while the selling form (Firm-2) is served by a branch of Savings Bank. The former firm does not have enough balance on the current account and hence it borrows from its banking unit (Branch-1). The latter itself is short of balances on its correspondent account and hence it borrows them from another branch (Branch-2), which has them is excess by assumption. In its own turn the head office of Prominvestbank is assumed as being short of reserves, which are the balances on its correspondent account with the country's central bank, and it borrows them from the central bank to settle the transaction. (In practice, these borrowings of correspondent account balances either between independent banks or between branches of a bank are made in bulk terms and with an estimation of overall daily needs. They are done most of the time not for the sake of one transaction. The explanation use in these cases is done for simplicity purpose. It should not create an impression that one transaction by a client causes those chains of borrowings by banking units.) The transaction is being finally settled on the books of the central bank by means of the Prominvestbank's payment instruction given to the central bank to debit its correspondent account and credit the correspondent account of Saving Bank. Then, the payment instruction extended to the balance sheet of the head office of Savings Bank, which within own balance sheets debits its correspondent account with the central bank and credits the correspondent account of the branch that serves the client, which is the beneficiary of the payment. That branch, too, records an entry within own balance sheet, where it debits its correspondent account with head office and credits current account of the Firm-2. On consolidated basis, each bank and the central bank did expand their balance sheet simultaneously by the end of transaction. At next level of consolidation, when balance sheets of all banks and the central banks are put together as balance sheet of monetary sector, it is seen that this sector expanded its balance sheet by size of the transaction. On the assets side of the balance sheet there is new loan to the buying firm, while on the liabilities side there is new deposit owed to the selling firm. And vice versa on the non-consolidated basis, each banking unit on the below diagram did expand its balance sheet by size of the transaction.
-
-%![Case #6: Balance-sheet relationships between Prominvestbank's branches and their two clients in settling their mutual obligations.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart6.png")
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart6}
-\caption[Case \#6: Domestic Payment Between Two Clients Served by Two Independent Banks with Branches]%
-{Case \#6: Domestic Payment Between Two Clients Served by Two Independent Banks with Branches.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart6}
-\end{figure}
-
-\subsection{Cross-Border Payments}
-
-\subsubsection*{Case \#7: Cross-Border Payment Between Two Firms of Different Countries, Payment is Denominated in the Importer's Domestic Money of Account}
-
-This case is about a cross-border payment between two firms residing in two different countries. One firm is an exporter and sells its produce to a foreign firm, which is an importer. The former firm is the seller, while the latter one is the buyer. The firms agree that payment is going to be made in domestic money unit of the importer's country. The firms transact via their banks, which are assumed to have established correspondent relationship. It means that the bank of the importer has opened a correspondent account for the foreign bank, which serves the exporter. That correspondent account is denominated in the domestic money unit of the importer's country. To be more specific those two firms reside in Ukraine and Russia. The Ukrainian firm is an exporter and is being served by a branch of Prominvestbank. The Russian firm is an importer and is being served by the head office of Sberbank of Russia. These two firms agree that goods being sold and purchased is worth of 10,000 Russian rubles (\ac{rub}). It is assumed, hypothetically, that in the Russian domestic financial market the exchnage rate of the Russian ruble (\ac{rub})\footnote{Russia's money of account} against the US dollar is 72 (rubles per 1 dollar). In the Ukraine's financial market the exchange rate of the Ukrainian hryvnia (\ac{uah})\footnote{Ukraine's money of account} is 26  (hryvnias per 1 dollar). Hence, the cross-currency rate of hryvnia per ruble is derived as a ratio of $26/72=0.361$ (hryvnias per 1 ruble). Hence, the hryvnia value of the goods to be sold and purchased is 10,000*0.361=3,610 hryvnias. \par
-
-The importer, the Russian buying firm, does not have enough funds at hand, hence it borrows 10,000 rubles from its bank. Then, it instructs its bank to debit its current account for the value of goods to be purchased and credit the account of the exporter, which is the beneficiary of the cross-border payment. Since the banks of both the importer and of the exporter have already in use an established correspondent relationship, then buyer's payment instruction for its bank means the following accounting entry on its balance sheet: it debits the current account of importer by 10,000 rubles and credits the correspondent account of the exporter's bank for the same amount. Simultaneously, two banks exchange of payment information that gives ground to the exporter's bank to book the following entry on the balance sheet of its head office: it debits the correspondent account in ruble opened with Russian bank with 10,000 rubles and credits the corresponding account of the branch that serves the exporter. Subsequently, the branch's balance sheet records the accounting entry: debit (mark up) of the correspondent account in ruble with the head office and credit (mark up) of the current account in ruble of the exporting company. While this accounting entry is made, the bank gives information to the exporting firm that its account is being credited with above-mentioned amount in rubles. This makes exporting firm's balance sheet to record the following entry: debit (mark up) of current account in rubles by 10,000 rubles and credit (mark down) of the account of inventory by 3,610 hryvnias, which is a hryvnia equivalent of the rubles at the bank account. As goods left the inventories of the exporter and were physically transfered across the border into the inventories of the importer, the latter balance sheet records the entry: debit (mark up) of inventories by 10,000 rubles and credit (mark down) of the current account in rubles with its bank. \par
-
-One important assumption that is relevant for cross-border transactions is about the level of liberalization allowed by the authorities of the country (by laws adopted by the parliament, central government and central bank) in the sphere of usage of foreign cash and of denomination of the assets and liabilities of the local economic units in foreign money units of account. \acf{srr} is an internationally recognized coefficient and procedure. It is imposed by the authorities onto exporters of goods and services which are selling their produce in foreign money. It is practically a requirement on the exporters to sell immediately a certain portion of the foreign money that are credited upon their bank accounts. It may range from zero to 100 percent. In this case, the assumption is that $SRR=0\%$. Hence, the exporter freely decides when the foreign money funds to be converted into domestic money. \par
-
-This said, however, the exporter (Firm-UA) wants to proceed and convert its bank's ruble balance into the bank's balance in domestic money unit, hryvnia. It asks its serving bank unit to sell its rubles at the prevailing current exchange rate. The branch finds a bid for its client ruble balances in another branch, which serves a third firm (Firm-UA2) that is importer from Russia. Then these two branches transact on the ruble-for-hryvnia bank balances exchange. For simplicity, the exchange rate is assumed at the above-mentioned level of 0.361 hryvnias per 1 ruble. Another assumption is that the ruble-buying firm does not have hyvnia balance at hand on its current account. So it borrows from its serving bank unit, resulting in the balance sheet expansion of both the branch and the firm. By another assumption, the branch (Branch-2) is short of hryvnia balance on its correspondent account with the head office. In order, to settle the payment for its client Branch-2 borrows from head office to build up its correspondent account balance. Then the firm instructs its bank branch to make the following accounting entry on the balance sheet of the latter: debit (mark down) the hryvnia current account of Firm-3 and credit (mark down) the hryvnia correspondent account of Branch-2 opened with head office of Prominvestbank. \par
-
-The latter entry in essence comes hand in hand with a set of accounting entries on the balance sheets of head office of Prominvestbank, the branch of the ruble-selling firm and that firm itself. These entries are dealing with two groups of assets and liabilities in terms of denomination in money units of account: (i) domestic and (ii) foreign.  \par 
-
-Hence, the entries with domestic money unit (hryvnia, \ac{uah}) are: \par 
-
-1. Prominvestbank's head office: debit the correspondent account of Branch-2 and credit the correspondent account of Branch-1. 
-
-2. Branch-1: debit (mark up) the correspondent account with head office and credit (mark up) the current account of Firm-1, the ruble selling firm. 
-
-Then, the entries with the foreign money unit (ruble, \ac{rub}) are: \par
-
-1. Branch-1: debit (mark down) of ruble current account of Firm-1 and credit (mark down) of the ruble correspondent account with head office.
-
-2. Prominvestbank's head office: debit (mark down) the ruble correspondent account of Branch-1 and credit (mark up) the ruble correspondent account of Branch-2.
-
-On their balance sheets Firm-UA and Firm-UA2 record the following entries, which are mixed in terms of denomination of assets and liabilities by money units of account: \par
-
-1. Firm-UA: debit (mark down) of the ruble current account of 10,000 rubles and credit (mark up) the hryvnia current account of 3,610 hryvnias. 
-
-2. Firm-UA2: debit (mark down) of the hryvnia current account of 3,610 hryvnias and credit (mark up) the ruble current account of 10,000 rubles.
-
-(Note: for simplicity these two entries by Firm-UA and Firm-UA2 are presented in compressed form, where debit and credit sides of the each entry are in different money units. While in practice each of them consists of at least two entries where each entry consists of debt and credit in the same monetary unit.) 
-
-On consolidated basis, two banks did expand their balance sheets alebit at different pace. The Russia's bank expanded it in the assets side by ruble loan to the importing firm and it the liabilities side by ruble deposit on the correspondent account of the Ukraine's bank. The Ukraine's bank did expand twice the size of the expansion of the Russia's bank. It happened because the Ukrainian bank expanded its balance sheet by ruble-denominated assets and liabilities. At the same time it expanded the balance sheet by hryvnia-denominated assets and liabilities, because another client took a loan--and effectively it obtained hryvnia-denominated liabilities of the Ukrainian bank--to acquire ruble-denominated liabilities of the same bank. This illustrates a foreign-exchange transaction as effectively a swap of the \acsp{iou} the same bank but denominated in different money units of account (in this case in hryvnia and ruble).
-
-%![Case #7: Balance-sheet relationships during cross-border payment between banks of two countries, where one bank is a correspondent of another.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart7.png")
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart7}
-\caption[Case \#7: Balance-sheet relationships during cross-border payment between banks of two countries, where one bank is a correspondent of another]%
-{Case \#7: Balance-sheet relationships during cross-border payment between banks of two countries, where one bank is a correspondent of another.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart7}
-\end{figure}
-
-\subsubsection*{Case \#8: Cross-Border Payment Between Two Firms of Different Countries, Payment is Denominated in the Foreign Money Unit}
-
-Another example of the cross-border payment between the same firms and banks, which participated in the payment in the previous case, illustrates situation when the exporter and importer agree that payment now should be denominated in the money unit of account of a third country.
-
-In particular, this case describes two firms, an exporter from Ukraine and importer from Russia, which are served by their countries' commercial banks. The names of firms and banks are identical to the previous case. Also, the market exchange rates of national money units of account is the same, too. The difference is that the firms agree to transaction is the US dollars and the goods to be sold and purchased are worth of 1,000 US dollars.
-
-The banks that serve these two firms now have to activate their established correspondent relationships with banks that help them clear the US dollar payment. By assumption such a clearance is provided by the US bank, which is member bank of the Federal Reserve System. This status of the US bank means that it has correspondent account with Federal Reserve System.
-
-The importing firm (Firm-RU) does not have US dollar balance on its current account with the Russian bank and hence it borrows from its bank in the US dollar. As a result, the Russian bank creates deposit, which is its own \acsp{iou} denominated in the US dollar (see diagram below). For the Russian firm, those bank's \acsp{iou} dollars are money to be used for the payment in favor of exporter from Ukraine. For the Russian bank those \acsp{iou} in US dollars it just created are going to be paired with US dollar balances on the correspondent account with its bank that facilitates the US dollar payments in most efficient way. By assumption, the Russian bank does not enough balance on that correspondent account and hence it borrows those balances from the US bank. The latter records the following entry on its balance sheet: it debits (marks up) the account of loan to the Russian bank and credits (marks up) the correspondent account of that same bank. Then, the Russian bank gives instruction to its US correspondent bank to make a payment in favor of the Ukrainian bank, where the beneficiary of the payment is served. Such an instruction forces the US bank to record the accounting entry: debit of the correspondent account of the Russian bank and credit of the correspondent account of the Ukrainian bank. \par
-
-Once the Ukrainian bank receives indication of the inbound US dollar payment in favor of Firm-UA, the exporter, as beneficiary, it records the following accounting entries in the balance sheets of the head of office and the branch that serves the exporting firm (all modifications are with assets and liabilities denominated in the US dollar): \par
-
-1. Prominvestbank's head office: debit (mark up) of the US dollar correspondent account with US bank and credit (mark up) of the US dollar correspondent account of the Branch-1.
-2. Branch-1: debit (mark up) of the US dollar correspondent account with head office and credit (mark up) of the US dollar current account of Firm-UA.
-3. Firm-UA, too, books this entry: debit (mark up) of the US dollar current account with Branch-1 by 1,000 US dollars and credit (mark down) of inventories by 26,000 hryvnias, which is an equivalent of the dollar amount of the transaction.
-
-In Russia, meanwhile, the importing Firm-RU records an entry, where inventories are debited (marked up) by 72,000 rubles, which a local money unit equivalent of the US dollar amount of the transaction, and the US dollar current account at the Russian bank is credited (marked down). \par
-
-Back to Ukraine, there is an assumption that Firm-UA is willing to sells its US dollar bank balance to obtain the Ukrainian hryvnia bank balance. For that purpose, the exporting firm provides its bank unit, Branch-1, with an order to sell US dollar at the current market exchange rate (assumed to be 26 hryvnias per 1 US dollar). The branch goes out to the inter-branch over-the-counter market and finds another branch, Branch-2, which has a bid on the US dollar bank balances at this level of the exchange rate. Hence, these two branches of Prominvestbank are to carry out a foreign exchange transaction swapping US\$1,000 for \ac{uah}26,000. \par
-
-It has to be mentioned here that Branch-2 has a bid for the US dollar balances because it serves another Ukrainian firm, labeled as Firm-UA2, which is an importer requiring US dollars for its operations. The firm does not have enough funds at hand so it asks its banking branch for a local-currency loan to buy the US dollar balances it needs. So, by lending to the firm Branch-2 creates Ukrainian hryvnia balances in the volume of \ac{uah}26,000. Then, those are used to settle the purchase of the US dollar bank balances from Branch-1. \par
-
-Branch-2 debits (marks down) the current account in hryvnia of the importing firm, Firm-UA2, for \ac{uah}26,000 and credits (marks down) its correspondent account in hryvnia with the head office of the bank for the same amount. It also instructs the head office and Branch-1 about the initiation of the payment on crediting the Firm-UA's account in hryvnia for the amount of \ac{uah}26,000. Hence, three balance sheets record the following accounting entries: \par
-
-1. Head office: it debits (marks down) the correspondent account of Branch-2 and credits (marks up) the correspondent account of Branch-1 for the amount of \ac{uah}26,000.
-2. Branch-1: it debits (marks up) its correspondent account with the head office and credits (marks up) the current account of Firm-UA, which sells its US dollar balances for the Ukrainian hryvnia balances, for the amount of \ac{uah}26,000.
-3. Firm-UA: it debits (marks up) its current account for the amount of \ac{uah}26,000 and credits (marks down) its US dollar current account by US\$1,000. (Note: for simplicity this entry presented in compressed form where debit and credit sides of the entry are in different money units. While in practice it consists of at least two entries where each entry consists of debt and credit in the same monetary unit.) \par
-
-Then, the following accounting entries with the US dollar balances take place: \par
-
-1. Branch-1: it credits (marks down) the US dollar correspondent account with head office by US\$1,000 and debits (marks down) the US dollar current account of Firm-UA, the exporter.
-2. Head office: it debits (marks down) the US dollar correspondent account of Branch-1 and credits (marks up) the US dollar correspondent account of Branch-2 for the amount of US\$1,000.
-3. Branch-2: it debits (marks up) its US dollar correspondent account and credits (marks up) the US dollar current account of Firm-UA2, the importer.
-4. Firm-UA2: it debits (marks up) its US dollar current account with Branch-2 for US\$1,000 and credits (marks down) its Ukrainian hryvnia current account with Branch-2 for \ac{uah}26,000. (Note: for simplicity this entry presented in compressed form where debit and credit sides of the entry are in different money units. While in practice it consists of at least two entries where each entry consists of debt and credit in the same monetary unit.) \par
-
-And, again if one considers this set of transactions on the consolidated basis (see diagram below), the banks involved in these transactions--in three countries: Ukraine, Russia and the United States--have expanded their balance sheets in order to facilitates the above mentioned transactions. The description of "flow" of capital between the above-mentioned jurisdictions and geographical territories does not reflect in its entirety the processes that take place. A detailed balance sheet description of the processes allows to see that what did take place is accommodation of business requirements by banks and then reconfiguration of the structure of the balance sheets across the money unit mix (domestic vs. foreign money units). The capital (funds) in the US dollars did not leave the jurisdiction of the USA, the country for which the US dollar as money unit of account belongs in legal terms. \par 
-
-%![Case #8: Balance-sheet relationships during cross-border payment between banks of three countries, where two banks serving their clients have correspondent accounts in the bank of third country.]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart8.png")
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=.95\textwidth]{\plotsfld/PIB chart8}
-\caption[Case \#8: Balance-sheet relationships during cross-border payment between banks of three countries, where two banks serving their clients have correspondent accounts in the bank of third country]%
-{Case \#8: Balance-sheet relationships during cross-border payment between banks of three countries, where two banks serving their clients have correspondent accounts in the bank of third country.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart8}
-\end{figure}
-
-\subsection{Collateral-Based Payments}
-
-In some strands of the endogenous money literature, there is a notion that banks rely on trust while accommodating their clients' demand for money. For example: ``the process through which banks create money--that is bank deposits--fundamentally relies on trust."~\citep[p.~153]{gabor2018} Invoking trust, this kind of literature points out on the supposed difference between traditional intermidiation by banks, which is named as relational banking, and market-based intermidiation by banks and non-bank financial institutions. That difference is on that thing the banks do rely upon while endogenously create money. In the former case, they rely on trust, while in the latter case they use collateral such as US Treasuries or government bonds of other triple-A rated sovereigns.\footnote{\ac{mmt} literature says these are securities issued by the central/federal governments that enjoy highest degree of monetary sovereignty. US, UK, Japan, Australia and some other countries are considered monetary sovereign.}
-
-\ac{mmt} literature does not mentioned trust as a feature of endogenous money neither explicitly nor implicitly. Instead, own anticipations of profits on the side of a lender and a borrower are in place as they enter a loan agreement:
+Both expositions, in Figures~\ref{fig:US_MX_payment1} and \ref{fig:US_MX_payment2}, explain in detail what a senior official of the Inernational Monetary Fund (IMF)\footnote{Tobias Adrian, the Financial Councellor and Director of the Monetary and Capital Markets Department of the IMF. See \url{https://www.imf.org/en/About/senior-officials/Bios/tobias-adrian}} was talking about the essencial elements of cross-border payments. He used rather obscure language while talking in breif on the subject:
 
 \begin{quote}
-Banks, like other firms, take positions in assets by issuing liabilities on the expectation of making profits. \dots It is mainly the private demand for loans, plus the williness of banks to lend, that determines the quantity of loans, and thus of deposits, created. \dots One can think of bank money as 'horizontal' at the loan rate of interest, with banks supplying loans on demand. This does not indicate that banks are merely passive, fully accommodating all demand for loans. Clearly, large segments of the population are 'quantity rationed' \dots~\citep[pp.~109-110]{wray1998} \par
-Credit and money are created endogenously, out of thin air, independent of
-prior deposits, at the initiative of a borrower deemed creditworthy and in the context
-of a loan deemed profitable to the lender. The bank makes the loan and obtains reserve
-balances and liabilities later to meet reserve requirements or withdrawals as needed.~\citep[p.~190]{fullwiler2013}
+When a Moroccan ceramics business exports dinnerware to nearby Spain, it receives
+money in its account through a complex web of inter-linkages between banks, possibly
+going through Paris and New York. The payment is routed through banks
+that know and trust each other. Money \textit{does not really change hands}; instead, \textit{each
+bank offers credit to the next one in line}. As a result, the small Moroccan business
+may face delays in receiving money and will pay high fees, hurting its bottom line.
+\citep[emphasis added]{adrian2023}
 \end{quote}
 
-In \ac{mmt} literature, authors do discuss collateralized, or secured, lending and it is usually put greater focus on the central banks operations with commercial banks. See \cite{tymoigne2009,fullwiler2013,wray1998}. The banks, if being short of reserves as a whole, do turn to the central bank for reserves accommodation. And central bank respond by accepting eligible securities collateral from the borrowing banks. MMT's description of the banks operations with their clients during endogenous money creation has a bit more different and nuanced explanation of the role of collateral.
+In his commentary \citeauthor{adrian2023} surely tended to sound as an orthodox economist, for whom ``money'' is both a tangable cash, which every indiviual has an experience of, and intangable reserves or settlement balances, which every commercial bank use today at its account with a central bank. His usage of word ``credit'' intended to be orthodox, too, in the meaning of ``loan.'' However, it is rather not. Instead, \citeauthor{adrian2023}'s ``credit'' has the meaning this paper is conceptualizing: $\overrightarrow{c_0}$. In the described case of a Moroccan ceramics producer, the only credit that ``each bank offers \dots to the next one in line'' is the one that is part of debt-credit relationships due today continuously. Indeed, it might be the case that in Morocco local banks do not have direct correspondent relationships with banks located in the countries from which foreign purchases of Moroccan ceramics originate. Hence, their correspondent banking relationships might be done via those large banks, based in major global financial centers such as New York, London, Paris and others, that serve as specialists in correspondent banking business. As shown in Figures~\ref{fig:US_MX_payment1} and \ref{fig:US_MX_payment2}, there is a short line of two banks, where $R_2$ provides $R_1$ with a debt-credit relationship in which they have respectively debt ($\overrightarrow{d^{\$}_0}$) and credit ($\overrightarrow{c^{\$}_0}$) positions. Whereas in the \citeauthor{adrian2023}'s example that line is longer by, at least, one more bank, being based in Paris or New York. And these banks create new debt-credit relationships between each other by the same principle.
 
-In the literature such as \cite{gabor2018} there is a dichotomy of trust-based versus collateral-based endogenous money creation. And it is defined along the line of credit risk exposure. Under trust-based way of money creation the bank assumes the borrower's risk directly, it means the lender-borrower relationship is a long-lasting and established one so that trust supports the lending decision. Under the market-based money creation, the lender requires collateral (a readily marketable financial security) from the borrower. In doing so, the lender mitigates a direct credit risk exposure on the borrower by having a collateral that is security issued by an economic unit of higher credit quality than the borrower itself. 
+\subsection{\textit{Foreign} Money of Account}\label{sec:xpay_frn}
 
-In the literature written by \ac{mmt} economists there is a slightly different approach to collateral. They tend to agree to another dichotomy: it is the cash-flow-based endogenous money creation versus the collateral-based one. This approach borrows from \citeauthor{minsky1986}.
+Now, let us consider the reverse situation, when a Mexico-based firm $C$ from Figure~\ref{fig:minsky_intl}, p~\pageref{fig:minsky_intl}, requires a payment in U.S. dollars to be made in favor of the U.S.-based firm $B$. In other words, the payer uses foreign money of account in order to complete its payment committed.
 
-Under cash-flow-based lending, banks can provide loans against collateral (such as borrowers' fixed assets or inventories of goods they produce), however, "a successful bank would almost never be forced to take the collateral"~\citep[p.~104]{wray2016}.
+The next two subsections consider two starting conditions: (i) endogenous money upproach, when basic assumption is that all unit have zero balances on its reserve or checking accounts, and (ii) pre-existing money. 
 
-\begin{quote}
-Banks make loans against collateral or unsecured loans that "do 
-not have specific assets as security, rather they are based upon 
-the fact that the borrower's total assets are sufficiently in excess 
-of his debts to protect the prudent banker." However, a prudent 
-banker does not want to seize assets-seizure is costly and can 
-be risky and time-consuming.~\citep[p.~169]{wray2016}
-\end{quote}
+\subsubsection{Endogenous Money}
 
-\begin{quote}
-When lending, the bank usually pays attention to the customer's collateral and 
-solvency. The latter consists of a judgement regarding the customer's capability to 
-repay debts using income. Collateral is relevant in case the customer defaults on a 
-loan - i.e. if there's a lasting interruption in the agreed stream of repayments. In 
-that case, the bank takes recourse by exercising its right to take ownership of the 
-posted collateral, and selling it (in most cases) to recover as much as possible of 
-the nominal financial value of the defaulted loan.\par 
-Things that have been bought with the loan might count as collateral. This is 
-typical for real estate loans, which in some countries are called 'mortgages'. If 
-the borrower stops making payments on his mortgage, the bank eventually takes 
-possession of the house and usually sells it. If this does not provide the bank 
-with sufficient money to pay off the loan, residual debt might be placed on the 
-borrower by means of a 'lien', requiring him to repay the balance of the debt 
-from his future earnings. Rules vary from country to country.~\citep[p.~58-59]{ehnts2017}
-\end{quote}
-
-Minsky's motto here is "a bank should not operate like a pawn shop" (ibid). Underwriting practices of a bank are key. Minsky pointed out that a loan officer of the bank, which is prudently follows cash-flow-based underwriting practice, is always skeptical of the borrower's plans. Collectively they are designated skeptics in the constant game of guessing between the lenders and borrowers about the future. While their skepticism might be eroded over time, loan officers epitomizing cash-flow-based lending practice are considered essential to the stability of the economy~\citep[p.~125]{tymoigne2009}.
-
-Hence,  a cash-flow-based lending by a bank relies on something more than trust. It is "cash flow analysis is the most important consideration" in such an activity (ibid). And on top of that, quoting Minsky again, there is "a morality to the lending officer's work, because his prosperity depended on the success of his clients" \citep{mayer2010}.
-
-Following Minsky, \ac{mmt} considers collateral-based lending by banks and non-bank financial institutions, where tradable securities serve as collateral, as a lasting development that has led economy into a state of heightened financial fragility. In Minsky's sketchy terminology, this development forstered financial institutions that are ``banks without loan officers"~\citep[p.~127]{tymoigne2009}. It meant that endogenous money creation by the banking industry lacked designated skeptics and relied on anticipation of (i) short-term gains from taking positions in the financial securities tradable in the secondary markets, and (ii) underwriting fees from arranging issuance of ever more new financial securities in the primary markets, including layering of debt or securitization of cash-flow derived from pooled debt obligations (such as \acfp{cmo} and \acfp{clo}).    
-
-Next, I provide description of three cases of banking lending against collateral. Each case aims to show particular balance-sheet relationship between lender and borrower that arise from using a distinct type of collateral. Hence, there are three types of collateral being discussed: (1) fixed assets and/or inventories that belong to the borrower, (2) borrower's deposit at the bank that provides lending, and (3) local-currency government securities held by the borrower. 
-
-\subsubsection*{Case \#9: Bank Lending Against Fixed Assets As Collateral}
-
-This is a simple case of a domestic company that borrows from the local bank some funds denominated in the local money unit of account (again, say, in Ukrainian hryvnia or \ac{uah}). Assumptions on the loan agreement are purely notional and they are: (a) total size is \ac{uah}1,000, (b) period is one year, (c) interest rate is 5\% per year and paid at the end of the period. Another assumption is that lender asked for collateral and the borrower pledged its fixed assets. In legal terms, it means that borrower resumes operating its fixed assets to produce more stuff for sale with profit, while the ownership title is temporary transferred to the lender, which might use it in case of borrower's fail to repay the loan in due terms. Both sides of the loan agreement booked the pledged collateral on the off balance sheet accounts. (These off balance sheet entries are not detailed in full. They just indicate that pledge collateral is an asset to the lender and a liability to the borrower.)
-
-With this set of assumptions in mind, there are two opposite outcomes that follow. The first one assumes that borrower is successful in its business plan and repays the loan. In the second one it fails. The lender's respective operations with collateral take place.
-
-Consider the \textit{first} outcome. At the beginning, when both the bank and the company entered the loan agreement, they booked the opening of the loan transaction accordingly (see diagram below, where Bank-1 stands for the lender and Firm-1 stands for the borrower).
-
-The principal of the loan (\ac{uah}1,000) is booked on the balance sheet of the bank, the lender, as debit (mark up) of the 'loan-to-company' account and credit (mark up) of the current account of the company. The company, the borrower, booked this loan on its balance sheet by debiting (marking up) the current account at the bank and crediting (marking up) the 'loan-due-to-bank' account. In additon to these accounts, both the bank and the company book the interest to be, respectively, received and paid (\ac{uah}50). For the bank this is anticipated interest revenues, while for the company this is anticipated interest expense. On the payment day, which is at the end of one year since opening the loan relationship, the bank will book those funds (\ac{uah}50) as realized revenues and the company will book them as realized expenses. Hence, both balance sheets of two economic units--the bank and the company or the lender and the borrower--have expanded by the size of the loan principal and interest payment that is accounted for to be made in the future, at the end of the loan agreement.
-
-Then, right after opening the loan relationship and respective balance-sheet positions, the borrower uses the bank's funds turns them into produce. Its balance sheet expanded further as production booked as inventory at some selling market price. Proceeds from realization of the produce in the market allows the borrower to repay the loan principal (\ac{uah}1,000) and interest (\ac{uah}50) and retain some funds as profit (which is not specified but assumed to be enough).
-
-At the end of the loan term, which is in the one-year period, the sides of the loan agreement are ready to close this relationship and their respective mutual positions. For that matter, the company accumulated on this current account with the bank enough balance to fully repay the loan. Hence, total balance on the account is \ac{uah}1,050 (a total of principal and interest, see above). Then, on the day of repayment the company redeems principal and pays interest. This repayment results in the following balance sheet modifications of the involved parties: 
-
-1. The company, the borrower, makes these accounting entries on its balance sheet:
-
-(i) debit (mark down) of the loan account 'loan due to Bank-1' for \ac{uah}1,000, which is loan principal, and credit (mark down) of the current account with the bank, Bank-1, for the same amount;
-
-(ii) debit (mark down) of the account 'interest due to Bank-1' for \ac{uah}50, which is interest charged on the loan, and credit (mark down) of the current account with the bank, Bank-1, for the same amount; and 
-
-(iii) debit (mark down) of the account 'anticipated interest expenses' for \ac{uah}50 and credit (mark down) of the account 'realized interest expanses' for the same amount.
-
-2. The bank, the lender, books these four accounting entries within its balance sheet:
-
-(i) debit (mark down) of the current account of the company, the borrower, for loan principal of \ac{uah}1,000 and credit (mark down) of the 'loan to Firm-1' account for the same amount;
-
-(ii) debit (mark down) of the current account of the company, the borrower, for loan interest of \ac{uah}50 and credit (mark down) of the account called 'interest due from Firm-1' for the same amount; and
-
-(iii) debit (mark down) of the account called 'anticipated interest revenues' for \ac{uah}50 and credit of the account 'realized interest revenues' for the same amount.
-
-Both sides of the agreement unwind the off-balance-sheet positions with respect to collatreal. Effectively, in legal terms, the lender does not have any more a hold on the ownership title of the collateral (fixed assets). The borrower, too, does not account the pledged collateral on the off-balance-sheet accounts any more. The collateral's silent service, generally speaking, remained unnoticed.
-
-%![Case #9-1: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart9.png")
+Under endogenous money approach the following transactions take place. Since firm $C$ has zero U.S. dollar and Mexican peso balances on its checking accounts with the Mexico-based bank, then it asks the latter to provide a loan either in Mexican pesos or in U.S. dollars. Under high level of financial liberalization, the Mexico's transacting counterparties are free to decide which money of account to use. Considerations of interest rate and borrower's ability to access credits in that money of account on the due date will be taking into account while making final decision. Let's assume they agree on the loan in the U.S. dollar. Then, a cerain chain of actions with debt-credit relationships will place as shown in Figure~\ref{fig:US_MX_payment3} below, p.~\pageref{fig:US_MX_payment3}. Such a chain includes creations, reuses and set-offs of the DCRs. The left-hand side part of the figure depicts initiation of the payment: (i)~since $C$ buys from $B$ they become debtor and creditor, respecively; (ii)~to make a U.S. dollar payment $C$ borrows from its bank $R_1$ for a period of, for example, three months ($t=90$ days), (iii)~while the latter borrows overnight from $R_2$ ($t=1$ day) to accomodate its customer. As a result, five new debt-credit relationships were created. Then, the payment by $C$ to $B$ is handled as a series of set offs and reuse of just created DCRs: (i) for $C$ its $d^{\$}_{0,C}$ is set off with $\overrightarrow{c^{\$}_{0,R1}}$, (ii) for $R_1$ its $\overrightarrow{d^{\$}_{0,C}}$ is set off with $\overrightarrow{c^{\$}_{0,R2}}$, and (iii) for $R_2$, acting by the order from $R_1$, reuses its formerly $\overrightarrow{d^{\$}_{0,R1}}$ to currently $\overrightarrow{d^{\$}_{0,B}}$. Lastly, the right-hand side of Figure~\ref{fig:US_MX_payment3} shows the moment, when payment is completed and all the discussed counterparties have certain debt or credit positions. 
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart9}
-\caption[Case \#9A: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral]%
-{Case \#9A: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart9}
+\vspace{.1in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+\begin{tikzpicture}
+  \draw[help lines,white] (0,0) grid (15,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (1,6) {B};
+  \node         (R2)        at (6,6) {R$_2$};
+  \node         (R1)        at (6,1) {R$_1$};
+  \node         (C)         at (1,1) {C};
+  \node                     at (3.5,-0.5) {(1)};
+  \draw[red,dashed] (0,3) -- (15,3); 
+  \node[black] at (8.5,3.2) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (8.5,2.7) {\textsuperscript{Mexico (p)}};
+  %\draw[red,dashed] (0,3.5) -- (15,3.5); 
+  %\node[red] at (8.5,3.7) {\textsuperscript{United States, \$}};
+  %\node[red] at (8.5,3.2) {\textsuperscript{Mexico, peso}};
+  \draw[black]   (C.north) |- (4,1.5) -| (R1.north);
+  \draw[black,thick]   (C.south) |- (4,0.5) -| (R1.south);
+  \node at (1.8,1.8) {\textsuperscript{\textit{debt: }$d^{\$}_{t,R1}$}};
+  \node at (4.2,1.8) {\textsuperscript{\textit{credit: }$c^{\$}_{t,C}$}};
+  %\node at (3.5,1.7) {\textsuperscript{\textit{debt: }$d^{\$}_{t,R1}$ \hspace{.7in} \textit{credit: }$c^{\$}_{t,C}$}};
+  \node at (3.5,0.15) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R1}}$ \hspace{.7in} \textit{debt: }$\overrightarrow{d^{\$}_{0,C}}$}};  
+  \draw[dashed,blue] (B) .. controls +(left:-2.8cm) and +(left:-2.8cm) .. (C);
+  \node[blue,align=left,font=\scriptsize] at (2,4.5) {$C$ buys from\\$B$ with\\USD payment\\due today};
+  \draw (B) -| (.5,3) |- (C);
+  \node[rotate=90] at (0.2,5.2) {\textsuperscript{\textit{credit: }$c^{\$}_{0,C}$}};
+  \node[rotate=90] at (0.2,2.0) {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$}};
+  \draw[thin]  (R1) -| (5.5,3) |- (R2);
+  \node[rotate=90] at (5.2,5.2) {\textsuperscript{\textit{credit: }$c^{\$}_{1,R2}$}};
+  \node[rotate=90] at (5.2,2.5) {\textsuperscript{\textit{debt: }$d^{\$}_{1,R1}$}};
+  \draw[thick] (R1) -| (6.5,3) |- (R2);
+  \node[rotate=90] at (6.9,5.2) {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R1}}$}};
+  \node[rotate=90] at (6.9,2.0) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  % Right-hand side part of the Figure
+  \node         (B)         at (9, 6) {B};
+  \node         (R2)        at (14,6) {R$_2$};
+  \node         (R1)        at (14,1) {R$_1$};
+  \node         (C)         at (9, 1) {C};
+  \node                     at (11.5,-0.5) {(2)};
+  \draw[thick] (B) -- (R2) node[midway,sloped,above]%
+        {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$ \hspace{.5in} \textit{debt: }$\overrightarrow{d^{\$}_{0,B}}$}};
+  \draw[thin] (C) -- (R1)  node[midway,sloped,below]%
+        {\textsuperscript{\textit{debt: }${d^{\$}_{t,R1}}$ \hspace{.5in} \textit{credit: }${c^{\$}_{t,C}}$}}; 
+  \draw[thin] (R1) -- (R2) node[midway,sloped,below]%
+        {\textsuperscript{\textit{debt: }${d^{\$}_{1,R2}}$ \hspace{.5in} \textit{credit: }${c^{\$}_{1,R1}}$}};
+\end{tikzpicture}
+\caption{(1) a U.S. dollar payment by $C$ to $B$ is initiated as $C$ borrows from $R_1$, and the latter borrows overnight ($t=1$) from $R_2$, and (2) the payment is completed}%
+\label{fig:US_MX_payment3}
+\vspace{.1in}
 \end{figure}
 
-In the \textit{second} outcome, where the borrower fails to repay the loan, collateral's service becomes much more prominent than in the above-mentioned outcome. Here, the initial (opening) leg of the loan relationship is exactly the same as in the above-mentioned case (see diagram below). However, the borrower failed to realize its produce in the market and hence it did not accumulate balances on its bank account at all (it is zero balance). In this case, the lender takes its legal right over collateral and sells it into the market. It is a prior assumption, too, that there is a market for such fixed assets and there is a willing buyer, which is another company (Firm-2) that is driven by consideration of profits and competition reduction. Hence, the ongoing price on this market is such that allows the bank to realize the collateral exactly at the price that covers total size of payments \ac{uah}1,050 owed by the borrower (Firm-1). Firm-2 has enough funds on its bank account with Bank-1 to pay for the fixed assets. It is our assumption too (it is shown on the diagram below). Hence, there are three economic units that engage with each other at this final (closing) leg of the loan relationship. They carry out the following accounting entries on their balance sheets: \par
+Note the positions of the counterparties involved to facilitate the payment: both of the Mexico-based units---firm $C$ and bank $R_1$---have \textit{dated} debt-credit relationships. One of them is with each other. Second is between $R_1$ and the U.S.-based $R_2$. Lastly, the U.S.-based units---firm $B$ and bank $R_2$ have a debt-credit relationship due today continuously. Effectively, the U.S. dollar payment has been facilitated by the U.S.-bank, which expanded its balance sheet via, first, providing a U.S. dollar loan to the Mexico-based bank. Via a loan, it created two debt-credit relationships (DCRs) with a Mexican bank: one dated and another is due today continuously. Then, on the latter's order, it re-assigned the credit position within the second DCR from the Mexican bank to the U.S.-based firm $B$. This endouguous creation of money for the U.S. dollar payment, as described, does not reveal a loss of purchasing power.   
 
-1. The defaulted company, Firm-1, books three entries:
+This exposition differs from the one in \cite{lavoie2014,lavoie2022}, see section 7.1.3 'A Transaction Initiated by the Banking Sector' of this book present in both 1st and 2nd editions. The latter provides an endogenous money example for a cross-border transaction between Mexico and the United States. \citeauthor{lavoie2022} starts off with a Mexican bank called Banamex turning to a U.S. bank called City Bank for a loan denominated in U.S. dollar. Then, the exposition proceeds to possible reasons why Banamex acts this way:  ``We may then presume that Banamex agrees to take in the loan because it knows that some Mexican residents would like to borrow US dollars. The newly created dollars are now held by the Mexican residents. This is shown in [Table 7.2,] row 2.''~\citep[p.~501]{lavoie2022} The author explicitly resognizes those individuals that are to borrow dollars from Banamex as ``Mexican residents.'' However, Table 7.2 locates the ``newly created dollars'' as liability of City Bank, not of Banamex as endogenuous money approach postulates. It leaves a reader without due explanation why this happened. It must be explained because each commercial bank today, following domestic central bank regulation, adheres to a quite strict KYC (know your customer) policy. KYC is an internationally recognized business practice in domestic and international banking~\citep{bis2020_}. It is quite costly for a resident of one country to have bank accounts in the domestic bank as well as in the foreign bank. This situation is possible, but it is rather an exception from a more general case: residents of country have checking (current) accounts with domestic banks and their denomination is in the domestic as well as in foreign monies of account. But even if a Mexican resident had accounts at both a Mexican bank or a U.S. bank, it would choose the bank to borrow in U.S. dollars from which charges less in term of the interest rate. And then it would ask that bank to proceed with a U.S. payment. From a perspective of debt-credit relationship this paper advocates, such an exposition with unexplained shortcuts confuses rather than illuminates the reader.
 
-(i) it debits (marks down) the account 'loan due to Bank-1' for \ac{uah}1,000 and credits (marks down) the fixed assets account for the same amount;
+\subsubsection{Pre-Existing Money}
 
-(ii) it debits (marks down) the account 'interest due to Bank-1' for \ac{uah}50 and credits (marks down) the fixed assets account for the same amount;
+If the same case is reconsidered by switching from endogenuous money creation to pre-existing ``purchasing power'' on the checking account of the Mexico's importer $C$, then the following exposition is proposed. 
 
-(iii) it debits (marks down) the account 'anticipated interest expenses' for \ac{uah}50 and credits (marks down) of the account 'realized interest expanses' for the same amount.
+To illustrate this case in full, in an extended form, it must be assumed that Mexico-based firm $C$ has that purchasing power on its Mexican peso checking account with a local bank $R_1$. This assumption is quite reasonable for the country which has its own money of account -- Mexican peso. How then $C$ acquires the U.S. dollars? There are several options, however, let us make another assumption of pre-existing purchasing power in U.S. dollar: there is another Mexico-based firm $D$, which is an exporter and has just been paid in the U.S. dollar thanks to prior sale of own produce. Consider this assumption as an end point of the case shown in Figures~\ref{fig:US_MX_payment1} and \ref{fig:US_MX_payment2}, above. These two prior assumptions are shown on~\pageref{fig:US_MX_payment4} in Figure~\ref{fig:US_MX_payment4}, section (1), as red and black thick lines, respectively. The former line is between $C$ and $R_1$, representing a debt-credit relationship due today continuously in Mexican peso. The latter line is beetween $D$ and $R_3$ representing similar reltionship in U.S. dollar, but it also extends to the same relationship between $R_3$ and its U.S.-based correspondent bank $R_2$, because that prior U.S. dollar payment has just happened. 
 
-2. The new company, Firm-2, carries out one entry:
+Note: two relationships between $D$---$R_3$ and $R_3$---$R_2$, in section (1) of Figure~\ref{fig:US_MX_payment4}, exist together at the very moment of the U.S. payment to $D$ is made as shown in section (2) of either Figure~\ref{fig:US_MX_payment1} or Figure~\ref{fig:US_MX_payment2}. If, for example, next moment, or day, $D$ stays idle with its U.S. dollar balance with $R_3$, the latter most likely does not with its own U.S. dollar balance with $R_2$, because it has numeruous customers requiring a U.S. dollar payment such as shown in Figure~\ref{fig:US_MX_payment3}.
 
-(i) it credits (marks down) its current account with Bank-1 for \ac{uah}1,050 and debits its fixed assets account for the same amount.
-
-3. The bank, Bank-1, books the following entries within its balance sheet:
-
-(i) given the borrower's default on the loan agreement, it turns collateral initially book on the off-balance sheet accounts onto its balance sheet -- hence, it debits (marks up) an account 'assets for sale' for \ac{uah}1,050 and credits (marks up) internal or transit account for the same account;
-
-(ii) upon Firm-2 request to purchase the fixed assets, it debits (marks down) the current account of Firm-2 for \ac{uah}1,050 and credits (marks down) the 'assets for sale' account for the same amount;
-
-(iii) then, simultaneously two entries are carried out, which are (a) debit of the 'loan due from Firm-1' account for \ac{uah}1,000 and credit of the transit account for the same amount, and (b) debit of the 'interest due from Firm-1' account for \ac{uah}50 and credit of the transit account for the same amount;
-
-(iv)  debit (mark down) of the account called 'anticipated interest revenues' for \ac{uah}50 and credit of the account 'realized interest revenues' for the same amount.
-
-%![Case #9-2: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral and under borrower's default]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart10.png")
+Indeed, section (1) of Figure~\ref{fig:US_MX_payment4} is a starting point of the exposition of the U.S. dollar paymnet by $C$ to $B$. 
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart10}
-\caption[Case \#9B: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral and under borrower's default]%
-{Case \#9B: Balance-sheet relationship within collaterilzed lending, when borrower's fixed assets is collateral and under borrower's default.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart9b}
+%\vspace{.1in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+%% SECTION #1
+\begin{tikzpicture}[scale=1]
+  \draw[help lines,white] (0,0) grid (15,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (7.5,6) {R$_2$};
+  \node         (R1)        at (5,1) {R$_1$};
+  \node         (R3)        at (10,1) {R$_3$};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (15,1) {D};
+  \node                     at (7.5,-0.5) {(1)};
+  \node                     at (7.5,-3) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (15.25,3.5); 
+  \node[black] at (13.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (13.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[gray,dashdotted] (R1) -- (R2); \draw[gray,dashdotted] (R1) -- (R3);
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  \draw[blue,dashed] (B) .. controls +(left:-3cm) and +(left:-1cm) .. (C.north east);
+  \node[blue,align=left,font=\scriptsize] at (3,5) {$C$ buys from\\$B$ with\\USD payment\\due today};
+  \draw[black] (C) -- (B) node[midway,sloped,above]% 
+  {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$ \hspace{.6in} \textit{credit: }$c^{\$}_{0,C}$}};
+  \draw[red,thick] (C) -- (R1) node[midway,sloped,below]%
+  {\textsuperscript{\textit{credit: }$\overrightarrow{c^{p}_{0,R1}}$ \hspace{.6in} \textit{debt: }$\overrightarrow{d^{p}_{0,C}}$}};
+  \draw[black,thick] (R2) -- (R3) node[midway,sloped,above]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R3}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \draw[black,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,D}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R3}}$}};
+\end{tikzpicture}
+%% SECTION #2
+\begin{tikzpicture}[scale=1]
+  \draw[help lines,white] (0,0) grid (15,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (7.5,6) {R$_2$};
+  \node         (R1)        at (5,1) {R$_1$};
+  \node         (R3)        at (10,1) {R$_3$};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (15,1) {D};
+  \node                     at (7.5,-0.5) {(2)};
+  \node                     at (7.5,-1.5) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (15.25,3.5); 
+  \node[black] at (13.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (13.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  \draw[black] (C) -- (B) node[midway,sloped,above]% 
+  {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$ \hspace{.6in} \textit{credit: }$c^{\$}_{0,C}$}};
+  \draw[red,thick] (C) -- (R1) node[midway,sloped,below]%
+  {\textsuperscript{\textit{credit: }$\overrightarrow{c^{p}_{0,R1}}$ \hspace{.6in} \textit{debt: }$\overrightarrow{d^{p}_{0,C}}$}};
+  \draw[black,thick] (R2) -- (R3) node[midway,sloped,above]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R3}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \draw[black,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,D}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R3}}$}};
+  \draw[red]   (R1.north) |- (7.5,1.5) -| (R3.north);
+  \draw[red,thick]   (R1.south) |- (7.5,0.5) -| (R3.south);
+  \node[red] at (5.75,1.8) {\textsuperscript{\textit{debt: }$d^{p}_{1,R1}$}};
+  \node[red] at (8.75,1.8) {\textsuperscript{\textit{credit: }$c^{p}_{1,C}$}};
+  \node[red] at (7.5,0.15) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{p}_{0,R3}}$ \hspace{.7in} \textit{debt: }$\overrightarrow{d^{p}_{0,R1}}$}};
+\end{tikzpicture}
+\caption[A four-step exposition of the U.S. dollar payment by $C$ to $B$, steps (1) and (2)]%
+{A four-step exposition of the U.S. dollar payment by $C$ to $B$ with prior assumptions: (a)~$C$ has a balance (``purchasing power'') on its Mexican peso checking (current) account in a Mexico-based bank $R_1$; (b)~there is another Mexico-based bank $R_3$, which serves a Mexico-based exporter $D$ with a balance (``purchasing power'') on its U.S. dollar account thanks to a \textit{prior} cross-border payment; (c) the U.S.-based bank $R_2$ and all mentioned Mexico-based banks have correspondent relationships, meanwhile $R_3$ serves as a correspondent for to $R_1$ for a U.S. dollar payment.~\textit{See steps (3) and (4) on the next page.}}%
+\label{fig:US_MX_payment4}
+%\vspace{.1in}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+%\vspace{.1in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+\ContinuedFloat
+%% SECTION #3
+\begin{tikzpicture}[scale=1]
+  \draw[help lines,white] (0,0) grid (15,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (7.5,6) {R$_2$};
+  \node         (R1)        at (5,1) {R$_1$};
+  \node         (R3)        at (10,1) {R$_3$};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (15,1) {D};
+  \node                     at (7.5,-0.5) {(3)};
+  \node                     at (7.5,-2.5) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (15.25,3.5); 
+  \node[black] at (13.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (13.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  \draw[black] (C) -- (B) node[midway,sloped,above]% 
+  {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$ \hspace{.6in} \textit{credit: }$c^{\$}_{0,C}$}};
+  \draw[black,thick] (C) -- (R1) node[midway,sloped,below]%
+  {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R1}}$ \hspace{.6in} \textit{debt: }$\overrightarrow{d^{\$}_{0,C}}$}};
+  \draw[black,thick] (R2) -- (R3) node[midway,sloped,above]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R3}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \draw[red,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{p}_{0,D}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{p}_{0,R3}}$}};
+  \draw[red]   (R1.north) |- (7.5,1.5) -| (R3.north);
+  \draw[black,thick]   (R1.south) |- (7.5,0.5) -| (R3.south);
+  \node[red] at (5.75,1.8) {\textsuperscript{\textit{debt: }$d^{p}_{1,R1}$}};
+  \node[red] at (8.75,1.8) {\textsuperscript{\textit{credit: }$c^{p}_{1,C}$}};
+  \node[black] at (7.5,0.15) {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R3}}$ \hspace{.7in} \textit{debt: }$\overrightarrow{d^{\$}_{0,R1}}$}};
+\end{tikzpicture}
+%% SECTION #4
+\begin{tikzpicture}[scale=1]
+  \draw[help lines,white] (0,0) grid (15,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (7.5,6) {R$_2$};
+  \node         (R1)        at (5,1) {R$_1$};
+  \node         (R3)        at (10,1) {R$_3$};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (15,1) {D};
+  \node                     at (7.5,-0.5) {(4)};
+  \node                     at (7.5,-1.5) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (15.25,3.5); 
+  \node[black] at (13.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (13.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  \draw[black,thick] (B) -- (R2) node[midway,sloped,above]%
+  {\textsuperscript{\textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$ \hspace{1.5in} \textit{debt: }$\overrightarrow{d^{\$}_{0,B}}$}};
+  \draw[red,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{p}_{0,D}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{p}_{0,R3}}$}};
+  \draw[red]   (R1) -- (R3);
+  \node[red] at (5.75,1.8) {\textsuperscript{\textit{debt: }$d^{p}_{1,R1}$}};
+  \node[red] at (8.75,1.8) {\textsuperscript{\textit{credit: }$c^{p}_{1,C}$}};
+\end{tikzpicture}
+\caption[A four-step exposition of the U.S. dollar payment by $C$ to $B$, steps (3) and (4)]%
+{A four-step exposition of the U.S. dollar payment by $C$ to $B$ with prior assumptions: (a)~$C$ has a balance (``purchasing power'') on its Mexican peso checking (current) account in a Mexico-based bank $R_1$; (b)~there is another Mexico-based bank $R_3$, which serves a Mexico-based exporter $D$ with a balance (``purchasing power'') on its U.S. dollar account thanks to a \textit{prior} cross-border payment; (c) the U.S.-based bank $R_2$ and all mentioned Mexico-based banks have correspondent relationships, meanwhile $R_3$ serves as a correspondent for to $R_1$ for a U.S. dollar payment.~\textit{See previous page for steps (1) and (2).}}%
+\label{fig:US_MX_payment4_}
+%\vspace{.1in}
 \end{figure}
 
-\subsubsection*{Case \#10: Bank Lending Against Deposit As Collateral}
+There are various pathways to proceed with the payment. This paper provides two: (1) old fashined one, and (2) modern-day one. The former excludes the domestic central bank of the payer's country (Mexico) from the picture altogether: Figure~\ref{fig:US_MX_payment4} on pp.~\pageref{fig:US_MX_payment4}-\pageref{fig:US_MX_payment4_} depicts it as a four-step sequence. The latter does take into account the role plaied by the domestic central bank in facilitating inter-bank payments in domestic money of account: Figure~\ref{fig:US_MX_payment5} on pp.~\pageref{fig:US_MX_payment5}-\pageref{fig:US_MX_payment5_} depicts it, too, as a four-step sequence.
 
-Bank deposit can serve as collateral as well. For example, in Ukraine, commercial banks practice extensively the ``loan-against-deposit" type of lending.\footnote{A number of top banks in Ukraine provide this service. For example, state-owned Privatbank has this offering on its web page \url{https://privatbank.ua/business/kredit-pod-depozit} with loan-to-collateral ratio of 85\%. Another example is a Ukrainian subsidiary of the Hungarian bank OTP Bank: \url{https://www.otpbank.com.ua/privateclients/crediting/loans-deposit/}, where the loan-to-collateral ratio is advertised as up to 90\%. (This page is available only on the Ukrainian version of the website of the bank and the English-language version of the website does not mention this service.) Ukrsibbank, which is a Ukrainian subsidiary of French bank BNP Paribas, offers this service with loan-to-collateral ratio of up to 95\%, interest rate is 8.5\% and in addition the upfront charge is 0.4\%, see \url{https://my.ukrsibbank.com/ru/sme/credits/loan_secured_by_deposit/}. Another top Ukrainian bank, First Ukrainian International Bank, offers this service with loan-to-collateral ratio of 95\%, no upfront charge and denomination of the loan as well as of deposit can be in three money units of account: Ukrainian hryvnia, US dollar, and euro, \url{see https://b2b.pumb.ua/finance/credit_for_deposit}. In a small regional bank Vostok this service is offering a loan with loan-to-collateral ratio of 100\%, \url{https://vostok.bank/b2b/financing}.} These collaterized loans are usually denominated in the domestic money unit of account, however, they many denominated in foreign units such as the US dollar and the euro. Another feature is that both the loan and the deposit are of the same money unit of account. However, this rule is not engraved in stone and banks might be flexible according to their profit-seeking appetite, which is the same to say as risk tolerance, and given the prevailing practices of competing banks. A bank that offers to its client a loan against the deposit of the same client assumes (or expects) that both loan and deposit will be accounted for on its balance sheet. It means that a bank agrees to extend loan to its customer if this customer has a deposit with same bank. If a customer has a deposit in another bank, it has to transfer those balances to the bank with which this customer agrees to obtain loan secured by deposit. In some situations, when a bank and its client have international presence they might agree that deposit is accounted on the balance sheet of the bank's subsidiary that resides in one jurisdiction, while loan is extended by a bank's subsidiary in another jurisdiction. In this case, money units of account applied to both deposit and loan might be the same or they might differ. In the latter case, for example, a deposit might be denominated in the US dollars while the loan might be extended in the Ukrainian hryvnia.\footnote{We omit considerations of interest rates and exchange rates. The purpose of this exposition is to provide balance-sheet modifications between lender and borrower, which show the essential meaning of bank deposit as a type of collateral.} 
+So, the old fashioned way is when local commercial banks establish correspondent banking relationships with each other to facilitate payments in domestic money. The central bank is not envolved. Since, it is the bank $R_3$, which has an already existing debt-credit relationship with the U.S.-based bank $R_2$, then it is in a relative superior position versus $R_1$ which seeks a U.S. dollar credit position ($\overrightarrow{c^{\$}_{0}}$) on $R_2$. Indeed, $R_1$ could ask $R_2$ directly for a U.S. dollar loan to get such a position as shown in Figure~\ref{fig:US_MX_payment3}, section (1). But it might be more costly for $R_1$ to proceed that way. Instead, let us assume that it is less costly for $R_1$ to transact domestically with $R_3$. It might be the case that $R_3$ is well known domestically  as the bank which serves exporters and hence it regularly has U.S. dollar credits on the U.S.-based banks such as $R_2$. Moreover, as the underlying story unfolds in Figure~\ref{fig:US_MX_payment4} from section~(1) through section~(4), $R_3$ was asked by its customer $D$ to sell its U.S. dollar balance and buy an equivalent of Mexico peso balance at the going or current exchange rate, Mexico peso (MXN) per U.S. dollar (USD). 
 
-The following case describes a set of balance sheet relationships between a lender and borrower as they agreed to enter the lending-secured-by-deposit transaction. The main assumptions of the transaction are the following ones: (i) a company, the borrower, has a deposit with the bank of 1,000 denominated in the domestic money unit of account (let it be Ukrainian hryvnia, \ac{uah}) and the bank pays 5\% per year on its deposit balances, (ii) it agrees to enter a one-year loan agreement with the bank by pledging its deposit as security and the loan has 8\% interest rate.
+The exact value of the exchange rate is not crucial here as this paper aims to show the very basic principles of money as debt-credit reltionships. Let us assume again that the size of the $C$'s peso balance is equivalent to the $D$'s dollar balance times the current exchange rate plus a profit mark-up to be shared by $R_1$ and $R_3$. For now and for the sake of simplicity let us assume that that profit mark-up is zero.  
 
-There are two outcomes of the transaction: (1) a successful outcome, where the borrower repays the borrowed funds, and (2) its opposite or a unsuccessful outcome, where the borrower fails to repay or defaults.
+Then, in order to make the foreign exchange, $R_1$ first must obtain a credit position in peso, $\overrightarrow{c^{p}_{0}}$, on $R_3$. To get it, $R_1$ borrows from $R_3$ on overnight terms: these banks create two debt-credit relationships in Mexican peso between each other, see two red line connecting $R_1$ and $R_3$ in section (2) of Figure~\ref{fig:US_MX_payment4} on p.~\pageref{fig:US_MX_payment4}.   
 
-%![Case #10-1: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart11.png")
+Right after that step, $R_1$ and $R_3$ are ready to complete the foreign exchange transaction. The latter is done then this way: (i) on request of $D$, $R_3$ re-assigns the credit position, $\overrightarrow{c^{\$}_{0}}$, within its debt-credit replationship in U.S. dollar from $D$ to $R_1$, and at the same time (ii) on request of $R_1$, $R_3$ re-assigns the credit position, $\overrightarrow{c^{p}_{0}}$, within its debt-credit replationship in Mexican peso from $R_1$ to $D$. At the same time, $R_1$ cancels its debt-credit relationship with $C$ that is due today continuously and denominated in Mexican peso, and it creates new one between them in U.S. dollar, see section (3) of Figure~\ref{fig:US_MX_payment4_} on p.~\pageref{fig:US_MX_payment4_}.  
 
-%![Case #10-2: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral and under borrower's default]("C:/UMKC/2021-2 Fall/ECON 5690 Doctoral Reading w Dr Fullwiler/Plots/PIB chart12.png")
+Then, $C$'s U.S. dollar payment is executed this way: (i)~thanks of having credit, $\overrightarrow{c^{\$}_{0}}$, on $R_1$, $C$ orders $R_1$ to re-assign it to $B$, (ii)~$R_1$ cancels its debt, $\overrightarrow{d^{\$}_{0}}$, to $C$ and orders $R_3$ to re-assign its credit, $\overrightarrow{c^{\$}_{0}}$, on the latter reflecting $C$'s order, (iii)~$R_3$ cancels its debt to $R_1$, $\overrightarrow{d^{\$}_{0}}$, and orders $R_2$ to re-assign its credit, $\overrightarrow{c^{\$}_{0}}$, on the latter reflecting $R_1$'s order, and lastly (iv)~$R_2$ cancels its debt, $\overrightarrow{d^{\$}_{0}}$, to $R_2$ and assigns it to $B$ instead. The end-result of this step is shown in section (4) of Figure~\ref{fig:US_MX_payment4_} on p.~\pageref{fig:US_MX_payment4_}.
+
+First,\label{tag1} note that ``purchasing power'' in Mexican peso, $\overrightarrow{c^{\$}_{0}}$, was not lost. It was eventually re-asignned: at the very beginning it was a part of debt-credit relationship between $C$ and $R_1$ and at the very end it turned out to be a part within a debt-credit relationship between $R_3$ and $D$. In total, the balance sheet of the entire domestic banking system denominated in domestic money of account did not shrink on the back of the payment discussed above.
+
+Second, note that a cross-border payment in foreign money can take place only as a re-use of an ``old,'' already existing debt-xredit relationship of the due today continuously type. If it is not existing then it must be created a moment prior. Otherwise, such a payment does not take place at all.   
+
+Third, the ``purchasing power'' in the U.S. dollar did disappear from the Mexico's domestic banking system, but it never disappeared from the U.S. domestic banking system in the very first place as it was explained in section~\ref{sec:xpay_dom}, p.~\pageref{sec:xpay_dom}. In other words, the Mexico's banking system as a whole had its aggregate balance sheet in the U.S. dollar contracting. At the same time, the entire banking system of the United States as a whole did not change at that moment: there was neither increase nor decrease. 
+
+The following Figure~\ref{fig:US_MX_payment5}, on pp.~\pageref{fig:US_MX_payment5}-\pageref{fig:US_MX_payment5_} is different from Figure~\ref{fig:US_MX_payment4} in a couple of factors. First, inter-bank payments in domestic money of account are handled by the national central bank, labeled as $CB$. Second, both of the Mexico-based banks handle their cross-border payments via a foreign correspondent. 
+
+While the starting point is the same: there is a ``purchasing power'' in the hands of Mexico-based from $C$, whcih is in the form of a Mexican peso balance at the checking (current) account with domestic bank $R_1$. Also, it is assume there another ``puchasing power'' in the form of a U.S. dollar balance at the checking (current) account of the Mexican exporter $D$ with local bank $R_3$. See section (1) in Figure~\ref{fig:US_MX_payment5}, below.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart11}
-\caption[Case \#10A: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral]%
-{Case \#10A: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart10a}
+%\vspace{.1in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+%% SECTION #1
+\begin{tikzpicture}[scale=.9]
+  \draw[help lines,white] (0,0) grid (16,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (8,6) {R$_2$};
+  \node         (R1)        at (4,1) {R$_1$};
+  \node         (R3)        at (12,1) {R$_3$};
+  \node         (CB)        at (8,1) {CB};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (16,1) {D};
+  \node                     at (7.5,-0.5) {(1)};
+  \node                     at (7.5,-2.5) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (16.25,3.5); 
+  \node[black] at (14.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (14.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[gray,dashdotted] (R1) -- (R2); \draw[gray,dashdotted] (R1) -- (CB); \draw[gray,dashdotted] (R3) -- (CB); \draw[gray,dashdotted] (R2) -- (CB);
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  \draw[blue,dashed] (B) .. controls +(left:-3cm) and +(left:-1cm) .. (C.north east);
+  \node[blue,align=left,font=\scriptsize] at (3,5) {$C$ buys from\\$B$ with\\USD payment\\due today};
+  \draw[black] (C) -- (B) node[midway,sloped,above]% 
+  {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$ \hspace{.45in} \textit{credit: }$c^{\$}_{0,C}$}};
+  \draw[red,thick] (C) -- (R1) node[midway,sloped,below]%
+  {\textsuperscript{$\overrightarrow{c^{p}_{0,R1}}$ \hspace{.65in} $\overrightarrow{d^{p}_{0,C}}$}};
+  \draw[black,thick] (R2) -- (R3) node[midway,sloped,above]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R3}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \draw[black,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{$\overrightarrow{d^{\$}_{0,D}}$ \hspace{.6in} $\overrightarrow{c^{\$}_{0,R3}}$}};
+\end{tikzpicture}
+%% SECTION #2
+\begin{tikzpicture}[scale=.9]
+  \draw[help lines,white] (0,0) grid (16,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (8,6) {R$_2$};
+  \node         (R1)        at (4,1) {R$_1$};
+  \node         (R3)        at (12,1) {R$_3$};
+  \node         (CB)        at (8,1) {CB};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (16,1) {D};
+  \node                     at (7.5,-1) {(2)};
+  \node                     at (7.5,-1.5) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (16.25,3.5); 
+  \node[black] at (14.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (14.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  %\draw[blue,dashed] (B) .. controls +(left:-3cm) and +(left:-1cm) .. (C.north east);
+  %\node[blue,align=left,font=\scriptsize] at (3,5) {$C$ buys from\\$B$ with\\USD payment\\due today};
+  \draw[black] (C) -- (B) node[midway,sloped,above]% 
+  {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$ \hspace{.45in} \textit{credit: }$c^{\$}_{0,C}$}};
+  \draw[red,thick] (C) -- (R1) node[midway,sloped,below]%
+  {\textsuperscript{$\overrightarrow{c^{p}_{0,R1}}$ \hspace{.65in} $\overrightarrow{d^{p}_{0,C}}$}};
+  \draw[red]   (R1.north) |- (7.5,1.5) -| (CB.north);
+  \draw[red,thick]   (R1.south) |- (7.5,0.5) -| (CB.south); 
+  \node[red] at (6,1.8) {\textsuperscript{$c^{p}_{1,CB}$ \hspace{.7in} $d^{p}_{1,R1}$}};
+  \node[red] at (6,0.15) {\textsuperscript{$\overrightarrow{c^{p}_{0,CB}}$ \hspace{.7in} $\overrightarrow{d^{p}_{0,R1}}$}};
+  \draw[black,thick] (R2) -- (R3) node[midway,sloped,above]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R3}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \draw[black,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{$\overrightarrow{d^{\$}_{0,D}}$ \hspace{.6in} $\overrightarrow{c^{\$}_{0,R3}}$}};
+\end{tikzpicture}
+\caption[A four-step exposition of the U.S. dollar payment by $C$ to $B$, steps 1 and 2]%
+{A four-step exposition of the U.S. dollar payment by $C$ to $B$ with prior assumptions: (a)~$C$ has a balance (``purchasing power'') on its Mexican peso checking (current) account in a Mexico-based bank $R_1$; (b)~there is another Mexico-based bank $R_3$, which serves a Mexico-based exporter $D$ with a balance (``purchasing power'') on its U.S. dollar account thanks to a \textit{prior} cross-border payment; (c) there is a Mexico's central bank, which clears peso-denominated debts and credits for local banks; and (d) the U.S.-based bank $R_2$ and all mentioned Mexico-based banks have correspondent relationships.~\textit{See steps (3) and (4) on the next page.}}%
+\label{fig:US_MX_payment5}
+%\vspace{.1in}
 \end{figure}
-
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1.0\textwidth]{\plotsfld/PIB chart12}
-\caption[Case \#10B: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral and under borrower's default]%
-{Case \#10B: Balance-sheet relationship within collaterilzed lending, when borrower's bank deposit is collateral and under borrower's default.\par\vspace{.05in}Source: author's illustration.}
-\label{fig:pib_chart10b}
+%\vspace{.1in}
+\captionsetup{width=1\linewidth,labelfont=bf}
+\usetikzlibrary {matrix}
+\ContinuedFloat
+%% SECTION #3
+\begin{tikzpicture}[scale=.9]
+  \draw[help lines,white] (0,0) grid (16,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (8,6) {R$_2$};
+  \node         (R1)        at (4,1) {R$_1$};
+  \node         (R3)        at (12,1) {R$_3$};
+  \node         (CB)        at (8,1) {CB};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (16,1) {D};
+  \node                     at (7.5,-1) {(3)};
+  \node                     at (7.5,-2.5) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (16.25,3.5); 
+  \node[black] at (14.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (14.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  %\draw[blue,dashed] (B) .. controls +(left:-3cm) and +(left:-1cm) .. (C.north east);
+  %\node[blue,align=left,font=\scriptsize] at (3,5) {$C$ buys from\\$B$ with\\USD payment\\due today};
+  \draw[black] (C) -- (B) node[midway,sloped,above]% 
+  {\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$ \hspace{.45in} \textit{credit: }$c^{\$}_{0,C}$}};
+  \draw[thick] (C) -- (R1) node[midway,sloped,below]%
+  {\textsuperscript{$\overrightarrow{c^{\$}_{0,R1}}$ \hspace{.65in} $\overrightarrow{d^{\$}_{0,C}}$}};
+  \draw[red] (R1) -- (CB) node [midway,sloped,below] {\textsuperscript{$c^{p}_{1,CB}$ \hspace{.6in} $d^{p}_{1,R1}$}};
+  \draw[red,thick]   (R3) -- (CB) node[midway,sloped,below] {\textsuperscript{$\overrightarrow{d^{p}_{0,R3}}$ \hspace{.6in} $\overrightarrow{c^{p}_{0,CB}}$}};
+  \draw[black,thick] (R2) -- (R1) node[midway,sloped,above]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R3}}$ \hspace{.6in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \draw[red,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{$\overrightarrow{d^{p}_{0,D}}$ \hspace{.6in} $\overrightarrow{c^{p}_{0,R3}}$}};
+\end{tikzpicture}
+%% SECTION #4
+\begin{tikzpicture}[scale=.9]
+  \draw[help lines,white] (0,0) grid (16,6);
+  % Left-hand side part of the Figure
+  \node         (B)         at (0,6) {B};
+  \node         (R2)        at (8,6) {R$_2$};
+  \node         (R1)        at (4,1) {R$_1$};
+  \node         (R3)        at (12,1) {R$_3$};
+  \node         (CB)        at (8,1) {CB};
+  \node         (C)         at (0,1) {C};
+  \node         (D)         at (16,1) {D};
+  \node                     at (7.5,-1) {(4)};
+  \node                     at (7.5,-1.5) {}; % blank line, separator
+  \draw[black,dashed] (-.25,3.5) -- (16.25,3.5); 
+  \node[black] at (14.5,3.7) {\textsuperscript{U.S. (\$)}};
+  \node[red] at (14.5,3.3) {\textsuperscript{Mexico (p)}};
+  %\draw[black,dashed]  (-.25,3.55) -- (15.25,3.55); 
+  %\draw[red,dashed] (-.25,3.45) -- (15.25,3.45); 
+  %\node[black] at (13.5,3.75) {\textsuperscript{United States, \$=USD}};
+  %\node[red] at (13.5,3.2) {\textsuperscript{Mexico, p=MXN}};
+  %\draw[blue,dashed] (B) .. controls +(left:-3cm) and +(left:-1cm) .. (C.north east);
+  %\node[blue,align=left,font=\scriptsize] at (3,5) {$C$ buys from\\$B$ with\\USD payment\\due today};
+  %\draw[black] (C) -- (B) node[midway,sloped,above]% 
+  %{\textsuperscript{\textit{debt: }$d^{\$}_{0,B}$ \hspace{.45in} \textit{credit: }$c^{\$}_{0,C}$}};
+  %\draw[thick] (C) -- (R1) node[midway,sloped,below]%
+  %{\textsuperscript{$\overrightarrow{c^{\$}_{0,R1}}$ \hspace{.65in} $\overrightarrow{d^{\$}_{0,C}}$}};
+  \draw[red] (R1) -- (CB) node [midway,sloped,below] {\textsuperscript{$c^{p}_{1,CB}$ \hspace{.6in} $d^{p}_{1,R1}$}};
+  \draw[red,thick]   (R3) -- (CB) node[midway,sloped,below] {\textsuperscript{$\overrightarrow{d^{p}_{0,R3}}$ \hspace{.6in} $\overrightarrow{c^{p}_{0,CB}}$}};
+  \draw[black,thick] (B) -- (R2) node[midway,sloped,above]%
+  {\textsuperscript{\textit{debt: }$\overrightarrow{d^{\$}_{0,R3}}$ \hspace{1.4in} \textit{credit: }$\overrightarrow{c^{\$}_{0,R2}}$}};
+  \draw[red,thick] (D) -- (R3) node[midway,sloped,below]%
+  {\textsuperscript{$\overrightarrow{d^{p}_{0,D}}$ \hspace{.6in} $\overrightarrow{c^{p}_{0,R3}}$}};
+\end{tikzpicture}
+\caption[A four-step exposition of the U.S. dollar payment by $C$ to $B$, steps 3 and 4]%
+{A four-step exposition of the U.S. dollar payment by $C$ to $B$ with prior assumptions: (a)~$C$ has a balance (``purchasing power'') on its Mexican peso checking (current) account in a Mexico-based bank $R_1$; (b)~there is another Mexico-based bank $R_3$, which serves a Mexico-based exporter $D$ with a balance (``purchasing power'') on its U.S. dollar account thanks to a \textit{prior} cross-border payment; (c) there is a Mexico's central bank, which clears peso-denominated debts and credits for local banks; and (d) the U.S.-based bank $R_2$ and all mentioned Mexico-based banks have correspondent relationships.~\textit{See previous page for steps (1) and (2).}}%
+\label{fig:US_MX_payment5_}
+%\vspace{.1in}
 \end{figure}
+
+What remains the same in Figure~\ref{fig:US_MX_payment5} in comparison with Figure~\ref{fig:US_MX_payment4} is that $R_1$ does a foreign-exchange transaction with $R_3$. Both act on behalf of there customers $C$ and $D$ respectively, which want to exchange their balances in Mexican peso and U.S. dollar on the accounts with their banks. No other ``purchasing powers'' are assumed, meaning all the rest of transactions will following the logic of endogenuous money approach.
+
+To facilitate the exchange, $C$ borrows from the Mexico's central bank $CB$ to make a Mexican peso payment in favor $D$ on behalf of $C$. This payment will be handled by the Mexico's central bank, with which all domestic banks have correspondent accounts. See section (2) of Figure~\ref{fig:US_MX_payment5}, p.~\pageref{fig:US_MX_payment5}.
+
+Then, these banks do two payments. First, the Mexico peso payment is handled by the local central bank, which acting on the payer's order cancels its debt position, $\overrightarrow{d^{p}_{0}}$, to $R_1$ and assigns it to $R_3$. Second, the U.S. dollar payment is handled by the U.S.-based bank $R_2$, which acting on the payer's order cancels its debt position, $\overrightarrow{d^{\$}_{0}}$, to $R_3$ and assigns it to $R_1$. Simulteniously, on the back of these payments $R_1$ swaps its debt position to $C$ from $\overrightarrow{d^{p}_{0}}$ to $\overrightarrow{d^{\$}_{0}}$, $R_3$ does the opposite with its debt position to $D$: $\overrightarrow{d^{\$}_{0}}$ is canceled and $\overrightarrow{d^{p}_{0}}$ is assigned instead. See section (3) of Figure~\ref{fig:US_MX_payment5_}, p.~\pageref{fig:US_MX_payment5_}.
+
+Lastly, thanks to the just-established credit position, $\overrightarrow{c^{\$}_{0}}$, on the U.S.-based bank $R_2$, the Mexico-based bank $R_1$ make a payment order to $R_2$ to deliver a U.S. dollar payment from the Mexico-based firm $C$ to the U.S.-based firm $B$. $R_2$ cancels its debt position to $R_1$ and assigns it to $B$. At this point the U.S. dollar is complete, and $C$'s deb, $d^{\$}_0$, to $B$ is cleared.
+
+Quick observation of the positions at the end point yields the same three conclusions, which were made at the end of exposition of the old-fashined, or no central bank, scheme, p.~\pageref{tag1}.    
 
 \subsection{Conclusions}
 
-1. Monetary system has been digitized since very early 1990s and most money operations were non-cash, they involved computerized systems, and cash operations occupied rather a smaller portion of total. This claim is valid for both domestic- and foreign-money denominated assets and liabilities of the banks.
+As it is shown above, it is indispansable in which money of account either domestic or foreign the payment is made with purpose of buying goods, services or securities. 
 
-2. The monetary system is hierarchical even within one large bank. For example, Prominvestbank's inter-branch trading in balances on correspondent accounts with head office revealed different branches had varying credit risk. Hence, the monetary hierarchy within one country is multi-tiered. And a two-tiered monetary system is a description that omits important nuances of the operations of the system as a whole.
+If payment is in \textit{domestic} money then the end result once the payment is complete is that domestic banking industry created a new \acf{dcr} denominated in that money of account with the banking industry of a foreign country. The former just informs the latter that payment is made must be accounted for. 
 
-3. Money (or monetary) hierarchy between economic units (banks, near banks and non-banks) appears because of correspondent relationships (direct and indirect) between them. In banks these are called correspondent relationships (nostro and vostro accounts), in other units these are the relationships that take place through current or demand deposit accounts. Those relationships are constructed to facilitate payments and settlements. If a bank unit provides its balance sheet to other banks for payments (such a bank opens correspondent accounts for those banks) hence such a bank situates in the higher tier in the money hierarchy relative to those banks it serves, which are in the lower tier.
-4. Money (or monetary) hierarchy practically happens on the balance sheets of economic units. Talking of the banking business, balance sheets are the language of this business. Money hierarchies denominated in different money units (domestic and foreign ones) co-habituate on those balance sheets. Business operations modify them daily through creation and destruction of financial liabilities (\acsp{iou}) denominated in either domestic or foreign money units of account. In other words, it reflects endogenous money concept.
+If payment is in \textit{foreign} money then in order to make a payment the domestic banking industry must have a priorly established \ac{dcr} denominated in that money of account with a foreign banking industry. If there is none, then it must ask the latter to established one anew. Then, the original payment is done as a re-use of the prior or just-created created \ac{dcr} between two banking industries. This type of payment is also conceptualized as one-sided or a partial set-off. If the payment is of the repayment of the foreign bank loan and its interest then it is a two-sided or a complete set-off, or just a set-off. 
 
-5. A granulated (most elementary) transaction between economic units, balance sheets of which are in such relationship that situates them on different tiers of money  (or monetary) hierarchy, such as a wire transfer of balances (money) result in the following outcome. Consolidated balance sheet of the units of higher money tier stays intact in terms of total assets, while there is expansion of consolidated balance sheet of the units of lower money tier. When such a transaction takes place between economic units within same money tier then consolidated balance sheet of this tier stays intact, while consolidated balance sheets of other tiers stays intact too. One example of the former case is wage payment by a firm in favor of its employees: a firm borrows from the head office of the bank (both balance sheets expand) and then instruct the bank to debit its current account and credit the accounts of its employees served by the branch of that bank.
-
-6. Foreign-exchange market operationally is such money hierarchy (endogenous) modifications that convert endogenously created \acsp{iou} denominated in domestic money unit into the endogenously created \acsp{iou} denominated in foreign money unit. Exchange of domestic cash currency into foreign cash currency is just a fraction of the whole of foreign-exchange operations. Hence, description of the whole as well as of its elementary part is best served by the language free of cash currency invocations.
+These two ways of payment underscore the relative power existing between nations. Those which make payments via creation of \acp{dcr} have upper hand over those which are able to make payments only through a re-use or set-off.  
